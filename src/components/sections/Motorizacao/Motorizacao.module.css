@@ -1,0 +1,289 @@
+/* Motorizacao.module.css — Maravilha Cortinas · dark section com imagem */
+
+.sec {
+  position:   relative;
+  padding:    var(--section-py) 0;
+  background: var(--color-grafite);
+  overflow:   hidden;
+}
+
+/* ── Imagem de fundo ── */
+.bgWrap {
+  position: absolute;
+  inset:    0;
+  z-index:  0;
+}
+
+.bgImg {
+  object-fit:      cover;
+  object-position: center 20%;
+}
+
+/* ── Overlay ── */
+.bgOverlay {
+  position:   absolute;
+  inset:      0;
+  z-index:    1;
+  background: linear-gradient(
+    to right,
+    rgba(20,20,20,0.95) 0%,
+    rgba(20,20,20,0.80) 55%,
+    rgba(20,20,20,0.60) 100%
+  );
+}
+
+/* ── Container ── */
+.container {
+  position:  relative;
+  z-index:   2;
+  width:     100%;
+  max-width: var(--container);
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+.inner {
+  display:        flex;
+  flex-direction: column;
+  gap:            48px;
+}
+
+/* ── Copy ── */
+.copy {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+  max-width:      560px;
+}
+
+.eyebrow {
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+}
+
+.eyebrowLine {
+  display:     block;
+  width:       28px;
+  height:      1px;
+  background:  var(--color-pink);
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+}
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(26px, 3.2vw, 40px);
+  font-weight:    600;
+  line-height:    1.2;
+  color:          #fff;
+  letter-spacing: -0.01em;
+  margin:         0;
+}
+
+.tituloEm {
+  font-style: italic;
+  color:      #D9CEBB;
+}
+
+.sub {
+  font-family: var(--font-body);
+  font-size:   16px;
+  font-weight: 300;
+  line-height: 1.85;
+  color:       rgba(255,255,255,0.65);
+  margin:      0;
+}
+
+/* ── Recursos ── */
+.recursos {
+  list-style:     none;
+  padding:        0;
+  margin:         0;
+  display:        flex;
+  flex-direction: column;
+  gap:            0;
+}
+
+.recurso {
+  display:       flex;
+  align-items:   flex-start;
+  gap:           16px;
+  padding:       16px 0;
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+}
+
+.recurso:last-child { border-bottom: none; }
+
+.recursoIco {
+  width:           40px;
+  height:          40px;
+  min-width:       40px;
+  border:          0.5px solid rgba(233,30,140,0.3);
+  background:      rgba(233,30,140,0.08);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  color:           var(--color-pink);
+  border-radius:   var(--radius-sm);
+}
+
+.recursoTexto {
+  display:        flex;
+  flex-direction: column;
+  gap:            3px;
+}
+
+.recursoTitulo {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 500;
+  color:       rgba(255,255,255,0.90);
+}
+
+.recursoDesc {
+  font-family: var(--font-body);
+  font-size:   14px;
+  font-weight: 300;
+  color:       rgba(255,255,255,0.45);
+  line-height: 1.5;
+}
+
+/* ── CTAs ── */
+.acoes {
+  display:        flex;
+  flex-direction: column;
+  gap:            12px;
+}
+
+.ctaPrimario {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             10px;
+  background:      #fff;
+  color:           var(--color-grafite);
+  font-family:     var(--font-body);
+  font-size:       13px;
+  font-weight:     500;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  text-decoration: none;
+  padding:         14px 28px;
+  border-radius:   var(--radius-md);
+  min-height:      44px;
+  width:           100%;
+  transition:      background var(--duration) var(--ease),
+                   transform var(--duration) var(--ease);
+}
+
+.ctaPrimario:hover {
+  background: var(--color-linho);
+  transform:  translateY(-2px);
+}
+
+/* ── Visual card ── */
+.visual { width: 100%; }
+
+.visualCard {
+  background:     rgba(255,255,255,0.05);
+  border:         0.5px solid rgba(217,206,187,0.2);
+  padding:        40px 32px;
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+  border-radius:  var(--radius-lg);
+  width:          100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.visualIcone {
+  color:           var(--color-pink);
+  width:           52px;
+  height:          52px;
+  border:          0.5px solid rgba(233,30,140,0.3);
+  border-radius:   var(--radius-md);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+}
+
+.visualTitulo {
+  font-family: var(--font-display);
+  font-size:   clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 400;
+  font-style:  italic;
+  color:       #fff;
+  margin:      0;
+}
+
+.visualDesc {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 300;
+  color:       rgba(255,255,255,0.55);
+  line-height: 1.8;
+  margin:      0;
+}
+
+.visualBadges {
+  display:   flex;
+  flex-wrap: wrap;
+  gap:       8px;
+}
+
+.visualBadge {
+  font-family:    var(--font-body);
+  font-size:      11px;
+  font-weight:    500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          #D9CEBB;
+  border:         0.5px solid rgba(217,206,187,0.3);
+  padding:        4px 12px;
+  border-radius:  var(--radius-sm);
+  background:     rgba(217,206,187,0.08);
+}
+
+/* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) {
+  .acoes       { flex-direction: row; }
+  .ctaPrimario { width: auto; }
+}
+
+/* ══ DESKTOP ≥ 1024px ══ */
+@media (min-width: 1024px) {
+  .bgOverlay {
+    background: linear-gradient(
+      to right,
+      rgba(20,20,20,0.95) 0%,
+      rgba(20,20,20,0.75) 55%,
+      rgba(20,20,20,0.40) 100%
+    );
+  }
+
+  .inner {
+    flex-direction: row;
+    align-items:    center;
+    gap:            80px;
+  }
+
+  .copy        { max-width: 520px; flex-shrink: 0; }
+  .visual      { flex: 1; }
+  .visualCard  { max-width: 380px; margin-left: auto; }
+}
+
+/* ══ REDUCED MOTION ══ */
+@media (prefers-reduced-motion: reduce) {
+  .ctaPrimario            { transition: none; }
+  .ctaPrimario:hover      { transform: none; }
+}

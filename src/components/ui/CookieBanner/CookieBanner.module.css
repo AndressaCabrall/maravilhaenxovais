@@ -1,0 +1,94 @@
+/* CookieBanner.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.banner {
+  position:   fixed;
+  bottom:     0;
+  left:       0;
+  right:      0;
+  z-index:    999;
+  background: var(--color-white);
+  border-top: 0.5px solid var(--color-areia);
+  padding:    16px var(--gap);
+  box-shadow: var(--shadow-lg);
+}
+
+.conteudo {
+  max-width:      var(--container);
+  margin:         0 auto;
+  display:        flex;
+  flex-direction: column;
+  gap:            12px;
+  align-items:    flex-start;
+}
+
+.texto {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.7;
+  margin:      0;
+}
+
+.link {
+  color:                 var(--color-pink);
+  text-decoration:       underline;
+  text-underline-offset: 3px;
+  transition:            color var(--duration) var(--ease);
+}
+.link:hover { color: var(--color-pink-hover); }
+
+.acoes {
+  display:    flex;
+  gap:        8px;
+  flex-shrink: 0;
+}
+
+.btnAceitar {
+  padding:        10px 24px;
+  min-height:     44px;
+  background:     var(--color-pink);
+  color:          #fff;
+  border:         none;
+  border-radius:  var(--radius-md);
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor:         pointer;
+  transition:     background var(--duration) var(--ease);
+}
+.btnAceitar:hover { background: var(--color-pink-hover); }
+
+.btnRecusar {
+  padding:        10px 24px;
+  min-height:     44px;
+  background:     transparent;
+  color:          var(--color-taupe);
+  border:         0.5px solid var(--color-areia-dark);
+  border-radius:  var(--radius-md);
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor:         pointer;
+  transition:     color var(--duration) var(--ease), border-color var(--duration) var(--ease);
+}
+.btnRecusar:hover {
+  color:        var(--color-grafite);
+  border-color: var(--color-taupe);
+}
+
+@media (min-width: 768px) {
+  .conteudo {
+    flex-direction:  row;
+    align-items:     center;
+    justify-content: space-between;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link, .btnAceitar, .btnRecusar { transition: none; }
+}

@@ -1,0 +1,20 @@
+/* RevealWrapper.module.css — Maravilha Cortinas */
+
+.reveal {
+  opacity:    0;
+  transform:  translateY(28px);
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+}
+
+.visivel {
+  opacity:   1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity:    1;
+    transform:  none;
+    transition: none;
+  }
+}

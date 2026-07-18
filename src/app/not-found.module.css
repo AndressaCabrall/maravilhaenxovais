@@ -1,0 +1,93 @@
+/* not-found.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.pagina {
+  background:     var(--color-bg);
+  min-height:     70vh;
+  padding-top:    160px;
+  padding-bottom: var(--section-py);
+  display:        flex;
+  align-items:    center;
+}
+
+.container {
+  max-width: var(--container);
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+.eyebrow {
+  display:       flex;
+  align-items:   center;
+  gap:           12px;
+  margin-bottom: 16px;
+}
+
+.eyebrowLine {
+  display:     block;
+  width:       28px;
+  height:      1px;
+  background:  var(--color-pink);
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  font-weight:    500;
+}
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(2rem, 5vw, 3.2rem);
+  font-weight:    400;
+  color:          var(--color-grafite);
+  line-height:    1.15;
+  letter-spacing: -0.01em;
+  margin:         0 0 16px;
+}
+
+.tituloEm {
+  font-style: italic;
+  color:      var(--color-taupe);
+}
+
+.sub {
+  font-family: var(--font-body);
+  font-size:   17px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.85;
+  max-width:   520px;
+  margin:      0 0 40px;
+}
+
+.links {
+  list-style: none;
+  padding:    0;
+  margin:     0;
+  display:    flex;
+  flex-direction: column;
+  gap:        1px;
+  background: var(--color-areia);
+  max-width:  420px;
+}
+
+.link {
+  display:         block;
+  background:      var(--color-white);
+  padding:         16px 20px;
+  font-family:     var(--font-body);
+  font-size:       15px;
+  font-weight:     500;
+  color:           var(--color-grafite);
+  text-decoration: none;
+  transition:      background var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+.link:hover {
+  background: var(--color-linho);
+  color:      var(--color-pink);
+}

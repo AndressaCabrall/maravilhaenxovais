@@ -1,0 +1,120 @@
+/* ProductCard.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.card {
+  position:        relative;
+  display:         block;
+  width:           100%;
+  height:          clamp(340px, 48vw, 520px);
+  overflow:        hidden;
+  text-decoration: none;
+  background:      var(--color-grafite);
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.8s var(--ease);
+}
+
+.card:hover .img { transform: scale(1.04); }
+
+.overlay {
+  position:   absolute;
+  inset:      0;
+  background: linear-gradient(180deg, rgba(44,44,42,0) 40%, rgba(44,44,42,0.78) 100%);
+  transition: background var(--duration) var(--ease);
+}
+
+.card:hover .overlay {
+  background: linear-gradient(180deg, rgba(44,44,42,0.1) 30%, rgba(44,44,42,0.85) 100%);
+}
+
+.conteudo {
+  position:       absolute;
+  left:           0;
+  right:          0;
+  bottom:         0;
+  z-index:        1;
+  display:        flex;
+  flex-direction: column;
+  gap:            10px;
+  padding:        28px 28px 32px;
+}
+
+.eyebrow {
+  display:        inline-flex;
+  align-items:    center;
+  gap:            8px;
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  width:          fit-content;
+}
+
+.eyebrowDot {
+  width:         6px;
+  height:        6px;
+  border-radius: 50%;
+  background:    var(--color-pink);
+  flex-shrink:   0;
+}
+
+.linha {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             16px;
+}
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(28px, 4vw, 44px);
+  font-weight:    400;
+  color:          #F2EDE8;
+  letter-spacing: -0.01em;
+  margin:         0;
+}
+
+.icone {
+  flex-shrink:     0;
+  width:           40px;
+  height:          40px;
+  border:          0.5px solid rgba(242,237,232,0.4);
+  border-radius:   50%;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  font-size:       18px;
+  font-weight:     300;
+  color:           #F2EDE8;
+  transition:      border-color var(--duration) var(--ease),
+                   background var(--duration) var(--ease),
+                   transform var(--duration) var(--ease);
+}
+
+.card:hover .icone {
+  border-color: var(--color-pink);
+  background:   var(--color-pink);
+  transform:    rotate(90deg);
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color:       rgba(242,237,232,0.75);
+  max-width:   520px;
+  margin:      0;
+}
+
+@media (min-width: 768px) {
+  .conteudo { padding: 36px 40px 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .img, .icone, .overlay { transition: none; }
+  .card:hover .icone { transform: none; }
+}

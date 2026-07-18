@@ -1,0 +1,172 @@
+/* contato.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.pagina {
+  background:     var(--color-bg);
+  min-height:     100vh;
+  padding-top:    140px;
+  padding-bottom: var(--section-py);
+}
+
+.container {
+  max-width: var(--container);
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+.header {
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+  padding-bottom: 48px;
+  max-width:      680px;
+}
+
+.eyebrow {
+  display:       flex;
+  align-items:   center;
+  gap:           12px;
+  margin-bottom: 4px;
+}
+
+.eyebrowLine {
+  display:     block;
+  width:       28px;
+  height:      1px;
+  background:  var(--color-pink);
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  font-weight:    500;
+}
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(2rem, 5vw, 3.2rem);
+  font-weight:    400;
+  color:          var(--color-grafite);
+  line-height:    1.15;
+  letter-spacing: -0.01em;
+  margin:         0;
+}
+
+.tituloEm {
+  font-style: italic;
+  color:      var(--color-taupe);
+}
+
+.sub {
+  font-family: var(--font-body);
+  font-size:   17px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.85;
+  max-width:   560px;
+  margin:      0;
+}
+
+.grid {
+  display:               grid;
+  grid-template-columns: 1fr;
+  gap:                   40px;
+}
+
+.infoCol {
+  display:        flex;
+  flex-direction: column;
+  gap:            32px;
+}
+
+.nap {
+  display:        flex;
+  flex-direction: column;
+  gap:            24px;
+}
+
+.napItem {
+  display:        flex;
+  flex-direction: column;
+  gap:            6px;
+  padding-bottom: 20px;
+  border-bottom:  0.5px solid var(--color-areia);
+}
+
+.napLabel {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+}
+
+.napValor {
+  font-family: var(--font-body);
+  font-size:   16px;
+  font-weight: 300;
+  color:       var(--color-grafite);
+  line-height: 1.7;
+}
+
+.napLink {
+  font-family: var(--font-body);
+  font-size:   16px;
+  font-weight: 400;
+  color:       var(--color-grafite);
+  text-decoration: none;
+  transition:  color var(--duration) var(--ease);
+}
+
+.napLink:hover { color: var(--color-pink); }
+
+.redes {
+  display: flex;
+  gap:     16px;
+}
+
+.ctaWa {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             10px;
+  background:      var(--color-pink);
+  color:           #fff;
+  font-family:     var(--font-body);
+  font-size:       13px;
+  font-weight:     500;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  text-decoration: none;
+  padding:         14px 28px;
+  border-radius:   var(--radius-md);
+  min-height:      44px;
+  width:           fit-content;
+  transition:      background var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.ctaWa:hover {
+  background: var(--color-pink-hover);
+  transform:  translateY(-2px);
+}
+
+.mapaCol {
+  width: 100%;
+}
+
+.mapa {
+  width:         100%;
+  height:        360px;
+  border:        0.5px solid var(--color-areia-dark);
+  border-radius: var(--radius-md);
+}
+
+@media (min-width: 1024px) {
+  .pagina { padding-top: 150px; }
+  .grid   { grid-template-columns: 1fr 1.2fr; gap: 64px; }
+  .mapa   { height: 100%; min-height: 480px; }
+}

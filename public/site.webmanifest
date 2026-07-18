@@ -1,0 +1,21 @@
+{
+  "name": "Maravilha Cortinas & Persianas",
+  "short_name": "Maravilha",
+  "description": "Cortinas e Persianas Sob Medida — Ibitinga SP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F4F0",
+  "theme_color": "#E91E8C",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

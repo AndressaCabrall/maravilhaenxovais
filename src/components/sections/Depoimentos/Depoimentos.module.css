@@ -1,0 +1,320 @@
+/* Depoimentos.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.sec {
+  background: var(--color-linho);
+  padding:    var(--section-py) 0;
+}
+
+.container {
+  width:     100%;
+  max-width: var(--container);
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+/* ── Header ── */
+.header {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+  margin-bottom:  48px;
+}
+
+.eyebrow {
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+}
+
+.eyebrowLine {
+  display:     block;
+  width:       28px;
+  height:      1px;
+  background:  var(--color-pink);
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family:    var(--font-body);
+  font-size:      13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  font-weight:    500;
+}
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(26px, 3.2vw, 40px);
+  font-weight:    600;
+  line-height:    1.2;
+  color:          var(--color-grafite);
+  letter-spacing: -0.01em;
+  margin:         0;
+}
+
+.tituloEm {
+  font-style: italic;
+  color:      var(--color-taupe);
+}
+
+/* ── Rating ── */
+.ratingGeral {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             16px;
+  text-decoration: none;
+  background:      var(--color-white);
+  border:          0.5px solid var(--color-areia);
+  border-radius:   var(--radius-md);
+  padding:         14px 20px;
+  width:           fit-content;
+  transition:      background var(--duration) var(--ease);
+}
+
+.ratingGeral:hover { background: var(--color-linho); }
+
+.ratingNum {
+  font-family: var(--font-display);
+  font-size:   2.2rem;
+  font-style:  italic;
+  font-weight: 600;
+  color:       var(--color-grafite);
+  line-height: 1;
+}
+
+.ratingInfo {
+  display:        flex;
+  flex-direction: column;
+  gap:            3px;
+}
+
+.ratingStars {
+  color:          var(--color-pink);
+  font-size:      13px;
+  letter-spacing: 2px;
+}
+
+.ratingTxt {
+  font-family: var(--font-body);
+  font-size:   13px;
+  font-weight: 400;
+  color:       var(--color-taupe);
+}
+
+.ratingLink {
+  font-family:    var(--font-body);
+  font-size:      11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  margin-left:    auto;
+  white-space:    nowrap;
+}
+
+/* ── Carrossel ── */
+.carrosselWrap { position: relative; }
+
+.track {
+  display:                  flex;
+  gap:                      24px;
+  overflow-x:               auto;
+  scroll-snap-type:         x mandatory;
+  scroll-behavior:          smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width:          none;
+  padding-bottom:           8px;
+}
+
+.track::-webkit-scrollbar { display: none; }
+
+/* ── Card ── */
+.card {
+  flex:             0 0 100%;
+  scroll-snap-align: start;
+  background:       var(--color-white);
+  border:           0.5px solid var(--color-areia);
+  border-radius:    var(--radius-md);
+  padding:          28px 24px;
+  display:          flex;
+  flex-direction:   column;
+  gap:              14px;
+  position:         relative;
+  overflow:         hidden;
+  min-height:       240px;
+  transition:       border-color var(--duration) var(--ease);
+  box-sizing:       border-box;
+}
+
+.card::before {
+  content:          '';
+  position:         absolute;
+  top:              0; left: 0; right: 0;
+  height:           2px;
+  background:       var(--color-pink);
+  transform:        scaleX(0);
+  transform-origin: left;
+  transition:       transform 0.4s var(--ease);
+}
+
+.card:hover                { border-color: var(--color-areia-dark); }
+.card:hover::before        { transform: scaleX(1); }
+
+.aspas {
+  position:       absolute;
+  top:            12px;
+  right:          16px;
+  font-family:    var(--font-display);
+  font-size:      4rem;
+  font-style:     italic;
+  color:          var(--color-pink);
+  opacity:        0.08;
+  line-height:    1;
+  pointer-events: none;
+}
+
+.estrelas {
+  display:   flex;
+  gap:       2px;
+  color:     var(--color-pink);
+  font-size: 13px;
+}
+
+.texto {
+  font-family: var(--font-display);
+  font-size:   16px;
+  font-style:  italic;
+  font-weight: 500;
+  color:       var(--color-grafite);
+  line-height: 1.75;
+  flex:        1;
+  margin:      0;
+  padding:     0;
+  border:      none;
+}
+
+.texto p { margin: 0; color: var(--color-grafite); }
+
+.autor {
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+  border-top:  0.5px solid var(--color-areia);
+  padding-top: 14px;
+  margin-top:  auto;
+}
+
+.avatar {
+  width:           36px;
+  height:          36px;
+  min-width:       36px;
+  border-radius:   50%;
+  background:      var(--color-pink-soft);
+  border:          0.5px solid var(--color-pink-border);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  font-family:     var(--font-body);
+  font-size:       12px;
+  font-weight:     500;
+  color:           var(--color-pink-hover);
+  flex-shrink:     0;
+}
+
+.autorInfo {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  min-width:      0;
+}
+
+.autorNome {
+  font-family:    var(--font-body);
+  font-size:      13px;
+  font-weight:    600;
+  font-style:     normal;
+  color:          var(--color-grafite);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space:    nowrap;
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+}
+
+.autorVia {
+  font-family: var(--font-body);
+  font-size:   12px;
+  color:       var(--color-taupe-light);
+}
+
+/* ── Controles ── */
+.controles {
+  display:         flex;
+  justify-content: flex-end;
+  gap:             8px;
+  margin-top:      16px;
+}
+
+.arrow {
+  width:           40px;
+  height:          40px;
+  border:          0.5px solid var(--color-areia-dark);
+  background:      transparent;
+  color:           var(--color-taupe);
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  cursor:          pointer;
+  border-radius:   var(--radius-md);
+  transition:      border-color var(--duration) var(--ease),
+                   color var(--duration) var(--ease);
+}
+
+.arrow:hover { border-color: var(--color-pink); color: var(--color-pink); }
+
+/* ── Rodapé ── */
+.rodape {
+  margin-top:      48px;
+  display:         flex;
+  justify-content: center;
+}
+
+.rodapeBtn {
+  display:         inline-flex;
+  align-items:     center;
+  text-align: center;
+  gap:             10px;
+  font-family:     var(--font-body);
+  font-size:       13px;
+  font-weight:     500;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  color:           var(--color-grafite);
+  text-decoration: none;
+  border:          0.5px solid var(--color-areia-dark);
+  padding:         13px 28px;
+  border-radius:   var(--radius-md);
+  min-height:      44px;
+  transition:      border-color var(--duration) var(--ease),
+                   color var(--duration) var(--ease);
+}
+
+.rodapeBtn:hover { border-color: var(--color-pink); color: var(--color-pink); }
+
+/* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) {
+  .card { flex: 0 0 calc(50% - 12px); }
+}
+
+/* ══ DESKTOP ≥ 1024px ══ */
+@media (min-width: 1024px) {
+  .card { flex: 0 0 calc(33.333% - 16px); min-height: 260px; }
+}
+
+/* ══ REDUCED MOTION ══ */
+@media (prefers-reduced-motion: reduce) {
+  .track              { scroll-behavior: auto; }
+  .card, .card::before,
+  .arrow, .ratingGeral,
+  .rodapeBtn          { transition: none; }
+}

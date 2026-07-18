@@ -1,0 +1,514 @@
+/* slug.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.pagina {
+  background:  var(--color-bg);
+  min-height:  100vh;
+  padding-top: 120px;
+  padding-bottom: var(--section-py);
+}
+
+.container {
+  max-width: 720px;
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  display:     flex;
+  gap:         8px;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size:   13px;
+  color:       var(--color-taupe-light);
+  margin-bottom: 16px;
+  flex-wrap:   wrap;
+}
+.breadcrumbLink {
+  color:           var(--color-taupe-light);
+  text-decoration: none;
+  transition:      color 0.25s ease;
+}
+.breadcrumbLink:hover { color: var(--color-pink); }
+.breadcrumbAtual {
+  color:         var(--color-taupe);
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  max-width:     40ch;
+}
+
+/* ── Voltar ── */
+.btnVoltar {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             8px;
+  font-family:     var(--font-body);
+  font-size:       13px;
+  font-weight:     500;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  color:           var(--color-taupe);
+  text-decoration: none;
+  margin-bottom:   32px;
+  transition:      gap 0.25s ease, color 0.25s ease;
+}
+.btnVoltar:hover { gap: 14px; color: var(--color-pink); }
+
+/* ── Artigo ── */
+.artigo { margin-bottom: 64px; }
+
+/* ── Header ── */
+.header {
+  margin-bottom:  32px;
+  padding-bottom: 28px;
+  border-bottom:  0.5px solid var(--color-areia);
+  display:        flex;
+  flex-direction: column;
+  gap:            16px;
+}
+
+.headerMeta {
+  display:     flex;
+  gap:         10px;
+  align-items: center;
+  flex-wrap:   wrap;
+}
+
+.categoria {
+  font-family:    var(--font-body);
+  font-size:      12px;
+  font-weight:    500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+}
+.metaSep { color: var(--color-areia-dark); }
+.data    { font-family: var(--font-body); font-size: 13px; color: var(--color-taupe-light); }
+.tempo   { font-family: var(--font-body); font-size: 13px; color: var(--color-taupe-light); }
+
+.titulo {
+  font-family:    var(--font-display);
+  font-size:      clamp(1.8rem, 4vw, 2.6rem);
+  font-weight:    400;
+  color:          var(--color-grafite);
+  line-height:    1.15;
+  margin:         0;
+  letter-spacing: -0.01em;
+}
+
+.resumo {
+  font-family: var(--font-body);
+  font-size:   18px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.75;
+  margin:      0;
+}
+
+/* ── Autora (topo do artigo) ── */
+.autora {
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+  padding-top: 4px;
+}
+.autoraAvatar {
+  width:           40px;
+  height:          40px;
+  border-radius:   50%;
+  overflow:        hidden;
+  background:      var(--color-linho);
+  flex-shrink:     0;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+}
+.autoraImg { object-fit: cover; width: 100%; height: 100%; }
+.autoraIniciais {
+  font-family: var(--font-display);
+  font-size:   16px;
+  font-weight: 400;
+  color:       var(--color-pink);
+  font-style:  italic;
+}
+.autoraNome {
+  font-family: var(--font-body);
+  font-size:   14px;
+  font-weight: 500;
+  color:       var(--color-grafite);
+  margin:      0;
+  line-height: 1.3;
+}
+.autoraCargo {
+  font-family: var(--font-body);
+  font-size:   12px;
+  color:       var(--color-taupe-light);
+  margin:      0;
+  line-height: 1.3;
+}
+
+/* ── Imagem capa ── */
+.imagemCapa {
+  position:   relative;
+  width:      100%;
+  height:     240px;
+  overflow:   hidden;
+  margin:     32px 0;
+  background: var(--color-linho);
+}
+.imagem { object-fit: cover; object-position: center top; width: 100%; height: 100%; }
+
+/* ── Conteúdo ── */
+.conteudo {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+}
+
+.subtitulo {
+  font-family: var(--font-display);
+  font-size:   clamp(1.1rem, 2.2vw, 1.4rem);
+  font-weight: 400;
+  color:       var(--color-grafite);
+  line-height: 1.3;
+  margin-top:  12px;
+  padding-top: 24px;
+  border-top:  0.5px solid var(--color-areia);
+}
+
+.paragrafo {
+  font-family: var(--font-body);
+  font-size:   17px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.85;
+  margin:      0;
+}
+
+/* ── Lista ── */
+.lista {
+  list-style:     none;
+  padding:        0;
+  margin:         0;
+  display:        flex;
+  flex-direction: column;
+  gap:            10px;
+}
+.listaItem {
+  display:     flex;
+  gap:         12px;
+  font-family: var(--font-body);
+  font-size:   16px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.7;
+  align-items: flex-start;
+}
+.listaItem::before {
+  content:     "—";
+  color:       var(--color-pink);
+  font-weight: 400;
+  flex-shrink: 0;
+  margin-top:  1px;
+}
+
+/* ── Blockquote (dica) ── */
+.dica {
+  display:     flex;
+  gap:         14px;
+  align-items: flex-start;
+  background:  var(--color-linho);
+  border-left: 2px solid var(--color-pink);
+  padding:     16px 20px;
+  margin:      4px 0;
+}
+.dicaIcone { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.dicaTexto {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.7;
+  margin:      0;
+}
+
+/* ── Inline code ── */
+.code {
+  font-family:   var(--font-mono, monospace);
+  font-size:     14px;
+  background:    var(--color-linho);
+  border:        0.5px solid var(--color-areia);
+  padding:       1px 6px;
+  border-radius: 4px;
+  color:         var(--color-grafite);
+}
+
+/* ── Links no conteúdo do blog ── */
+.linkInterno {
+  color:                 var(--color-pink);
+  font-weight:           500;
+  text-decoration:       underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--color-pink) 40%, transparent);
+  transition:            color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.linkInterno:hover {
+  color:                 var(--color-pink-hover);
+  text-decoration-color: var(--color-pink-hover);
+}
+
+.linkExterno {
+  color:                 var(--color-taupe);
+  font-weight:           400;
+  text-decoration:       underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--color-taupe) 40%, transparent);
+  transition:            color 0.2s ease;
+}
+.linkExterno:hover { color: var(--color-grafite); }
+
+/* ── CTA do post ── */
+.ctaPost {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            20px;
+  padding:        40px 28px;
+  background:     var(--color-linho);
+  border:         0.5px solid var(--color-areia);
+  text-align:     center;
+  margin-top:     40px;
+}
+.ctaTexto {
+  font-family: var(--font-display);
+  font-size:   clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  color:       var(--color-grafite);
+  line-height: 1.4;
+  margin:      0;
+}
+.ctaTexto em { font-style: italic; color: var(--color-taupe); }
+.ctaBtn {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             10px;
+  background:      var(--color-pink);
+  color:           #fff;
+  padding:         14px 28px;
+  font-family:     var(--font-body);
+  font-size:       13px;
+  font-weight:     500;
+  letter-spacing:  0.08em;
+  text-transform:  uppercase;
+  text-decoration: none;
+  border-radius:   var(--radius-md);
+  min-height:      44px;
+  transition:      background 0.25s ease, transform 0.25s ease;
+  white-space:     nowrap;
+}
+.ctaBtn:hover { background: var(--color-pink-hover); transform: translateY(-2px); }
+
+/* ── Bio da autora ── */
+.autoraBio {
+  display:     flex;
+  gap:         20px;
+  align-items: flex-start;
+  padding:     28px 24px;
+  background:  var(--color-white, #fff);
+  border:      0.5px solid var(--color-areia);
+  margin-top:  40px;
+}
+.autoraBioAvatar {
+  width:           64px;
+  height:          64px;
+  border-radius:   50%;
+  overflow:        hidden;
+  background:      var(--color-linho);
+  flex-shrink:     0;
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+}
+.autoraBioImg { object-fit: cover; width: 100%; height: 100%; }
+.autoraBioIniciais {
+  font-family: var(--font-display);
+  font-size:   24px;
+  font-weight: 400;
+  color:       var(--color-pink);
+  font-style:  italic;
+}
+.autoraBioTexto { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.autoraBioNome {
+  font-family: var(--font-body);
+  font-size:   15px;
+  font-weight: 500;
+  color:       var(--color-grafite);
+  margin:      0;
+}
+.autoraBioCargo {
+  font-family:    var(--font-body);
+  font-size:      11px;
+  font-weight:    500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color:          var(--color-pink);
+  margin:         0;
+}
+.autoraBioDesc {
+  font-family: var(--font-body);
+  font-size:   14px;
+  font-weight: 300;
+  color:       var(--color-taupe);
+  line-height: 1.7;
+  margin:      6px 0 0;
+}
+.autoraBioIG {
+  font-family:     var(--font-body);
+  font-size:       13px;
+  color:           var(--color-pink);
+  text-decoration: none;
+  margin-top:      6px;
+  width:           fit-content;
+  transition:      color 0.2s ease;
+}
+.autoraBioIG:hover { color: var(--color-pink-hover); }
+
+/* ── Relacionados ── */
+.relacionados {
+  margin-top:  64px;
+  padding-top: 40px;
+  border-top:  0.5px solid var(--color-areia);
+}
+.relacionadosTitulo {
+  font-family:   var(--font-display);
+  font-size:     clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight:   400;
+  color:         var(--color-grafite);
+  margin-bottom: 28px;
+}
+.relacionadosTitulo em { font-style: italic; }
+.relacionadosGrid {
+  display:        flex;
+  flex-direction: column;
+  gap:            1px;
+  background:     var(--color-areia);
+}
+.relCard {
+  display:     flex;
+  gap:         16px;
+  align-items: flex-start;
+  padding:     16px;
+  background:  var(--color-white, #fff);
+  transition:  background 0.25s ease;
+}
+.relCard:hover  { background: var(--color-linho); }
+.relImgLink     { display: block; flex-shrink: 0; }
+.relImagem {
+  position:    relative;
+  width:       80px;
+  height:      80px;
+  overflow:    hidden;
+  background:  var(--color-linho);
+  flex-shrink: 0;
+}
+.relImg {
+  object-fit:      cover;
+  object-position: center;
+  width:           100%;
+  height:          100%;
+  transition:      transform 0.35s ease;
+}
+.relImgLink:hover .relImg { transform: scale(1.06); }
+.relBody      { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+.relCategoria { font-family: var(--font-body); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-pink); }
+.relTitulo    { font-family: var(--font-display); font-size: 15px; font-weight: 400; line-height: 1.4; margin: 0; }
+.relTituloLink { color: var(--color-grafite); text-decoration: none; transition: color 0.25s ease; }
+.relTituloLink:hover { color: var(--color-pink-hover); }
+.relTempo     { font-family: var(--font-body); font-size: 12px; color: var(--color-taupe-light); }
+
+/* ── Indicações regionais ── */
+.indicacoes {
+  margin-top: 48px;
+  padding:    28px 24px;
+  border:     0.5px solid var(--color-areia);
+  background: var(--color-bg);
+}
+.indicacoesTitulo {
+  font-family:   var(--font-display);
+  font-size:     15px;
+  font-weight:   400;
+  color:         var(--color-grafite);
+  margin-bottom: 6px;
+  font-style:    italic;
+}
+.indicacoesDesc {
+  font-family:   var(--font-body);
+  font-size:     13px;
+  font-weight:   300;
+  color:         var(--color-taupe-light);
+  line-height:   1.65;
+  margin-bottom: 16px;
+}
+.indicacoesLista {
+  list-style: none;
+  padding:    0;
+  margin:     0;
+  display:    grid;
+  grid-template-columns: 1fr 1fr;
+  gap:        8px;
+}
+.indicacoesLink {
+  display:         flex;
+  flex-direction:  column;
+  gap:             2px;
+  padding:         10px 14px;
+  background:      var(--color-white, #fff);
+  border:          0.5px solid var(--color-areia);
+  text-decoration: none;
+  transition:      border-color 0.2s ease, background 0.2s ease;
+}
+.indicacoesLink:hover {
+  border-color: var(--color-pink);
+  background:   var(--color-linho);
+}
+.indicacoesCidade {
+  font-family:    var(--font-body);
+  font-size:      11px;
+  font-weight:    500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color:          var(--color-taupe-light);
+}
+.indicacoesNome {
+  font-family: var(--font-body);
+  font-size:   13px;
+  font-weight: 400;
+  color:       var(--color-pink);
+  line-height: 1.4;
+}
+
+/* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) {
+  .pagina     { padding-top: 130px; }
+  .imagemCapa { height: 360px; }
+}
+
+/* ══ DESKTOP ≥ 1024px ══ */
+@media (min-width: 1024px) {
+  .pagina     { padding-top: 140px; }
+  .imagemCapa { height: 420px; }
+}
+
+/* ══ LARGE ≥ 1440px ══ */
+@media (min-width: 1440px) {
+  .container  { max-width: 780px; }
+  .imagemCapa { height: 460px; }
+}
+
+/* ══ REDUCED MOTION ══ */
+@media (prefers-reduced-motion: reduce) {
+  .relImg, .ctaBtn, .btnVoltar, .relTituloLink,
+  .indicacoesLink, .autoraBioIG, .linkInterno,
+  .linkExterno { transition: none; }
+}
