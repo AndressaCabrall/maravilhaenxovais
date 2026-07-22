@@ -97,11 +97,11 @@ export default function HeroSlider() {
 
             <div className={styles.eyebrow}>
               <span className={styles.eyebrowLine} aria-hidden="true" />
-              <span className={styles.eyebrowText}>Ibitinga · SP · Loja da Fábrica</span>
+              <span className={styles.eyebrowText}>Ibitinga · SP </span>
             </div>
 
             <h1 id="hero-titulo" ref={tituloRef} className={styles.titulo}>
-              Cortinas e persianas sob medida.
+              Cortinas e persianas sob medida
             </h1>
 
             <p className={styles.subtitulo}>{slide.subtitulo}</p>
