@@ -36,6 +36,12 @@
   object-position: center top;
   width:           100%;
   height:          100%;
+  animation:       imgZoom 6s linear forwards;
+}
+
+@keyframes imgZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
 }
 
 .imgOverlay {
@@ -112,17 +118,18 @@
 }
 
 .titulo {
-  font-family:    var(--font-display);
-  font-size:      clamp(30px, 4vw, 48px);
-  font-weight:    400;
-  line-height:    1.15;
-  color:          #fff;
-  letter-spacing: -0.01em;
+  font-family:    var(--font-body);
+  font-size:      clamp(30px, 4.5vw, 48px);
+  font-weight:    800;
+  line-height:    1.02;
+  text-transform: uppercase;
+  color:          #F2EDE8;
+  letter-spacing: -0.02em;
   margin:         0;
 }
 
 .tituloEm {
-  font-style: italic;
+  font-style: normal;
   color:      rgba(255,255,255,0.55);
 }
 
@@ -244,18 +251,19 @@
     gap:            80px;
   }
   .imgCol  { width: 45%; flex-shrink: 0; }
-  .imgWrap { height: 580px; }
+  .imgWrap { height: 720px; }
   .copy    { flex: 1; padding-top: 0; }
   .numeros { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* ══ LARGE ≥ 1440px ══ */
 @media (min-width: 1440px) {
-  .imgWrap { height: 640px; }
+  .imgWrap { height: 720px; }
 }
 
 /* ══ REDUCED MOTION ══ */
 @media (prefers-reduced-motion: reduce) {
   .ctaPrimario, .ctaSecundario { transition: none; }
   .ctaPrimario:hover { transform: none; }
+  .img { animation: none; }
 }

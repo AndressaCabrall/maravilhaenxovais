@@ -48,17 +48,19 @@
 }
 
 .titulo {
-  font-family: var(--font-display);
-  font-size:   clamp(2rem, 5vw, 3rem);
-  font-weight: 400;
-  color:       var(--color-grafite);
-  line-height: 1.15;
-  margin:      0;
+  font-family:    var(--font-body);
+  font-size:      clamp(30px, 4.5vw, 48px);
+  font-weight:    800;
+  line-height:    1.02;
+  text-transform: uppercase;
+  color:          var(--color-grafite);
+  letter-spacing: -0.02em;
+  margin:         0;
 }
 
 .tituloEm {
-  font-style: italic;
-  color:      var(--color-grafite);
+  font-style: normal;
+  color:      var(--color-taupe);
 }
 
 .atualizacao {

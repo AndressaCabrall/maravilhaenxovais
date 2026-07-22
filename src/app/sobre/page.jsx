@@ -1,7 +1,6 @@
 // src/app/sobre/page.jsx — Maravilha Cortinas
 import Image          from 'next/image'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
-import Diferenciais   from '@/components/sections/Diferenciais/Diferenciais'
 import ComoFunciona   from '@/components/sections/ComoFunciona/ComoFunciona'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -137,7 +136,6 @@ export default function SobrePage() {
           </div>
         </section>
 
-        <Diferenciais />
         <ComoFunciona />
 
         <div className={seoStyles.pagina} style={{ paddingTop: 0 }}>

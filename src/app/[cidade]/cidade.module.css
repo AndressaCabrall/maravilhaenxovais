@@ -50,17 +50,19 @@
 }
 
 .titulo {
-  font-family:    var(--font-display);
-  font-size:      clamp(2rem, 5vw, 3.2rem);
-  font-weight:    400;
+  font-family:    var(--font-body);
+  font-size:      clamp(30px, 4.5vw, 48px);
+  font-weight:    800;
+  line-height:    1.02;
+  text-transform: uppercase;
   color:          var(--color-grafite);
-  line-height:    1.15;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin:         0;
 }
 
 .tituloEm {
-  font-style: italic;
+  font-style: normal;
+  color:      var(--color-taupe);
 }
 
 .sub {
@@ -109,17 +111,19 @@
 .sec:last-of-type { border-bottom: none; }
 
 .secTitulo {
-  font-family: var(--font-display);
-  font-size:   clamp(1.6rem, 3vw, 2.6rem);
-  font-weight: 400;
-  color:       var(--color-grafite);
-  line-height: 1.2;
-  margin:      0;
-  max-width:   580px;
+  font-family:    var(--font-body);
+  font-size:      clamp(28px, 3.6vw, 40px);
+  font-weight:    800;
+  line-height:    1.05;
+  text-transform: uppercase;
+  color:          var(--color-grafite);
+  letter-spacing: -0.02em;
+  margin:         0;
+  max-width:      580px;
 }
 
 .secTituloEm {
-  font-style: italic;
+  font-style: normal;
   color:      var(--color-taupe);
 }
 
