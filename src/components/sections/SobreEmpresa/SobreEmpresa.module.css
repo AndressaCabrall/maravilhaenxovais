@@ -1,0 +1,156 @@
+/* SobreEmpresa.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+/* Proporções de referência: imagem grande 758×851, imagem pequena 380×475,
+   pequena sobrepondo o canto superior esquerdo da grande. */
+
+.sec {
+  background: var(--color-white);
+  padding:    var(--section-py) 0;
+  overflow:   hidden;
+}
+
+.container {
+  width:     100%;
+  max-width: 1440px;
+  margin:    0 auto;
+  padding:   0 var(--gap);
+}
+
+.inner {
+  display:        flex;
+  flex-direction: column;
+  gap:            56px;
+}
+
+/* ── Imagens ── */
+.imagens {
+  position:     relative;
+  width:        100%;
+  max-width:    420px;
+  margin:       0 auto;
+  aspect-ratio: 851 / 851;
+}
+
+.imgGrandeWrap {
+  position:      absolute;
+  right:         0;
+  bottom:        0;
+  width:         89%;
+  aspect-ratio:  758 / 851;
+  z-index:       1;
+  overflow:      hidden;
+}
+
+.imgPequenaWrap {
+  position:      absolute;
+  left:          0;
+  top:           50%;
+  transform:     translateY(-50%);
+  width:         44.6%;
+  aspect-ratio:  380 / 475;
+  z-index:       2;
+  overflow:      hidden;
+  box-shadow:    0 20px 50px -20px rgba(44,44,42,0.35);
+}
+
+.imgClipStatico {
+  position: relative;
+  width:    100%;
+  height:   100%;
+  overflow: hidden;
+}
+
+.imgClip {
+  position: relative;
+  width:    100%;
+  height:   100%;
+  overflow: hidden;
+}
+
+.imgClip img {
+  will-change: transform;
+}
+
+/* ── Copy ── */
+.copy {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+}
+
+.eyebrow {
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+}
+
+.eyebrowLine {
+  display:     block;
+  width:       28px;
+  height:      1px;
+  background:  var(--color-pink);
+  flex-shrink: 0;
+}
+
+.eyebrowText {
+  font-family:    var(--font-body);
+  font-size:      13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--color-pink);
+  font-weight:    500;
+}
+
+.titulo {
+  font-family:    var(--font-body);
+  font-size:      clamp(30px, 4.5vw, 48px);
+  font-weight:    800;
+  line-height:    1.05;
+  text-transform: uppercase;
+  color:          var(--color-grafite);
+  letter-spacing: -0.02em;
+  margin:         0;
+}
+
+.tituloEm {
+  font-style: normal;
+  color:      var(--color-taupe);
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size:   16px;
+  font-weight: 400;
+  line-height: 1.9;
+  color:       var(--color-taupe);
+  margin:      0;
+}
+
+/* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) {
+  .imagens { max-width: 520px; }
+}
+
+/* ══ DESKTOP ≥ 1024px ══ */
+@media (min-width: 1024px) {
+  .inner {
+    flex-direction: row-reverse;
+    align-items:    center;
+    gap:            80px;
+  }
+  .imagens {
+    flex-shrink: 0;
+    width:       640px;
+    max-width:   640px;
+  }
+  .copy { flex: 1; }
+}
+
+/* ══ LARGE ≥ 1440px ══ */
+@media (min-width: 1440px) {
+  .imagens { width: 758px; max-width: 758px; }
+}
+
+/* ══ REDUCED MOTION ══ */
+@media (prefers-reduced-motion: reduce) {
+  .imgClip img { transform: none !important; }
+}

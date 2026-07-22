@@ -1,5 +1,6 @@
 // src/app/page.jsx — Home institucional enxuta
 import HeroSlider    from '@/components/sections/HeroSlider/HeroSlider'
+import SobreEmpresa  from '@/components/sections/SobreEmpresa/SobreEmpresa'
 import Projetos      from '@/components/sections/Projetos/Projetos'
 import ResumoDiferenciais from '@/components/sections/ResumoDiferenciais/ResumoDiferenciais'
 import VitrinePreview     from '@/components/sections/VitrinePreview/VitrinePreview'
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <main>
         <HeroSlider />
+        <SobreEmpresa />
         <VitrinePreview />
         <ResumoDiferenciais />
         <Projetos />
