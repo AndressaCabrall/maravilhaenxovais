@@ -1,0 +1,79 @@
+/* FraseDestaque.module.css — Maravilha Cortinas · paleta Atelier Blanc */
+
+.sec {
+  background: var(--color-white);
+  padding:    64px 0;
+  overflow:   hidden;
+}
+
+/* ── Ticker vazado ── */
+.tickerWrap {
+  overflow: hidden;
+  width:    100%;
+  padding:  0.15em 0;
+}
+
+.tickerTrack {
+  display:     flex;
+  white-space: nowrap;
+  width:       max-content;
+  animation:   frase-ticker 22s linear infinite;
+}
+
+.tickerItem {
+  font-family:     var(--font-body);
+  font-size:       clamp(48px, 9vw, 120px);
+  font-weight:     800;
+  text-transform:  lowercase;
+  letter-spacing:  -0.02em;
+  color:           transparent;
+  -webkit-text-stroke: 1px var(--color-areia-dark);
+  padding-right:   56px;
+  flex-shrink:     0;
+  line-height:     1.25;
+}
+
+@keyframes frase-ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Frase de destaque ── */
+.container {
+  width:     100%;
+  max-width: 900px;
+  margin:    40px auto 0;
+  padding:   0 var(--gap);
+  display:   flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap:       4px;
+}
+
+.aspas {
+  font-family: var(--font-display);
+  font-size:   64px;
+  font-style:  italic;
+  color:       var(--color-grafite);
+  line-height: 1;
+}
+
+.frase {
+  font-family: var(--font-body);
+  font-size:   clamp(18px, 2.4vw, 26px);
+  font-weight: 400;
+  line-height: 1.6;
+  color:       var(--color-taupe);
+  margin:      0;
+}
+
+.frase strong {
+  font-weight: 700;
+  color:       var(--color-grafite);
+}
+
+/* ══ REDUCED MOTION ══ */
+@media (prefers-reduced-motion: reduce) {
+  .tickerTrack { animation: none; }
+}

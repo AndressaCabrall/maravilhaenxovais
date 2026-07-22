@@ -1,13 +1,17 @@
 // src/components/sections/VitrinePreview/VitrinePreview.jsx
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, useRef, useLayoutEffect } from 'react'
 import Link  from 'next/link'
 import Image from 'next/image'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from './VitrinePreview.module.css'
 import cortinaImg  from '@/assets/images/cortinas/webp/cortina-wave-tubo-sob-medida-ibitinga-sp.webp'
 import persianaImg from '@/assets/images/persianas/webp/persiana-double-vision-sob-medida-ibitinga-sp.webp'
 import motorImg     from '@/assets/images/motorizacao/webp/cortina-motorizada-trilho-automatizado-maravilha-ibitinga-sp.webp'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const PRODUTOS = [
   {
@@ -28,7 +32,7 @@ const PRODUTOS = [
     href: '/produtos-e-servicos/motorizacao',
     imagem: motorImg,
     alt: 'Cortina motorizada com trilho automatizado — Ibitinga SP',
-    titulo: 'Motorização',
+    titulo: 'Motorização de cortinas e persianas',
     descricao: 'Controle pelo celular, Alexa e Google Home.',
     posicao: 'top',
   },
@@ -37,28 +41,53 @@ const PRODUTOS = [
 export default function VitrinePreview() {
   const [atual, setAtual] = useState(0)
   const [pausado, setPausado] = useState(false)
+  const secRef = useRef(null)
 
   const proximo = useCallback(() => setAtual((i) => (i + 1) % PRODUTOS.length), [])
 
   useEffect(() => {
     if (pausado) return
-    const t = setInterval(proximo, 5500)
+    const t = setInterval(proximo, 4800)
     return () => clearInterval(t)
   }, [pausado, proximo])
+
+  useLayoutEffect(() => {
+    const mm = gsap.matchMedia()
+
+    mm.add('(prefers-reduced-motion: no-preference)', () => {
+      const img = secRef.current.querySelector('[data-zoom]')
+      if (!img) return
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: secRef.current,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      })
+
+      tl.fromTo(img, { scale: 1.15 }, { scale: 1.3, ease: 'none' }, 0)
+
+      return () => tl.scrollTrigger?.kill()
+    })
+
+    return () => mm.revert()
+  }, [atual])
 
   const produto = PRODUTOS[atual]
 
   return (
-    <section id="produtos" className={styles.sec} aria-labelledby="vitrine-titulo">
+    <section id="produtos" className={styles.sec} ref={secRef} aria-labelledby="vitrine-titulo">
       <div className={styles.container}>
         <div className={styles.editorial}>
           <div className={styles.header}>
             <div className={styles.eyebrow}>
               <span className={styles.eyebrowLine} aria-hidden="true" />
-              <span className={styles.eyebrowText}>Produtos e serviços</span>
+              <span className={styles.eyebrowText}>Nossos Produtos e serviços</span>
             </div>
             <h2 id="vitrine-titulo" className={styles.titulo}>
-              Cortinas, persianas{' '}
+              Cortinas, persianas sob medida{' '}
               <em className={styles.tituloEm}>e motorização.</em>
             </h2>
             <p className={styles.sub}>
@@ -82,14 +111,14 @@ export default function VitrinePreview() {
               sizes="(max-width: 768px) 100vw, 570px"
               className={styles.img}
               style={{ objectPosition: produto.posicao || 'center' }}
+              data-zoom
             />
             <div className={styles.overlay} aria-hidden="true" />
 
             <div className={styles.conteudo}>
-              <h3 className={styles.tituloVazado}>{produto.titulo}</h3>
-
               <div className={styles.infoBase}>
                 <div className={styles.textoBase}>
+                  <h3 className={styles.tituloVazado}>{produto.titulo}</h3>
                   <p className={styles.desc}>{produto.descricao}</p>
                   <span className={styles.cta}>
                     Explorar {produto.titulo.toLowerCase()} →
