@@ -2,8 +2,8 @@
 // Palavras fundo de funil: cortinas sob medida instalação, persiana sob medida com instalação,
 // medição e instalação sob consulta, cortinas ibitinga, orçamento cortinas
 
-import slide1 from '@/assets/images/hero/webp/cortina-sob-medida-instalacao-ibitinga-sp.webp'
-import slide2 from '@/assets/images/hero/webp/cortina-prega-macho-linho-ambiente-ibitinga-sp.webp'
+import slide1 from '@/assets/images/hero/webp/cortina-sob-medida-instalacao-ibitinga-sp.png'
+import slide2 from '@/assets/images/hero/webp/cortina-prega-macho-linho-ambiente-ibitinga-sp.png'
 import slide3 from '@/assets/images/hero/webp/cortina-wave-sala-alto-padrao-ibitinga-sp.webp'
 import slide4 from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
 

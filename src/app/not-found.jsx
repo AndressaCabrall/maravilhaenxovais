@@ -1,6 +1,5 @@
 // src/app/not-found.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import styles         from './not-found.module.css'
@@ -21,7 +20,6 @@ const LINKS_UTEIS = [
 export default function NotFound() {
   return (
     <>
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
           <div className={styles.eyebrow}>

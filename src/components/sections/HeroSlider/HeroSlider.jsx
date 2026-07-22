@@ -1,15 +1,20 @@
 // src/components/sections/HeroSlider/HeroSlider.jsx — Maravilha Cortinas
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef, useLayoutEffect } from 'react'
 import Image from 'next/image'
+import gsap from 'gsap'
+import { SplitText } from 'gsap/SplitText'
 import styles from './HeroSlider.module.css'
 import { SLIDES } from '@/data/hero'
+
+gsap.registerPlugin(SplitText)
 
 export default function HeroSlider() {
   const [atual, setAtual] = useState(0)
   const [pausado, setPausado] = useState(false)
   const [entrando, setEntrando] = useState(false)
+  const tituloRef = useRef(null)
 
   const irPara = useCallback((i) => {
     setEntrando(true)
@@ -37,6 +42,29 @@ export default function HeroSlider() {
     return () => window.removeEventListener('keydown', fn)
   }, [proximo, anterior])
 
+  // SplitText — entrada do título linha por linha, uma única vez
+  useLayoutEffect(() => {
+    const mm = gsap.matchMedia()
+
+    mm.add('(prefers-reduced-motion: no-preference)', () => {
+      const split = new SplitText(tituloRef.current, { type: 'lines', linesClass: 'linha-split' })
+
+      gsap.set(split.lines, { yPercent: 110, opacity: 0 })
+      gsap.to(split.lines, {
+        yPercent:  0,
+        opacity:   1,
+        duration:  0.9,
+        ease:      'power4.out',
+        stagger:   0.08,
+        delay:     0.3,
+      })
+
+      return () => split.revert()
+    })
+
+    return () => mm.revert()
+  }, [])
+
   const slide = SLIDES[atual]
 
   return (
@@ -47,7 +75,7 @@ export default function HeroSlider() {
       onMouseLeave={() => setPausado(false)}
     >
       {/* Imagem */}
-      <div className={`${styles.imgWrap} ${entrando ? '' : styles.imgVisible}`} aria-hidden="true">
+      <div className={`${styles.imgWrap} ${entrando ? '' : styles.imgVisible}`} aria-hidden="true" data-speed="0.8">
         <Image
           key={slide.id}
           src={slide.imagem}
@@ -72,10 +100,11 @@ export default function HeroSlider() {
               <span className={styles.eyebrowText}>Ibitinga · SP · Loja da Fábrica</span>
             </div>
 
-            <h1 id="hero-titulo" className={styles.titulo}>
-              Cortinas e persianas<br />
-              sob medida.
+            <h1 id="hero-titulo" ref={tituloRef} className={styles.titulo}>
+              Cortinas e persianas sob medida.
             </h1>
+
+            <p className={styles.subtitulo}>{slide.subtitulo}</p>
 
           </div>
         </div>

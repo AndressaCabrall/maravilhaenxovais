@@ -26,7 +26,6 @@ export default function ProductCard({ href, imagem, alt, eyebrow, titulo, descri
 
         <div className={styles.linha}>
           <h3 className={styles.titulo}>{titulo}</h3>
-          <span className={styles.icone} aria-hidden="true">+</span>
         </div>
 
         {descricao && <p className={styles.desc}>{descricao}</p>}

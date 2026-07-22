@@ -1,7 +1,6 @@
 // src/app/cortina-pe-direito-duplo/page.jsx
 import Link          from 'next/link'
 import styles        from '@/app/seo-page.module.css'
-import Navbar        from '@/components/layout/Navbar/Navbar'
 import Footer        from '@/components/layout/Footer/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -101,7 +100,6 @@ export default function Page() {
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

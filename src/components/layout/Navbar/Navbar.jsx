@@ -9,11 +9,17 @@ import { CONTATO, EMPRESA, HORARIO } from '@/lib/constants'
 import logo from '@/assets/images/logo/logo.png'
 
 const LINKS = [
-  { href: '/#projetos',                        label: 'Projetos' },
-  { href: '/produtos-e-servicos',              label: 'Produtos e Serviços' },
-  { href: '/sobre',                            label: 'Sobre' },
+  { href: '/',                                 label: 'Início' },
+  { href: '/sobre',                            label: 'Sobre nós' },
   { href: '/blog',                             label: 'Blog' },
   { href: '/contato',                          label: 'Contato' },
+]
+
+const PRODUTOS = [
+  { href: '/#projetos',                        label: 'Projetos' },
+  { href: '/produtos-e-servicos/cortinas',     label: 'Cortinas' },
+  { href: '/produtos-e-servicos/persianas',    label: 'Persianas' },
+  { href: '/produtos-e-servicos/motorizacao',  label: 'Motorização' },
 ]
 
 function IconeWA() {
@@ -101,35 +107,49 @@ export default function Navbar() {
             <Image
               src={logo}
               alt={EMPRESA.nome}
-              width={160}
-              height={48}
+              width={220}
+              height={66}
               priority
               className={styles.logoImg}
             />
           </a>
 
-          <nav className={styles.nav} aria-label="Navegação principal">
-            {LINKS.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className={`${styles.link} ${naHero ? styles.linkHero : ''}`}
-              >
-                {l.label}
-              </a>
-            ))}
-          </nav>
+          <div className={styles.navGroup}>
+            <nav className={styles.nav} aria-label="Navegação principal">
+              {LINKS.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className={`${styles.link} ${naHero ? styles.linkHero : ''}`}
+                >
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+
+            <nav className={styles.navProdutos} aria-label="Nossos produtos">
+              {PRODUTOS.map((p) => (
+                <a
+                  key={p.href}
+                  href={p.href}
+                  className={`${styles.linkProduto} ${naHero ? styles.linkHero : ''}`}
+                >
+                  {p.label}
+                </a>
+              ))}
+            </nav>
+          </div>
 
           <a
             href={WHATSAPP_URLS.orcamento}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.cta}
-            aria-label="Solicitar orçamento pelo WhatsApp"
+            aria-label="Fale conosco pelo WhatsApp"
             onClick={() => trackWhatsApp('navbar-desktop')}
           >
             <IconeWA />
-            Solicitar orçamento
+            Fale conosco
           </a>
 
           <button
@@ -192,6 +212,16 @@ export default function Navbar() {
             <li key={l.href} style={{ '--i': i }}>
               <a href={l.href} className={styles.drawerLink} onClick={fechar}>
                 {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <ul className={styles.drawerListaProdutos} role="list">
+          {PRODUTOS.map((p, i) => (
+            <li key={p.href} style={{ '--i': LINKS.length + i }}>
+              <a href={p.href} className={styles.drawerLinkProduto} onClick={fechar}>
+                {p.label}
               </a>
             </li>
           ))}

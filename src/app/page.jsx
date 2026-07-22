@@ -1,14 +1,11 @@
 // src/app/page.jsx — Home institucional enxuta
-import Navbar        from '@/components/layout/Navbar/Navbar'
-import Footer        from '@/components/layout/Footer/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
-import Preloader     from '@/components/layout/Preloader/Preloader'
 import HeroSlider    from '@/components/sections/HeroSlider/HeroSlider'
 import Projetos      from '@/components/sections/Projetos/Projetos'
 import ResumoDiferenciais from '@/components/sections/ResumoDiferenciais/ResumoDiferenciais'
 import VitrinePreview     from '@/components/sections/VitrinePreview/VitrinePreview'
 import Depoimentos   from '@/components/sections/Depoimentos/Depoimentos'
-import Cta           from '@/components/sections/Cta/Cta'
+import CtaFooterPin  from '@/components/sections/Cta/CtaFooterPin'
 import { DOMINIO } from '@/lib/constants'
 
 export const metadata = {
@@ -22,17 +19,16 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Preloader />
-      <Navbar />
       <main>
         <HeroSlider />
-        <Projetos />
-        <ResumoDiferenciais />
         <VitrinePreview />
+        <ResumoDiferenciais />
+        <Projetos />
+       
+      
         <Depoimentos />
-        <Cta />
       </main>
-      <Footer />
+      <CtaFooterPin />
       <WhatsAppFloat />
     </>
   )

@@ -100,14 +100,21 @@
 
 /* ── Título ── */
 .titulo {
-  font-family:    var(--font-display);
-  font-size:      clamp(3.2rem, 11vw, 7rem);
-  font-weight:    700;
-  line-height:    0.92;
+  font-family:    var(--font-body);
+  font-size:      clamp(3rem, 10.5vw, 6.6rem);
+  font-weight:    800;
+  line-height:    0.94;
+  text-transform: uppercase;
   color: #F2EDE8;
   letter-spacing: -0.02em;
   text-align:     left;
+  max-width:      13ch;
   margin:         0;
+}
+
+.titulo :global(.linha-split) {
+  overflow: hidden;
+  padding-bottom: 0.08em;
 }
 
 .slideTitulo {

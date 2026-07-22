@@ -1,7 +1,6 @@
 // src/app/privacidade/page.jsx — Maravilha Cortinas & Persianas
 import Link from 'next/link'
 import styles from './privacidade.module.css'
-import Navbar from '@/components/layout/Navbar/Navbar'
 import Footer from '@/components/layout/Footer/Footer'
 import { siteConfig } from '@/lib/config'
 
@@ -15,7 +14,6 @@ export const metadata = {
 export default function Privacidade() {
   return (
     <>
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

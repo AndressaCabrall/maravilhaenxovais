@@ -1,5 +1,4 @@
 // src/app/produtos-e-servicos/page.jsx — Maravilha Cortinas
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import ProductCard    from '@/components/ui/ProductCard/ProductCard'
@@ -51,7 +50,6 @@ export default function ProdutosPage() {
         { nome: 'Home',                 href: '/' },
         { nome: 'Produtos e Serviços',  href: '/produtos-e-servicos' },
       ]} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

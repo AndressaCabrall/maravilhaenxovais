@@ -1,6 +1,5 @@
 // src/app/sobre/page.jsx — Maravilha Cortinas
 import Image          from 'next/image'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import Diferenciais   from '@/components/sections/Diferenciais/Diferenciais'
@@ -52,7 +51,6 @@ export default function SobrePage() {
         { nome: 'Sobre', href: '/sobre' },
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
       <main>
         <section className={styles.hero} aria-labelledby="sobre-h1">
           <div className={styles.container}>

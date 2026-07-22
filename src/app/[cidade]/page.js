@@ -5,7 +5,6 @@ import Link         from 'next/link'
 import styles       from './cidade.module.css'
 import { CIDADES }  from '@/data/cidades'
 import { CONTATO, DOMINIO } from '@/lib/constants'
-import Navbar        from '@/components/layout/Navbar/Navbar'
 import Footer        from '@/components/layout/Footer/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -67,7 +66,6 @@ export default function CidadePage({ params }) {
         { nome: cidade.nome, href: `/${cidade.slug}` },
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

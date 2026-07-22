@@ -2,7 +2,6 @@
 import Image          from 'next/image'
 import Link           from 'next/link'
 import styles         from './blog.module.css'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import { POSTS }      from '@/data/posts'
@@ -28,7 +27,6 @@ export default function BlogPage() {
         { nome: 'Home', href: '/' },
         { nome: 'Blog', href: '/blog' },
       ]} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

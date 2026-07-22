@@ -3,6 +3,9 @@ import '@/styles/globals.css'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import { EMPRESA, CONTATO, ENDERECO, DOMINIO, AREA_ATENDIMENTO } from '@/lib/constants'
 import CookieBanner from '@/components/ui/CookieBanner/CookieBanner'
+import SmoothScroll  from '@/components/layout/SmoothScroll/SmoothScroll'
+import Navbar from '@/components/layout/Navbar/Navbar'
+import HomePreloader from '@/components/layout/Preloader/HomePreloader'
 
 // ── Fontes ────────────────────────────────────────────────────
 const cormorant = Cormorant_Garamond({
@@ -240,7 +243,11 @@ export default function RootLayout({ children }) {
         )}
       </head>
       <body>
-        {children}
+        <HomePreloader />
+        <Navbar />
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
         <CookieBanner />
       </body>
     </html>

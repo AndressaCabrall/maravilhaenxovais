@@ -28,18 +28,22 @@ export default function ResumoDiferenciais() {
           </div>
         </div>
 
-        <div className={styles.grid}>
-          {PRINCIPAIS.map((item) => (
-            <div key={item.id} className={styles.card}>
-              <h3 className={styles.cardTitulo}>{item.titulo}</h3>
-              <p className={styles.cardDesc}>{item.descricao}</p>
+        <div className={styles.lista}>
+          {PRINCIPAIS.map((item, i) => (
+            <div key={item.id} className={styles.item}>
+              <span className={styles.itemNum}>{String(i + 1).padStart(2, '0')}</span>
+              <div className={styles.itemTexto}>
+                <h3 className={styles.itemTitulo}>{item.titulo}</h3>
+                <p className={styles.itemDesc}>{item.descricao}</p>
+              </div>
             </div>
           ))}
         </div>
 
         <div className={styles.rodape}>
           <Link href="/sobre" className={styles.link}>
-            Conhecer nossa história e diferenciais →
+            Conhecer nossa história e diferenciais
+            <span aria-hidden="true">→</span>
           </Link>
         </div>
 

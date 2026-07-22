@@ -7,7 +7,6 @@ import Link           from 'next/link'
 import { POSTS, AUTORA, INDICACOES } from '@/data/posts'
 import { siteConfig } from '@/lib/config'
 import styles         from './slug.module.css'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -211,7 +210,6 @@ export default function PostPage({ params }) {
         { nome: post.titulo, href: `/blog/${post.slug}` },
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

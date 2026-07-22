@@ -14,13 +14,13 @@ export default function Preloader() {
   useEffect(() => {
     let atual = 0
     const intervalo = setInterval(() => {
-      atual += 2
+      atual += 1
       setPorcentagem(Math.min(atual, 100))
       if (atual >= 100) clearInterval(intervalo)
-    }, 32)
+    }, 26)
 
-    const timerSair   = setTimeout(() => setSaindo(true), 2000)
-    const timerRemove = setTimeout(() => setVisivel(false), 2800)
+    const timerSair   = setTimeout(() => setSaindo(true), 2800)
+    const timerRemove = setTimeout(() => setVisivel(false), 3600)
 
     return () => {
       clearInterval(intervalo)

@@ -1,5 +1,4 @@
 // src/app/contato/page.jsx — Maravilha Cortinas
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import styles         from './contato.module.css'
@@ -21,7 +20,6 @@ export default function ContatoPage() {
         { nome: 'Home',    href: '/' },
         { nome: 'Contato', href: '/contato' },
       ]} />
-      <Navbar />
       <main className={styles.pagina}>
         <div className={styles.container}>
 

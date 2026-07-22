@@ -1,6 +1,5 @@
 // src/app/produtos-e-servicos/motorizacao/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import Motorizacao    from '@/components/sections/Motorizacao/Motorizacao'
@@ -68,7 +67,6 @@ export default function MotorizacaoPage() {
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
       <main>
         <div className={styles.pagina} style={{ paddingBottom: 0 }}>
           <div className={styles.container}>

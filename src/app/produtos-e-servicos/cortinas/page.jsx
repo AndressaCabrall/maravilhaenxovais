@@ -1,6 +1,5 @@
 // src/app/produtos-e-servicos/cortinas/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Navbar         from '@/components/layout/Navbar/Navbar'
 import Footer         from '@/components/layout/Footer/Footer'
 import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import Cortinas       from '@/components/sections/Cortinas/Cortinas'
@@ -91,7 +90,6 @@ export default function CortinasPage() {
       ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Navbar />
       <main>
         <div className={styles.pagina}>
           <div className={styles.container}>
