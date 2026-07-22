@@ -1,8 +1,7 @@
 // src/app/cortina-wave-ibitinga/page.jsx
 import Link          from 'next/link'
 import styles        from '@/app/seo-page.module.css'
-import Footer        from '@/components/layout/Footer/Footer'
-import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin  from '@/components/sections/Cta/CtaFooterPin'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
@@ -216,8 +215,7 @@ export default function Page() {
 
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

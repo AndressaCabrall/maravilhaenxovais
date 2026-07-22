@@ -1,5 +1,4 @@
 // src/app/page.jsx — Home institucional enxuta
-import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 import HeroSlider    from '@/components/sections/HeroSlider/HeroSlider'
 import Projetos      from '@/components/sections/Projetos/Projetos'
 import ResumoDiferenciais from '@/components/sections/ResumoDiferenciais/ResumoDiferenciais'
@@ -29,7 +28,6 @@ export default function Home() {
         <Depoimentos />
       </main>
       <CtaFooterPin />
-      <WhatsAppFloat />
     </>
   )
 }

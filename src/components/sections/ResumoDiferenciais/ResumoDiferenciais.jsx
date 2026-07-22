@@ -32,10 +32,8 @@ export default function ResumoDiferenciais() {
           {PRINCIPAIS.map((item, i) => (
             <div key={item.id} className={styles.item}>
               <span className={styles.itemNum}>{String(i + 1).padStart(2, '0')}</span>
-              <div className={styles.itemTexto}>
-                <h3 className={styles.itemTitulo}>{item.titulo}</h3>
-                <p className={styles.itemDesc}>{item.descricao}</p>
-              </div>
+              <h3 className={styles.itemTitulo}>{item.titulo}</h3>
+              <span className={styles.itemResumo}>{item.resumo}</span>
             </div>
           ))}
         </div>

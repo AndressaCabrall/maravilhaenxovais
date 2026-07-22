@@ -84,7 +84,6 @@ export default function Projetos() {
 
       <div className={styles.container}>
         <div className={styles.rodape}>
-          <p className={styles.rodapeTxt}>Quer seu ambiente nessa galeria?</p>
           <a
             href={WHATSAPP_URLS.orcamento}
             target="_blank"

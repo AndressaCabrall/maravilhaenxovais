@@ -1,7 +1,7 @@
 // src/app/privacidade/page.jsx — Maravilha Cortinas & Persianas
 import Link from 'next/link'
 import styles from './privacidade.module.css'
-import Footer from '@/components/layout/Footer/Footer'
+import CtaFooterPin from '@/components/sections/Cta/CtaFooterPin'
 import { siteConfig } from '@/lib/config'
 
 export const metadata = {
@@ -179,7 +179,7 @@ export default function Privacidade() {
 
         </div>
       </main>
-      <Footer />
+      <CtaFooterPin />
     </>
   )
 }

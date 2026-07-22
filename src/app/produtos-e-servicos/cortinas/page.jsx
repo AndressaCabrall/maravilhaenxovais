@@ -1,7 +1,6 @@
 // src/app/produtos-e-servicos/cortinas/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Cortinas       from '@/components/sections/Cortinas/Cortinas'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -203,8 +202,7 @@ export default function CortinasPage() {
           </div>
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

@@ -87,44 +87,52 @@
 
 .item {
   display:       flex;
-  align-items:   flex-start;
+  align-items:   center;
   gap:           20px;
-  padding:       28px 0;
+  padding:       32px 0;
   border-bottom: 0.5px solid var(--color-areia-dark);
+  cursor:        default;
+  transition:    padding var(--duration) var(--ease);
 }
 
 .itemNum {
   font-family:    var(--font-body);
-  font-size:      14px;
-  font-weight:    700;
+  font-size:      13px;
+  font-weight:    500;
   letter-spacing: 0.04em;
-  color:          var(--color-pink);
+  color:          var(--color-taupe-light);
   flex-shrink:    0;
-  padding-top:    3px;
-}
-
-.itemTexto {
-  display:        flex;
-  flex-direction: column;
-  gap:            8px;
+  width:          26px;
 }
 
 .itemTitulo {
-  font-family: var(--font-body);
-  font-size:   18px;
-  font-weight: 700;
-  color:       var(--color-grafite);
-  margin:      0;
+  font-family:    var(--font-body);
+  font-size:      clamp(24px, 4vw, 40px);
+  font-weight:    700;
+  line-height:    1.1;
+  color:          var(--color-grafite);
+  letter-spacing: -0.01em;
+  margin:         0;
+  flex:           1;
+  transition:     color var(--duration) var(--ease);
 }
 
-.itemDesc {
+.itemResumo {
   font-family: var(--font-body);
-  font-size:   15px;
+  font-size:   13px;
   font-weight: 400;
-  line-height: 1.7;
   color:       var(--color-taupe);
-  margin:      0;
-  max-width:   520px;
+  text-align:  right;
+  flex-shrink: 0;
+  max-width:   180px;
+}
+
+.item:hover {
+  padding-left: 12px;
+}
+
+.item:hover .itemTitulo {
+  color: var(--color-pink);
 }
 
 .rodape {

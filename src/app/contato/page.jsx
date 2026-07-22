@@ -1,6 +1,5 @@
 // src/app/contato/page.jsx — Maravilha Cortinas
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import styles         from './contato.module.css'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, ENDERECO, HORARIO, DOMINIO } from '@/lib/constants'
@@ -103,8 +102,7 @@ export default function ContatoPage() {
 
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

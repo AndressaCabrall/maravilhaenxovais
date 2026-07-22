@@ -1,7 +1,6 @@
 // src/app/sobre/page.jsx — Maravilha Cortinas
 import Image          from 'next/image'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Diferenciais   from '@/components/sections/Diferenciais/Diferenciais'
 import ComoFunciona   from '@/components/sections/ComoFunciona/ComoFunciona'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
@@ -153,8 +152,7 @@ export default function SobrePage() {
           </div>
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

@@ -5,8 +5,7 @@ import Link         from 'next/link'
 import styles       from './cidade.module.css'
 import { CIDADES }  from '@/data/cidades'
 import { CONTATO, DOMINIO } from '@/lib/constants'
-import Footer        from '@/components/layout/Footer/Footer'
-import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin  from '@/components/sections/Cta/CtaFooterPin'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { ENDERECO }  from '@/lib/constants'
 
@@ -236,8 +235,7 @@ export default function CidadePage({ params }) {
 
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

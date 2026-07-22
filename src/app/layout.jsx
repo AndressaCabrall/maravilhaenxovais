@@ -6,6 +6,7 @@ import CookieBanner from '@/components/ui/CookieBanner/CookieBanner'
 import SmoothScroll  from '@/components/layout/SmoothScroll/SmoothScroll'
 import Navbar from '@/components/layout/Navbar/Navbar'
 import HomePreloader from '@/components/layout/Preloader/HomePreloader'
+import WhatsAppFloat from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
 
 // ── Fontes ────────────────────────────────────────────────────
 const cormorant = Cormorant_Garamond({
@@ -248,6 +249,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <WhatsAppFloat />
         <CookieBanner />
       </body>
     </html>

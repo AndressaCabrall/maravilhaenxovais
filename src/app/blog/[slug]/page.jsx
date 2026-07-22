@@ -7,8 +7,7 @@ import Link           from 'next/link'
 import { POSTS, AUTORA, INDICACOES } from '@/data/posts'
 import { siteConfig } from '@/lib/config'
 import styles         from './slug.module.css'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -394,8 +393,7 @@ export default function PostPage({ params }) {
 
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

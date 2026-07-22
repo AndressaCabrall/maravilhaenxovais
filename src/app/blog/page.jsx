@@ -2,8 +2,7 @@
 import Image          from 'next/image'
 import Link           from 'next/link'
 import styles         from './blog.module.css'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import { POSTS }      from '@/data/posts'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { DOMINIO }    from '@/lib/constants'
@@ -112,8 +111,7 @@ export default function BlogPage() {
 
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

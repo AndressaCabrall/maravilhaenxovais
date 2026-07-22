@@ -14,23 +14,15 @@ const PRODUTOS = [
     href: '/produtos-e-servicos/cortinas',
     imagem: cortinaImg,
     alt: 'Cortina wave sob medida — Ibitinga SP',
-    titulo: 'Cortinas',
+    titulo: 'Cortinas sob medida',
     descricao: 'Wave, blackout, linho e prega macho sob medida para o seu vão.',
-    dado1Label: 'Modelos',
-    dado1Valor: '8+',
-    dado2Label: 'Prazo',
-    dado2Valor: '20 dias',
   },
   {
     href: '/produtos-e-servicos/persianas',
     imagem: persianaImg,
     alt: 'Persiana double vision sob medida — Ibitinga SP',
-    titulo: 'Persianas',
+    titulo: 'Persianas sob medida',
     descricao: 'Rolô, blackout, double vision e tela solar para cada ambiente.',
-    dado1Label: 'Modelos',
-    dado1Valor: '5+',
-    dado2Label: 'Prazo',
-    dado2Valor: '20 dias',
   },
   {
     href: '/produtos-e-servicos/motorizacao',
@@ -38,10 +30,7 @@ const PRODUTOS = [
     alt: 'Cortina motorizada com trilho automatizado — Ibitinga SP',
     titulo: 'Motorização',
     descricao: 'Controle pelo celular, Alexa e Google Home.',
-    dado1Label: 'Controle',
-    dado1Valor: 'App/Voz',
-    dado2Label: 'Prazo',
-    dado2Valor: 'Sob consulta',
+    posicao: 'top',
   },
 ]
 
@@ -82,7 +71,6 @@ export default function VitrinePreview() {
             href={produto.href}
             className={styles.fotoWrap}
             aria-label={`Ver ${produto.titulo}`}
-            data-speed="0.92"
             onMouseEnter={() => setPausado(true)}
             onMouseLeave={() => setPausado(false)}
           >
@@ -93,6 +81,7 @@ export default function VitrinePreview() {
               fill
               sizes="(max-width: 768px) 100vw, 570px"
               className={styles.img}
+              style={{ objectPosition: produto.posicao || 'center' }}
             />
             <div className={styles.overlay} aria-hidden="true" />
 
@@ -100,17 +89,6 @@ export default function VitrinePreview() {
               <h3 className={styles.tituloVazado}>{produto.titulo}</h3>
 
               <div className={styles.infoBase}>
-                <div className={styles.dados}>
-                  <div className={styles.dado}>
-                    <span className={styles.dadoLabel}>{produto.dado1Label}</span>
-                    <span className={styles.dadoValor}>{produto.dado1Valor}</span>
-                  </div>
-                  <div className={styles.dado}>
-                    <span className={styles.dadoLabel}>{produto.dado2Label}</span>
-                    <span className={styles.dadoValor}>{produto.dado2Valor}</span>
-                  </div>
-                </div>
-
                 <div className={styles.textoBase}>
                   <p className={styles.desc}>{produto.descricao}</p>
                   <span className={styles.cta}>

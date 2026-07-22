@@ -2,7 +2,7 @@
 'use client'
 
 import Image             from 'next/image'
-import ctaImg            from '@/assets/images/footer/webp/cta-cortinas-persianas-sob-medida-maravilha-ibitinga-sp.webp'
+import ctaImg            from '@/assets/images/hero/webp/cortina-wave-sala-alto-padrao-ibitinga-sp.webp'
 import styles            from './Cta.module.css'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 
@@ -13,7 +13,7 @@ export default function Cta() {
       <div className={styles.picture} aria-hidden="true">
         <Image
           src={ctaImg}
-          alt="persianas-sob-medida-tela-solar-na-cozinha-ibitinga-sp"
+          alt="cortina wave sob medida em sala de alto padrão — Maravilha Cortinas Ibitinga SP"
           width={1920}
           height={1080}
           sizes="100vw"

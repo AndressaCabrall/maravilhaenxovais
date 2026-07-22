@@ -1,7 +1,6 @@
 // src/app/produtos-e-servicos/motorizacao/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Motorizacao    from '@/components/sections/Motorizacao/Motorizacao'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -134,8 +133,7 @@ export default function MotorizacaoPage() {
           </div>
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

@@ -1,7 +1,6 @@
 // src/app/produtos-e-servicos/persianas/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Persianas      from '@/components/sections/Persianas/Persianas'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -199,8 +198,7 @@ export default function PersianasPage() {
           </div>
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }

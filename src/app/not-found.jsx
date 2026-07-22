@@ -1,7 +1,6 @@
 // src/app/not-found.jsx — Maravilha Cortinas
 import Link           from 'next/link'
-import Footer         from '@/components/layout/Footer/Footer'
-import WhatsAppFloat  from '@/components/ui/WhatsAppFloat/WhatsAppFloat'
+import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import styles         from './not-found.module.css'
 
 export const metadata = {
@@ -43,8 +42,7 @@ export default function NotFound() {
           </ul>
         </div>
       </main>
-      <Footer />
-      <WhatsAppFloat />
+      <CtaFooterPin />
     </>
   )
 }
