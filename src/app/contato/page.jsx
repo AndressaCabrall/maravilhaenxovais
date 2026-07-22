@@ -92,10 +92,18 @@ export default function ContatoPage() {
               <iframe
                 title="Localização da Maravilha Cortinas em Ibitinga SP"
                 className={styles.mapa}
-                src={`https://maps.google.com/maps?q=${ENDERECO.lat},${ENDERECO.lng}&z=16&output=embed`}
+                src={`https://maps.google.com/maps?q=${encodeURIComponent('Maravilha Enxovais Cortinas e Persianas em Ibitinga SP')}&z=17&output=embed`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
+              <a
+                href={ENDERECO.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.mapaLink}
+              >
+                Abrir no Google Maps →
+              </a>
             </div>
 
           </div>

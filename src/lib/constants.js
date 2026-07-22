@@ -21,7 +21,7 @@ export const CONTATO = {
   instagram: '@maravilhaenxovais',
   instagramUrl: 'https://www.instagram.com/maravilhaenxovais',
   facebookUrl: 'https://www.facebook.com/maravilhaenxovaisibitinga',
-  gmbUrl: 'https://maps.google.com/?q=Maravilha+Pavan+Enxovais+Ibitinga+SP',
+  gmbUrl: 'https://www.google.com/maps/place/Maravilha+Enxovais+Cortinas+e+Persianas+em+Ibitinga+SP/@-21.7565608,-48.8347167,17z/data=!3m1!4b1!4m6!3m5!1s0x94bf29d72a7008a5:0xe3afce58b579ea14!8m2!3d-21.7565608!4d-48.8321418!16s%2Fg%2F11w9flj6ll',
 }
 
 export const ENDERECO = {
@@ -31,9 +31,9 @@ export const ENDERECO = {
   estado: 'SP',
   cep: '14940-157',
   completo: 'Av. Sete de Setembro, 595 — Centro, Ibitinga/SP — CEP 14940-157',
-  lat: -21.7574,
-  lng: -48.8289,
-  mapsUrl: 'https://maps.google.com/?q=Av.+Sete+de+Setembro,+595+Ibitinga+SP',
+  lat: -21.7565608,
+  lng: -48.8321418,
+  mapsUrl: 'https://www.google.com/maps/place/Maravilha+Enxovais+Cortinas+e+Persianas+em+Ibitinga+SP/@-21.7565608,-48.8347167,17z/data=!3m1!4b1!4m6!3m5!1s0x94bf29d72a7008a5:0xe3afce58b579ea14!8m2!3d-21.7565608!4d-48.8321418!16s%2Fg%2F11w9flj6ll',
 }
 
 export const HORARIO = {
@@ -46,7 +46,7 @@ export const HORARIO = {
 export const GMB = {
   nota: '5,0',
   avaliacoes: 7,
-  linkMaps: 'https://maps.google.com/?q=Maravilha+Pavan+Enxovais+Ibitinga+SP',
+  linkMaps: 'https://www.google.com/maps/place/Maravilha+Enxovais+Cortinas+e+Persianas+em+Ibitinga+SP/@-21.7565608,-48.8347167,17z/data=!3m1!4b1!4m6!3m5!1s0x94bf29d72a7008a5:0xe3afce58b579ea14!8m2!3d-21.7565608!4d-48.8321418!16s%2Fg%2F11w9flj6ll',
   placeId: 'ChIJpQhwKtcpv5QRFOp5tVjOr-M',
   reviewUrl: 'https://g.page/r/COPqebhYzq_jEAE/review',
   reviewsUrl: 'https://www.google.com/maps/place/Cortinas+e+Persianas+sob+Medida%7C+Maravilha+Enxovais+em+Ibitinga+e+Regi%C3%A3o+SP/@-21.7565558,-48.8347167,17z/data=!4m8!3m7!1s0x94bf29d72a7008a5:0xe3afce58b579ea14!8m2!3d-21.7565608!4d-48.8321418!9m1!1b1!16s%2Fg%2F11w9flj6ll',
