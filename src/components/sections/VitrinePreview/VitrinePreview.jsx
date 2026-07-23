@@ -7,8 +7,8 @@ import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from './VitrinePreview.module.css'
-import cortinaImg  from '@/assets/images/cortinas/webp/cortina-wave-tubo-sob-medida-ibitinga-sp.webp'
-import persianaImg from '@/assets/images/persianas/webp/persiana-double-vision-sob-medida-ibitinga-sp.webp'
+import cortinaImg  from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
+import persianaImg from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
 import motorImg     from '@/assets/images/motorizacao/webp/cortina-motorizada-trilho-automatizado-maravilha-ibitinga-sp.webp'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -27,6 +27,7 @@ const PRODUTOS = [
     alt: 'Persiana double vision sob medida — Ibitinga SP',
     titulo: 'Persianas sob medida',
     descricao: 'Rolô, blackout, double vision e tela solar para cada ambiente.',
+    posicao: 'right',
   },
   {
     href: '/produtos-e-servicos/motorizacao',
@@ -34,7 +35,7 @@ const PRODUTOS = [
     alt: 'Cortina motorizada com trilho automatizado — Ibitinga SP',
     titulo: 'Motorização de cortinas e persianas',
     descricao: 'Controle pelo celular, Alexa e Google Home.',
-    posicao: 'top',
+    posicao: 'right top',
   },
 ]
 
