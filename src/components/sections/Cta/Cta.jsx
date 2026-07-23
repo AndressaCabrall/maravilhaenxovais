@@ -2,7 +2,7 @@
 'use client'
 
 import Image             from 'next/image'
-import ctaImg            from '@/assets/images/hero/webp/cortina-wave-sala-alto-padrao-ibitinga-sp.webp'
+import ctaImg            from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
 import styles            from './Cta.module.css'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 

@@ -57,19 +57,13 @@ export default function Persianas() {
                     src={persiana.imagem}
                     alt={persiana.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 375px"
                     loading="lazy"
                     className={styles.img}
                   />
                   {persiana.destaque && (
                     <span className={styles.badge}>{persiana.destaque}</span>
                   )}
-                  <div className={styles.overlay} aria-hidden="true" />
-                  <div className={styles.info}>
-                    <span className={styles.infoTagline}>{persiana.tagline}</span>
-                    <h3 className={styles.infoNome}>{persiana.nome}</h3>
-                    <p className={styles.infoDesc}>{persiana.descricao}</p>
-                  </div>
                   <span className={styles.zoom} aria-hidden="true">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <circle cx="11" cy="11" r="8" />
@@ -77,6 +71,11 @@ export default function Persianas() {
                     </svg>
                   </span>
                 </button>
+
+                <div className={styles.info}>
+                  <h3 className={styles.infoNome}>{persiana.nome}</h3>
+                  <p className={styles.infoDesc}>{persiana.descricao}</p>
+                </div>
               </article>
             ))}
           </div>

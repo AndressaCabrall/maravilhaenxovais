@@ -12,9 +12,9 @@ export const CORTINAS = [
   {
     id:       'pe-direito-duplo',
     slug:     'cortina-pe-direito-duplo',
-    nome:     'Cortina Pé Direito Duplo em Linho',
+    nome:     'Cortina Pé Direito Alto em Linho',
     tagline:  'Para ambientes grandiosos',
-    descricao:'Linho natural do teto ao chão em ambientes com pé direito duplo. O tecido certo para valorizar cada centímetro de altura — com trilho estruturado, caimento impecável e instalação especializada.',
+    descricao:'Linho natural do teto ao chão em ambientes com pé direito alto. O tecido certo para valorizar cada centímetro de altura — com trilho estruturado, caimento impecável e instalação especializada.',
     destaque: 'Alto padrão',
     beneficios: [
       'Linho natural com caimento perfeito',
@@ -23,8 +23,8 @@ export const CORTINAS = [
       'Instalação segura com equipe qualificada',
     ],
     imagem: peDireito,
-    alt: 'Cortina pé direito duplo em linho sob medida em sala — Maravilha Cortinas Ibitinga SP',
-    wa: 'Olá Mara! Tenho interesse em Cortina Pé Direito Duplo em Linho sob medida. Pode me passar mais informações?',
+    alt: 'Cortina pé direito alto em linho sob medida em sala — Maravilha Cortinas Ibitinga SP',
+    wa: 'Olá Mara! Tenho interesse em Cortina Pé Direito Alto em Linho sob medida. Pode me passar mais informações?',
   },
   {
     id:       'wave-blackout',

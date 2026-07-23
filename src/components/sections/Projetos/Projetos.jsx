@@ -5,11 +5,9 @@ import Image                from 'next/image'
 import Lightbox             from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import styles               from './Projetos.module.css'
-import { PROJETOS } from '@/data/projetos'
+import { CORTINAS }  from '@/data/cortinas'
+import { PERSIANAS } from '@/data/persianas'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
-
-const CORTINAS   = PROJETOS.filter((p) => p.cat === 'Cortinas')
-const PERSIANAS  = PROJETOS.filter((p) => p.cat === 'Persianas')
 
 function Marquee({ itens, direcao, onOpen, offset = 0 }) {
   // Duplica a lista para o loop infinito ficar contínuo
@@ -20,23 +18,28 @@ function Marquee({ itens, direcao, onOpen, offset = 0 }) {
       <div
         className={`${styles.marqueeTrack} ${direcao === 'reversa' ? styles.marqueeReversa : ''}`}
       >
-        {loop.map((projeto, i) => (
-          <button
-            key={`${projeto.id}-${i}`}
-            className={styles.item}
-            onClick={() => onOpen(offset + (i % itens.length))}
-            aria-label={`Ver imagem ampliada — ${projeto.cat}`}
-          >
-            <Image
-              src={projeto.imagem}
-              alt={projeto.alt}
-              fill
-              unoptimized
-              loading="lazy"
-              className={styles.img}
-            />
-            <div className={styles.overlay} aria-hidden="true" />
-          </button>
+        {loop.map((item, i) => (
+          <article key={`${item.id}-${i}`} className={styles.item}>
+            <button
+              className={styles.imgWrap}
+              onClick={() => onOpen(offset + (i % itens.length))}
+              aria-label={`Ver imagem ampliada de ${item.nome}`}
+            >
+              <Image
+                src={item.imagem}
+                alt={item.alt}
+                fill
+                sizes="375px"
+                loading="lazy"
+                className={styles.img}
+              />
+            </button>
+
+            <div className={styles.info}>
+              <h3 className={styles.infoNome}>{item.nome}</h3>
+              <p className={styles.infoDesc}>{item.descricao}</p>
+            </div>
+          </article>
         ))}
       </div>
     </div>

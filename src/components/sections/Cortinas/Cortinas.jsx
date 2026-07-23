@@ -58,7 +58,7 @@ export default function Cortinas() {
                     src={cortina.imagem}
                     alt={cortina.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 375px"
                     loading="lazy"
                     className={styles.img}
                   />
@@ -67,14 +67,6 @@ export default function Cortinas() {
                     <span className={styles.badge}>{cortina.destaque}</span>
                   )}
 
-                  <div className={styles.overlay} aria-hidden="true" />
-
-                  <div className={styles.info}>
-                    <span className={styles.infoTagline}>{cortina.tagline}</span>
-                    <h3 className={styles.infoNome}>{cortina.nome}</h3>
-                    <p className={styles.infoDesc}>{cortina.descricao}</p>
-                  </div>
-
                   <span className={styles.zoom} aria-hidden="true">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <circle cx="11" cy="11" r="8" />
@@ -82,6 +74,11 @@ export default function Cortinas() {
                     </svg>
                   </span>
                 </button>
+
+                <div className={styles.info}>
+                  <h3 className={styles.infoNome}>{cortina.nome}</h3>
+                  <p className={styles.infoDesc}>{cortina.descricao}</p>
+                </div>
               </article>
             ))}
           </div>
