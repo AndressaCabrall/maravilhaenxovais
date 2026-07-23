@@ -2,9 +2,11 @@
 import Link           from 'next/link'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Cortinas       from '@/components/sections/Cortinas/Cortinas'
+import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
+import heroImg        from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -90,25 +92,19 @@ export default function CortinasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main>
+        <HeroPagina
+          imagem={heroImg}
+          alt="Cortina Wave com blackout instalada em quarto — Maravilha Cortinas Ibitinga SP"
+          eyebrow="Ibitinga — SP — Loja da Fábrica"
+          titulo="Cortinas sob medida —"
+          tituloEm="tecido certo, ambiente transformado"
+          sub="Somos a Loja da Fábrica de cortinas sob medida em Ibitinga/SP. Fabricamos e medimos com mais de 16 anos de experiência — sem intermediários, com preço justo e resultado impecável. Instalação sob consulta."
+          cta="Solicitar orçamento →"
+          ctaHref={WA}
+        />
+
         <div className={styles.pagina}>
           <div className={styles.container}>
-            <header className={styles.header}>
-              <div className={styles.eyebrow}>
-                <span className={styles.eyebrowLine} aria-hidden="true" />
-                <span className={styles.eyebrowText}>Ibitinga — SP — Loja da Fábrica</span>
-              </div>
-              <h1 className={styles.titulo}>
-                Cortinas sob medida —{' '}
-                <em className={styles.tituloEm}>tecido certo, ambiente transformado</em>
-              </h1>
-              <p className={styles.sub}>
-                Somos a Loja da Fábrica de cortinas sob medida em Ibitinga/SP. Fabricamos e medimos com mais de 16 anos de experiência — sem intermediários, com preço justo e resultado impecável. Instalação sob consulta.
-              </p>
-              <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-                Solicitar orçamento →
-              </a>
-            </header>
-
             <section className={styles.sec}>
               <h2 className={styles.secTitulo}>
                 Por que escolher a Maravilha{' '}

@@ -2,9 +2,11 @@
 import Link           from 'next/link'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Motorizacao    from '@/components/sections/Motorizacao/Motorizacao'
+import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
+import heroImg        from '@/assets/images/motorizacao/webp/cortina-motorizada-trilho-automatizado-maravilha-ibitinga-sp.webp'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -67,26 +69,16 @@ export default function MotorizacaoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main>
-        <div className={styles.pagina} style={{ paddingBottom: 0 }}>
-          <div className={styles.container}>
-            <header className={styles.header} style={{ marginBottom: 0, borderBottom: 'none' }}>
-              <div className={styles.eyebrow}>
-                <span className={styles.eyebrowLine} aria-hidden="true" />
-                <span className={styles.eyebrowText}>Cortinas & Persianas Motorizadas</span>
-              </div>
-              <h1 className={styles.titulo}>
-                Motorização —{' '}
-                <em className={styles.tituloEm}>seu ambiente mais inteligente</em>
-              </h1>
-              <p className={styles.sub}>
-                Acorde com luz natural entrando aos poucos. Feche tudo com um comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium em Ibitinga e região.
-              </p>
-              <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-                Solicitar orçamento →
-              </a>
-            </header>
-          </div>
-        </div>
+        <HeroPagina
+          imagem={heroImg}
+          alt="Cortina motorizada com trilho automatizado controlada por comando remoto — Maravilha Cortinas Ibitinga SP"
+          eyebrow="Cortinas & Persianas Motorizadas"
+          titulo="Motorização —"
+          tituloEm="seu ambiente mais inteligente"
+          sub="Acorde com luz natural entrando aos poucos. Feche tudo com um comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium em Ibitinga e região."
+          cta="Solicitar orçamento →"
+          ctaHref={WA}
+        />
 
         <Motorizacao />
 

@@ -2,9 +2,11 @@
 import Link           from 'next/link'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Persianas      from '@/components/sections/Persianas/Persianas'
+import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
 import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
+import heroImg        from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -86,26 +88,16 @@ export default function PersianasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main>
-        <div className={styles.pagina}>
-          <div className={styles.container}>
-            <header className={styles.header}>
-              <div className={styles.eyebrow}>
-                <span className={styles.eyebrowLine} aria-hidden="true" />
-                <span className={styles.eyebrowText}>Ibitinga — SP — Do rolô ao double vision</span>
-              </div>
-              <h1 className={styles.titulo}>
-                Persianas sob medida —{' '}
-                <em className={styles.tituloEm}>controle a luz, transforme o ambiente</em>
-              </h1>
-              <p className={styles.sub}>
-                Todos os modelos de persiana sob medida com visita técnica mediante agendamento. Atendemos Ibitinga e toda a região com mais de 16 anos de experiência. Instalação possui custo adicional.
-              </p>
-              <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-                Solicitar orçamento →
-              </a>
-            </header>
-          </div>
-        </div>
+        <HeroPagina
+          imagem={heroImg}
+          alt="Persiana tela solar sob medida em cozinha — Maravilha Cortinas Ibitinga SP"
+          eyebrow="Ibitinga — SP — Do rolô ao double vision"
+          titulo="Persianas sob medida —"
+          tituloEm="controle a luz, transforme o ambiente"
+          sub="Todos os modelos de persiana sob medida com visita técnica mediante agendamento. Atendemos Ibitinga e toda a região com mais de 16 anos de experiência. Instalação possui custo adicional."
+          cta="Solicitar orçamento →"
+          ctaHref={WA}
+        />
 
         <Persianas />
 

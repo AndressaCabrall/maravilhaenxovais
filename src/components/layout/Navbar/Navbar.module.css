@@ -247,39 +247,76 @@
 .drawerLink:hover::before     { transform: scaleY(1); }
 .drawerLink:focus-visible     { outline: 2px solid var(--color-pink); outline-offset: -2px; }
 
+.drawerLinkAccordion {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  width:           100%;
+  padding:         16px 20px;
+  background:      none;
+  border:          none;
+  border-bottom:   0.5px solid var(--color-areia);
+  font-family:     var(--font-display);
+  font-size:       1.3rem;
+  font-weight:     400;
+  font-style:      italic;
+  color:           var(--color-grafite);
+  cursor:          pointer;
+  text-align:      left;
+  transition:      color var(--duration) var(--ease);
+}
+
+.drawerLinkAccordion:hover         { color: var(--color-pink); }
+.drawerLinkAccordion:focus-visible { outline: 2px solid var(--color-pink); outline-offset: -2px; }
+
+.drawerAccordionIcon {
+  flex-shrink: 0;
+  transition:  transform var(--duration) var(--ease);
+}
+
+.drawerAccordionIconAberto { transform: rotate(180deg); }
+
 .drawerListaProdutos {
   list-style: none;
   margin:     0;
-  padding:    4px 20px 20px;
-  display:    flex;
-  flex-wrap:  wrap;
-  gap:        8px;
+  padding:    0 20px;
+  max-height: 0;
+  overflow:   hidden;
+  background: var(--color-linho);
+  transition: max-height 0.35s var(--ease);
 }
 
-.drawerListaProdutos li {
-  animation:       drawerLinkIn 0.38s cubic-bezier(0.22,1,0.36,1) both;
-  animation-delay: calc(0.05s + var(--i) * 0.055s);
+.drawerListaProdutosAberta {
+  max-height: 320px;
+  padding:    4px 20px;
 }
 
 .drawerLinkProduto {
-  display:         inline-block;
-  padding:         8px 14px;
-  background:      var(--color-linho);
-  border:          0.5px solid var(--color-areia);
-  border-radius:   var(--radius-md);
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             8px;
+  padding:         13px 4px;
   font-family:     var(--font-body);
-  font-size:       12px;
+  font-size:       15px;
   font-weight:     500;
-  letter-spacing:  0.06em;
-  text-transform:  uppercase;
   color:           var(--color-grafite);
   text-decoration: none;
+  border-bottom:   0.5px solid var(--color-areia);
   transition:      color var(--duration) var(--ease),
-                   background var(--duration) var(--ease);
+                   padding-left var(--duration) var(--ease);
 }
 
-.drawerLinkProduto:hover         { color: var(--color-pink); background: var(--color-areia); }
-.drawerLinkProduto:focus-visible { outline: 2px solid var(--color-pink); outline-offset: 2px; }
+.drawerLinkProduto svg {
+  flex-shrink: 0;
+  color:       var(--color-taupe-light);
+  transition:  color var(--duration) var(--ease),
+               transform var(--duration) var(--ease);
+}
+
+.drawerLinkProduto:hover           { color: var(--color-pink); padding-left: 10px; }
+.drawerLinkProduto:hover svg       { color: var(--color-pink); transform: translateX(3px); }
+.drawerLinkProduto:focus-visible   { outline: 2px solid var(--color-pink); outline-offset: 2px; }
 
 .drawerRodape {
   padding:        16px 20px 32px;
@@ -289,30 +326,6 @@
   border-top:     0.5px solid var(--color-areia);
   background:     var(--color-linho);
 }
-
-.drawerCta {
-  display:         flex;
-  align-items:     center;
-  justify-content: center;
-  text-align:      center;
-  gap:             8px;
-  background:      #25D366;
-  color:           #fff;
-  padding:         14px 20px;
-  border-radius:   var(--radius-md);
-  font-family:     var(--font-body);
-  font-size:       13px;
-  font-weight:     500;
-  letter-spacing:  0.08em;
-  text-transform:  uppercase;
-  text-decoration: none;
-  min-height:      44px;
-  transition:      background var(--duration) var(--ease),
-                   transform var(--duration) var(--ease);
-}
-
-.drawerCta:hover         { background: #1DAA54; transform: translateY(-1px); }
-.drawerCta:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 
 .drawerInfo {
   display:        flex;
@@ -481,7 +494,10 @@
 @media (prefers-reduced-motion: reduce) {
   .navbar, .burger span, .drawerLink,
   .drawerLink::before, .link, .link::after,
-  .cta, .drawerCta, .overlay, .drawer,
+  .cta, .drawerLinkProduto, .drawerLinkProduto svg,
+  .drawerLinkAccordion, .drawerAccordionIcon,
+  .drawerListaProdutos,
+  .overlay, .drawer,
   .drawerLista li {
     transition:  none;
     animation:   none;

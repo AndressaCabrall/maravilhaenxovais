@@ -162,8 +162,8 @@ export default function Footer() {
             <a href="/privacidade" className={styles.bottomLink}>Privacidade</a>
             <p className={styles.cred}>
               Desenvolvido por{' '}
-              <a href="https://cabralsweb.com.br" target="_blank" rel="noopener noreferrer" className={styles.credLink}>
-                Cabrals Web | Presença Digital
+              <a href="https://outvisionxr.com" target="_blank" rel="noopener noreferrer" className={styles.credLink}>
+                Outvision XR
               </a>
             </p>
           </div>

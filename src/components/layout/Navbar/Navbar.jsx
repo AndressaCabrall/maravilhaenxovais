@@ -8,12 +8,17 @@ import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 import { CONTATO, EMPRESA, HORARIO } from '@/lib/constants'
 import logo from '@/assets/images/logo/logo.png'
 
-const LINKS = [
+const LINKS_ANTES = [
   { href: '/',                                 label: 'Início' },
   { href: '/sobre',                            label: 'Sobre nós' },
+]
+
+const LINKS_DEPOIS = [
   { href: '/blog',                             label: 'Blog' },
   { href: '/contato',                          label: 'Contato' },
 ]
+
+const LINKS = [...LINKS_ANTES, ...LINKS_DEPOIS]
 
 const PRODUTOS = [
   { href: '/#projetos',                        label: 'Projetos' },
@@ -21,6 +26,10 @@ const PRODUTOS = [
   { href: '/produtos-e-servicos/persianas',    label: 'Persianas' },
   { href: '/produtos-e-servicos/motorizacao',  label: 'Motorização' },
 ]
+
+// No drawer mobile, "Projetos" fica como link direto (fora do accordion)
+const PRODUTOS_ACCORDION = PRODUTOS.filter((p) => p.label !== 'Projetos')
+const PROJETOS_LINK = PRODUTOS.find((p) => p.label === 'Projetos')
 
 function IconeWA() {
   return (
@@ -35,6 +44,7 @@ export default function Navbar() {
   const [naHero, setNaHero] = useState(true)
   const [aberto, setAberto] = useState(false)
   const [montado, setMontado] = useState(false)
+  const [produtosAberto, setProdutosAberto] = useState(false)
   const drawerRef = useRef(null)
   const burgerRef = useRef(null)
 
@@ -88,7 +98,7 @@ export default function Navbar() {
     return () => document.removeEventListener('keydown', fn)
   }, [aberto])
 
-  const fechar = () => { setAberto(false); burgerRef.current?.focus() }
+  const fechar = () => { setAberto(false); setProdutosAberto(false); burgerRef.current?.focus() }
 
   const navClasses = [
     styles.navbar,
@@ -208,8 +218,60 @@ export default function Navbar() {
         </div>
 
         <ul className={styles.drawerLista} role="list">
-          {LINKS.map((l, i) => (
+          {LINKS_ANTES.map((l, i) => (
             <li key={l.href} style={{ '--i': i }}>
+              <a href={l.href} className={styles.drawerLink} onClick={fechar}>
+                {l.label}
+              </a>
+            </li>
+          ))}
+
+          {PROJETOS_LINK && (
+            <li style={{ '--i': LINKS_ANTES.length }}>
+              <a href={PROJETOS_LINK.href} className={styles.drawerLink} onClick={fechar}>
+                {PROJETOS_LINK.label}
+              </a>
+            </li>
+          )}
+
+          <li style={{ '--i': LINKS_ANTES.length + 1 }}>
+            <button
+              type="button"
+              className={styles.drawerLinkAccordion}
+              onClick={() => setProdutosAberto((v) => !v)}
+              aria-expanded={produtosAberto}
+              aria-controls="drawer-produtos"
+            >
+              Produtos e serviços
+              <svg
+                width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"
+                className={`${styles.drawerAccordionIcon} ${produtosAberto ? styles.drawerAccordionIconAberto : ''}`}
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+
+            <ul
+              id="drawer-produtos"
+              className={`${styles.drawerListaProdutos} ${produtosAberto ? styles.drawerListaProdutosAberta : ''}`}
+              role="list"
+            >
+              {PRODUTOS_ACCORDION.map((p) => (
+                <li key={p.href}>
+                  <a href={p.href} className={styles.drawerLinkProduto} onClick={fechar}>
+                    {p.label}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                      <path d="M9 18l6-6-6-6" />
+                    </svg>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+
+          {LINKS_DEPOIS.map((l, i) => (
+            <li key={l.href} style={{ '--i': LINKS_ANTES.length + 2 + i }}>
               <a href={l.href} className={styles.drawerLink} onClick={fechar}>
                 {l.label}
               </a>
@@ -217,27 +279,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <ul className={styles.drawerListaProdutos} role="list">
-          {PRODUTOS.map((p, i) => (
-            <li key={p.href} style={{ '--i': LINKS.length + i }}>
-              <a href={p.href} className={styles.drawerLinkProduto} onClick={fechar}>
-                {p.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
         <div className={styles.drawerRodape}>
-          <a
-              href={WHATSAPP_URLS.orcamento}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.drawerCta}
-              onClick={() => { fechar(); trackWhatsApp('navbar-mobile') }}
-          >
-            <IconeWA />
-            Agendar visita de medição
-          </a>
           <address className={styles.drawerInfo}>
             <a href={`tel:${CONTATO.telefoneFormatado}`} className={styles.drawerTel}>
               {CONTATO.telefone}

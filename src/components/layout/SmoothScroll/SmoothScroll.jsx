@@ -2,6 +2,7 @@
 'use client'
 
 import { useLayoutEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollSmoother } from 'gsap/ScrollSmoother'
@@ -10,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 export default function SmoothScroll({ children }) {
   const wrapperRef = useRef(null)
+  const pathname = usePathname()
 
   useLayoutEffect(() => {
     const mm = gsap.matchMedia()
@@ -28,6 +30,18 @@ export default function SmoothScroll({ children }) {
 
     return () => mm.revert()
   }, [])
+
+  // Recalcula alturas/triggers ao trocar de rota — páginas com menos ou
+  // mais seções deixavam o ScrollSmoother com medições da página anterior.
+  useLayoutEffect(() => {
+    ScrollSmoother.get()?.scrollTo(0, false)
+
+    const raf = requestAnimationFrame(() => {
+      ScrollTrigger.refresh()
+    })
+
+    return () => cancelAnimationFrame(raf)
+  }, [pathname])
 
   return (
     <div id="smooth-wrapper" ref={wrapperRef}>
