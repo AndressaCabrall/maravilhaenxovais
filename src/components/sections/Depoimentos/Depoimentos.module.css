@@ -63,12 +63,12 @@
 .ratingGeral {
   display:         inline-flex;
   align-items:     center;
-  gap:             16px;
+  gap:             12px;
   text-decoration: none;
   background:      var(--color-white);
   border:          0.5px solid var(--color-areia);
   border-radius:   var(--radius-md);
-  padding:         14px 20px;
+  padding:         10px 16px;
   width:           fit-content;
   transition:      background var(--duration) var(--ease);
 }
@@ -77,7 +77,7 @@
 
 .ratingNum {
   font-family: var(--font-display);
-  font-size:   2.2rem;
+  font-size:   1.6rem;
   font-style:  italic;
   font-weight: 600;
   color:       var(--color-grafite);
@@ -285,18 +285,18 @@
   align-items:     center;
   justify-content: center;
   text-align:      center;
-  gap:             10px;
+  gap:             8px;
   font-family:     var(--font-body);
-  font-size:       15px;
+  font-size:       13px;
   font-weight:     600;
   letter-spacing:  0.04em;
   text-transform:  uppercase;
   color:           var(--color-grafite);
   text-decoration: none;
   border:          1.5px solid var(--color-grafite);
-  padding:         16px 36px;
+  padding:         12px 24px;
   border-radius:   var(--radius-md);
-  min-height:      52px;
+  min-height:      44px;
   transition:      background var(--duration) var(--ease),
                    border-color var(--duration) var(--ease),
                    color var(--duration) var(--ease);
@@ -310,12 +310,18 @@
 
 /* ══ TABLET ≥ 768px ══ */
 @media (min-width: 768px) {
-  .card { flex: 0 0 calc(50% - 12px); }
+  .card       { flex: 0 0 calc(50% - 12px); }
+  .rodapeBtn  { font-size: 14px; padding: 14px 30px; min-height: 48px; }
+  .ratingGeral{ gap: 14px; padding: 12px 18px; }
+  .ratingNum  { font-size: 1.9rem; }
 }
 
 /* ══ DESKTOP ≥ 1024px ══ */
 @media (min-width: 1024px) {
-  .card { flex: 0 0 calc(33.333% - 16px); min-height: 260px; }
+  .card       { flex: 0 0 calc(33.333% - 16px); min-height: 260px; }
+  .rodapeBtn  { font-size: 15px; padding: 16px 36px; min-height: 52px; }
+  .ratingGeral{ gap: 16px; padding: 14px 20px; }
+  .ratingNum  { font-size: 2.2rem; }
 }
 
 /* ══ REDUCED MOTION ══ */

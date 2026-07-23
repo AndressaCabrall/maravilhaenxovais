@@ -85,7 +85,7 @@
 .marqueeTrack {
   display:      flex;
   align-items:  flex-start;
-  gap:          40px;
+  gap:          16px;
   width:        max-content;
   padding:      4px 4px 8px;
   animation:    marqueeScroll 56s linear infinite;
@@ -176,18 +176,18 @@
   display:         inline-flex;
   align-items:     center;
   justify-content: center;
-  gap:             10px;
+  gap:             8px;
   font-family:     var(--font-body);
-  font-size:       15px;
+  font-size:       13px;
   font-weight:     600;
   letter-spacing:  0.04em;
   text-transform:  uppercase;
   color:           var(--color-grafite);
   text-decoration: none;
   border:          1.5px solid var(--color-grafite);
-  padding:         16px 36px;
+  padding:         12px 24px;
   border-radius:   var(--radius-md);
-  min-height:      52px;
+  min-height:      44px;
   transition:      background var(--duration) var(--ease),
                    border-color var(--duration) var(--ease),
                    color var(--duration) var(--ease);
@@ -197,6 +197,18 @@
   background:   var(--color-grafite);
   border-color: var(--color-grafite);
   color:        #fff;
+}
+
+/* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) {
+  .rodapeBtn   { font-size: 14px; padding: 14px 30px; min-height: 48px; }
+  .marqueeTrack{ gap: 28px; }
+}
+
+/* ══ DESKTOP ≥ 1024px ══ */
+@media (min-width: 1024px) {
+  .rodapeBtn   { font-size: 15px; padding: 16px 36px; min-height: 52px; }
+  .marqueeTrack{ gap: 40px; }
 }
 
 /* ══ REDUCED MOTION ══ */

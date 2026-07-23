@@ -86,13 +86,14 @@
 }
 
 .item {
-  display:       flex;
-  align-items:   center;
-  gap:           20px;
-  padding:       32px 0;
-  border-bottom: 0.5px solid var(--color-areia-dark);
-  cursor:        default;
-  transition:    padding var(--duration) var(--ease);
+  display:        flex;
+  flex-wrap:      wrap;
+  align-items:    center;
+  gap:            8px 20px;
+  padding:        24px 0;
+  border-bottom:  0.5px solid var(--color-areia-dark);
+  cursor:         default;
+  transition:     padding var(--duration) var(--ease);
 }
 
 .itemNum {
@@ -107,13 +108,14 @@
 
 .itemTitulo {
   font-family:    var(--font-body);
-  font-size:      clamp(24px, 4vw, 40px);
+  font-size:      clamp(22px, 6vw, 40px);
   font-weight:    700;
   line-height:    1.1;
   color:          var(--color-grafite);
   letter-spacing: -0.01em;
   margin:         0;
-  flex:           1;
+  flex:           1 1 auto;
+  min-width:      0;
   transition:     color var(--duration) var(--ease);
 }
 
@@ -123,8 +125,9 @@
   font-weight: 400;
   color:       var(--color-taupe);
   text-align:  right;
-  flex-shrink: 0;
-  max-width:   180px;
+  flex:        1 0 100%;
+  max-width:   100%;
+  padding-left: 46px;
 }
 
 .item:hover {
@@ -136,24 +139,29 @@
 }
 
 .rodape {
-  margin-top: 40px;
+  margin-top:      40px;
+  display:         flex;
+  justify-content: center;
+  text-align:      center;
 }
 
 .link {
   display:         inline-flex;
   align-items:     center;
-  gap:             10px;
+  justify-content: center;
+  text-align:      center;
+  gap:             8px;
   font-family:     var(--font-body);
-  font-size:       15px;
+  font-size:       13px;
   font-weight:     600;
   letter-spacing:  0.04em;
   text-transform:  uppercase;
   color:           var(--color-grafite);
   text-decoration: none;
   border:          1.5px solid var(--color-grafite);
-  padding:         16px 36px;
+  padding:         12px 24px;
   border-radius:   var(--radius-md);
-  min-height:      52px;
+  min-height:      44px;
   transition:      background var(--duration) var(--ease),
                    border-color var(--duration) var(--ease),
                    color var(--duration) var(--ease);
@@ -166,5 +174,11 @@
 }
 
 @media (min-width: 768px) {
-  .item { gap: 28px; }
+  .item        { gap: 20px; flex-wrap: nowrap; padding: 32px 0; }
+  .itemResumo  { flex: 0 0 auto; max-width: 180px; padding-left: 0; }
+  .link        { font-size: 14px; padding: 14px 30px; min-height: 48px; }
+}
+
+@media (min-width: 1024px) {
+  .link { font-size: 15px; padding: 16px 36px; min-height: 52px; }
 }
