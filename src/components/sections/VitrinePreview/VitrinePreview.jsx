@@ -1,17 +1,13 @@
 // src/components/sections/VitrinePreview/VitrinePreview.jsx
 'use client'
 
-import { useState, useCallback, useEffect, useRef, useLayoutEffect } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import Link  from 'next/link'
 import Image from 'next/image'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from './VitrinePreview.module.css'
 import cortinaImg  from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
 import persianaImg from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
 import motorImg     from '@/assets/images/motorizacao/webp/cortina-motorizada-trilho-automatizado-maravilha-ibitinga-sp.webp'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const PRODUTOS = [
   {
@@ -42,7 +38,6 @@ const PRODUTOS = [
 export default function VitrinePreview() {
   const [atual, setAtual] = useState(0)
   const [pausado, setPausado] = useState(false)
-  const secRef = useRef(null)
 
   const proximo = useCallback(() => setAtual((i) => (i + 1) % PRODUTOS.length), [])
 
@@ -52,34 +47,10 @@ export default function VitrinePreview() {
     return () => clearInterval(t)
   }, [pausado, proximo])
 
-  useLayoutEffect(() => {
-    const mm = gsap.matchMedia()
-
-    mm.add('(prefers-reduced-motion: no-preference)', () => {
-      const img = secRef.current.querySelector('[data-zoom]')
-      if (!img) return
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: secRef.current,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
-
-      tl.fromTo(img, { scale: 1.15 }, { scale: 1.3, ease: 'none' }, 0)
-
-      return () => tl.scrollTrigger?.kill()
-    })
-
-    return () => mm.revert()
-  }, [atual])
-
   const produto = PRODUTOS[atual]
 
   return (
-    <section id="produtos" className={styles.sec} ref={secRef} aria-labelledby="vitrine-titulo">
+    <section id="produtos" className={styles.sec} aria-labelledby="vitrine-titulo">
       <div className={styles.container}>
         <div className={styles.editorial}>
           <div className={styles.header}>
@@ -112,7 +83,6 @@ export default function VitrinePreview() {
               sizes="(max-width: 768px) 100vw, 570px"
               className={styles.img}
               style={{ objectPosition: produto.posicao || 'center' }}
-              data-zoom
             />
             <div className={styles.overlay} aria-hidden="true" />
 
