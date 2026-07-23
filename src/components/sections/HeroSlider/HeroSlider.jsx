@@ -129,7 +129,10 @@ export default function HeroSlider() {
       {/* Scroll indicator */}
       <div className={styles.scroll} aria-hidden="true">
         <span className={styles.scrollTxt}>scroll</span>
-        <div className={styles.scrollLine} />
+        <svg className={styles.scrollSeta} width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8 2v18" />
+          <path d="M2 14l6 6 6-6" />
+        </svg>
       </div>
 
     </section>

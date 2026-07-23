@@ -338,11 +338,9 @@
   color:          rgba(255,255,255,0.6);
 }
 
-.scrollLine {
-  width:      1px;
-  height:     40px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
-  animation:  scrollAnim 2s ease-in-out infinite;
+.scrollSeta {
+  color:      rgba(255,255,255,0.6);
+  animation:  scrollAnim 1.6s ease-in-out infinite;
 }
 
 /* ── Ticker ── */
@@ -355,8 +353,8 @@
 }
 
 @keyframes scrollAnim {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50%       { opacity: 1;   transform: scaleY(0.6); }
+  0%, 100% { opacity: 0.35; transform: translateY(0); }
+  50%       { opacity: 1;    transform: translateY(8px); }
 }
 
 /* ══ TABLET ≥ 768px ══ */
@@ -389,6 +387,6 @@
   .ctaSecundario, .arrow, .dot { transition: none; }
   .imgVisible   { opacity: 1; }
   .innerVisible { opacity: 1; transform: none; }
-  .scrollLine   { animation: none; }
+  .scrollSeta   { animation: none; }
   .imgWrap :global(img) { animation: none; }
 }
