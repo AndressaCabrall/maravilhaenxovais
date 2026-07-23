@@ -24,6 +24,7 @@ const PRODUTOS = [
     titulo: 'Persianas sob medida',
     descricao: 'Rolô, blackout, double vision e tela solar para cada ambiente.',
     posicao: 'right',
+    posicaoTablet: '85% center',
   },
   {
     href: '/produtos-e-servicos/motorizacao',
@@ -82,7 +83,10 @@ export default function VitrinePreview() {
               fill
               sizes="(max-width: 768px) 100vw, 570px"
               className={styles.img}
-              style={{ objectPosition: produto.posicao || 'center' }}
+              style={{
+                objectPosition: produto.posicao || 'center',
+                '--pos-tablet': produto.posicaoTablet || produto.posicao || 'center',
+              }}
             />
             <div className={styles.overlay} aria-hidden="true" />
 

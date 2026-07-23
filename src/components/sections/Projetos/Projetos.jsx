@@ -12,9 +12,15 @@ import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 function Marquee({ itens, direcao, onOpen, offset = 0 }) {
   // Duplica a lista para o loop infinito ficar contínuo
   const loop = [...itens, ...itens]
+  const [tocando, setTocando] = useState(false)
 
   return (
-    <div className={styles.marqueeWrap}>
+    <div
+      className={`${styles.marqueeWrap} ${tocando ? styles.marqueeWrapTocando : ''}`}
+      onTouchStart={() => setTocando(true)}
+      onTouchEnd={() => setTocando(false)}
+      onTouchCancel={() => setTocando(false)}
+    >
       <div
         className={`${styles.marqueeTrack} ${direcao === 'reversa' ? styles.marqueeReversa : ''}`}
       >

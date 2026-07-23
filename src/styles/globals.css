@@ -231,17 +231,17 @@ p {
 
 /* — Responsivo base */
 @media (max-width: 1024px) {
-  :root { --section-py: 72px; }
+  :root { --section-py: 72px; --gap: 32px; }
 }
 
 @media (max-width: 768px) {
-  :root { --section-py: 56px; --gap: 20px; }
+  :root { --section-py: 56px; --gap: 28px; }
   body  { font-size: 16px; }
   p     { font-size: 16px; }
 }
 
 @media (max-width: 480px) {
-  :root { --gap: 20px; }
+  :root { --gap: 24px; }
 }
 
 /* ── Animações CSS ─────────────────── */

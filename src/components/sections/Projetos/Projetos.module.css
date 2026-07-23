@@ -96,7 +96,8 @@
   animation-duration:  66s;
 }
 
-.marqueeWrap:hover .marqueeTrack {
+.marqueeWrap:hover .marqueeTrack,
+.marqueeWrapTocando .marqueeTrack {
   animation-play-state: paused;
 }
 

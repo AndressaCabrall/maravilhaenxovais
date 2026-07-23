@@ -208,6 +208,10 @@
 }
 
 /* ══ TABLET ≥ 768px ══ */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img { object-position: var(--pos-tablet, center); }
+}
+
 @media (min-width: 768px) {
   .conteudo { padding: 32px; }
   .desc     { font-size: 15px; }
