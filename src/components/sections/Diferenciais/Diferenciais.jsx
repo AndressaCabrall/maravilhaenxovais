@@ -58,7 +58,6 @@ export default function Diferenciais() {
 
           <div className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Por que a Maravilha?</span>
             </div>
             <h2 id="diferenciais-titulo" className={styles.titulo}>

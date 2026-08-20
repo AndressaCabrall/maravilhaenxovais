@@ -41,7 +41,6 @@ export default function Depoimentos() {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.eyebrow}>
-            <span className={styles.eyebrowLine} aria-hidden="true" />
             <span className={styles.eyebrowText}>Avaliações reais</span>
           </div>
           <h2 id="depoimentos-titulo" className={styles.titulo}>

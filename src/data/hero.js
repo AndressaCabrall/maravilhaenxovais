@@ -12,9 +12,9 @@ export const SLIDES = [
     id:             1,
     eyebrow:        'Visita técnica mediante agendamento · Ibitinga e Região',
     position:       'center center',
-    titulo:         'Cortinas sob medida',
-    tituloDestaque: 'com instalação profissional disponível.',
-    subtitulo:      'A Mara vai até você, mede e apresenta as opções. Instalação sob consulta — sem surpresa no preço, sem dor de cabeça.',
+    titulo:         'Cortinas sob medida e persianas',
+    tituloDestaque: 'direto de fábrica em Ibitinga.',
+    subtitulo:      'Transformamos o seu ambiente com projetos personalizados de alta costura, tecidos premium e automação residencial.',
     ctaPrimario: {
       texto: 'Agendar visita agora',
       wa:    'Olá Mara! Gostaria de agendar uma visita para orçamento de cortinas sob medida.',

@@ -71,7 +71,6 @@ export default function CidadePage({ params }) {
           {/* ── Hero / H1 ── */}
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Atendemos {cidade.nome}, {cidade.estado}</span>
             </div>
             <h1 className={styles.titulo}>
@@ -93,7 +92,6 @@ export default function CidadePage({ params }) {
           {/* ── Intro ── */}
           <section className={styles.sec} aria-labelledby={`intro-${cidade.slug}`}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Atendimento local</span>
             </div>
             <h2 id={`intro-${cidade.slug}`} className={styles.secTitulo}>
@@ -108,7 +106,6 @@ export default function CidadePage({ params }) {
           {/* ── Serviços ── */}
           <section className={styles.sec} aria-labelledby={`servicos-${cidade.slug}`}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>O que oferecemos</span>
             </div>
             <h2 id={`servicos-${cidade.slug}`} className={styles.secTitulo}>
@@ -141,7 +138,6 @@ export default function CidadePage({ params }) {
           {/* ── Diferenciais ── */}
           <section className={styles.sec} aria-labelledby={`dif-${cidade.slug}`}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Por que escolher a Maravilha</span>
             </div>
             <h2 id={`dif-${cidade.slug}`} className={styles.secTitulo}>
@@ -172,7 +168,6 @@ export default function CidadePage({ params }) {
             itemType="https://schema.org/FAQPage"
           >
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Perguntas frequentes</span>
             </div>
             <h2 id={`faq-${cidade.slug}`} className={styles.secTitulo}>
@@ -215,7 +210,6 @@ export default function CidadePage({ params }) {
           {outrasCidades.length > 0 && (
             <section className={styles.sec} aria-label="Outras cidades atendidas">
               <div className={styles.eyebrow}>
-                <span className={styles.eyebrowLine} aria-hidden="true" />
                 <span className={styles.eyebrowText}>Também atendemos</span>
               </div>
               <div className={styles.cidadesGrid}>

@@ -105,7 +105,6 @@ export default function Page() {
 
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Tendência — O modelo favorito dos arquitetos</span>
             </div>
             <h1 className={styles.titulo}>

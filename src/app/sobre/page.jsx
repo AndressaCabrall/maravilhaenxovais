@@ -75,7 +75,6 @@ export default function SobrePage() {
 
               <div className={styles.copy}>
                 <div className={styles.eyebrow}>
-                  <span className={styles.eyebrowLine} aria-hidden="true" />
                   <span className={styles.eyebrowText}>Nossa história</span>
                 </div>
 

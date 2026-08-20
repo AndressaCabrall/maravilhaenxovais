@@ -54,7 +54,6 @@ export default function ProdutosPage() {
 
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Produtos e serviços</span>
             </div>
             <h1 className={styles.titulo}>

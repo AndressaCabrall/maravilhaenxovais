@@ -1,5 +1,6 @@
 // src/app/produtos-e-servicos/persianas/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
+import Image           from 'next/image'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Persianas      from '@/components/sections/Persianas/Persianas'
 import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
@@ -7,6 +8,7 @@ import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
 import heroImg        from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
+import { PERSIANAS }  from '@/data/persianas'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -41,11 +43,11 @@ const schema = {
 }
 
 const faq = [
-  { pergunta: 'Qual a diferença entre persiana rolô e double vision?', resposta: 'A rolô é um tecido único que enrola para cima. A double vision tem faixas alternadas opacas e translúcidas que permitem controle preciso de luz — do bloqueio total à máxima luminosidade.' },
-  { pergunta: 'Persiana blackout bloqueia 100% da luz?', resposta: 'Tecidos blackout certificados bloqueiam entre 95% e 100% da luz. A instalação correta é fundamental — posicionamos o trilho para minimizar ao máximo as frestas laterais.' },
-  { pergunta: 'A tela solar bloqueia calor e mantém a vista?', resposta: 'Sim! A tela solar filtra até 90% da radiação solar e mantém a visibilidade de dentro para fora. Ideal para salas com muito sol.' },
-  { pergunta: 'Posso motorizar minha persiana?', resposta: 'Sim! Trabalhamos com motorização para todos os modelos de persiana, com controle remoto ou integração com sistemas de automação.' },
-  { pergunta: 'Vocês atendem além de Ibitinga?', resposta: 'Sim! Atendemos Taquaritinga, Araraquara, Matão, Itápolis e toda a região. Consulte pelo WhatsApp.' },
+  { pergunta: 'Qual é a diferença entre a persiana Rolô e a Persiana Double Vision?', resposta: 'A persiana Rolô tradicional é feita com uma única folha de tecido que se enrola completamente no tubo superior quando aberta, oferecendo um visual totalmente clean e minimalista. Já a Double Vision (ou persiana rolô noite e dia) possui faixas alternadas de tecido opaco e tela translúcida em duas camadas. Conforme você movimenta a persiana, essas faixas se sobrepõem, permitindo controlar perfeitamente a privacidade e a entrada de luz sem precisar recolher a peça inteira.' },
+  { pergunta: 'Como funciona a persiana de Tela Solar (Screen) e onde ela é indicada?', resposta: 'A persiana de Tela Solar é fabricada com uma composição de PVC e poliéster (ou fibra de vidro) que funciona como um filtro de proteção solar. Ela reduz significativamente o calor e bloqueia até 99% dos raios UV — protegendo seus móveis, pisos e estofados do sol —, mas sem tirar a visibilidade externa ou escurecer o ambiente. É o modelo mais indicado para cozinhas, varandas gourmet, escritórios e salas de estar com alta incidência de sol.' },
+  { pergunta: 'Qual é o melhor modelo de persiana para quarto e para a cozinha?', resposta: 'Para o quarto, o modelo mais recomendado é a Persiana Rolô Blackout ou a Persiana Romana Blackout, pois elas vedam a claridade e garantem o escurinho necessário para o descanso. Para a cozinha e lavanderia, a melhor opção é a Persiana Rolô de Tela Solar ou as persianas horizontais de alumínio/PVC. Esses materiais não retêm gordura, não mofam com a umidade e são extremamente fáceis de limpar no dia a dia.' },
+  { pergunta: 'Como deve ser feita a limpeza e manutenção das persianas?', resposta: 'A limpeza rotineira é simples: basta usar um espanador ou o bocal de escova macia do aspirador de pó uma vez por semana para remover a poeira superficial. Para manchas leves em modelos de tecido ou tela solar, utilize um pano branco levemente umedecido em água e sabão neutro, sem esfregar com força. Atenção: persianas de tecido (como Rolô e Romana) nunca devem ser lavadas na máquina ou mergulhadas na água. Para uma higienização profunda anual, recomendamos serviços profissionais de lavagem de persianas.' },
+  { pergunta: 'Posso instalar persianas em janelas com cortineiro de gesso?', resposta: 'Sim, com certeza! O cortineiro de gesso dá um acabamento impecável para as persianas, escondendo o tubo superior e o suporte de fixação. É ideal que o cortineiro tenha pelo menos 15 cm de profundidade livre para que a persiana (principalmente se for Double Vision ou Romana) consiga subir e descer livremente sem raspar no gesso. Na Maravilha Enxovais, também oferecemos a opção de acabamento com bandô (barra de alumínio) para cobrir o rolo da persiana caso você não tenha cortineiro de gesso na sua casa.' },
 ]
 
 const modelos = [
@@ -56,6 +58,17 @@ const modelos = [
   'Persiana Painel Translúcida — luz filtrada com design sofisticado',
   'Persiana Horizontal 50mm — durável para uso intenso',
   'Persiana Motorizada — automação e conforto',
+]
+
+const beneficios = [
+  { titulo: 'Loja da Fábrica',              legenda: 'Sem intermediários' },
+  { titulo: 'Visita de medição',            legenda: 'Mediante agendamento' },
+  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
+  { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
+  { titulo: 'Atendimento pela Mara',        legenda: 'Personalizado' },
+  { titulo: 'Produção própria',             legenda: 'Controle de qualidade' },
+  { titulo: 'Prazo garantido',              legenda: 'Informado no orçamento' },
 ]
 
 const porAmbiente = [
@@ -94,10 +107,57 @@ export default function PersianasPage() {
           eyebrow="Ibitinga — SP — Do rolô ao double vision"
           titulo="Persianas sob medida —"
           tituloEm="controle a luz, transforme o ambiente"
-          sub="Todos os modelos de persiana sob medida com visita técnica mediante agendamento. Atendemos Ibitinga e toda a região com mais de 16 anos de experiência. Instalação possui custo adicional."
+          sub="Todos os modelos de persiana sob medida com visita técnica mediante agendamento. Atendemos Ibitinga e toda a região com mais de 16 anos de experiência."
           cta="Solicitar orçamento →"
           ctaHref={WA}
         />
+
+        <div className={styles.pagina}>
+          <div className={styles.container}>
+            <div className={styles.introGrid}>
+              <div>
+                <h2 className={styles.introTitulo}>Controle de luz com sofisticação</h2>
+                <p className={styles.introTexto}>
+                  Rolô, Double Vision, Blackout, Tela Solar e muito mais. Cada modelo produzido sob medida com os melhores tecidos. Visita técnica e instalação disponível em Ibitinga SP.
+                </p>
+                <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
+                  Fale conosco →
+                </a>
+              </div>
+              <div className={styles.introImgWrap}>
+                <Image
+                  src={PERSIANAS[0].imagem}
+                  alt={PERSIANAS[0].alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+
+            <section className={styles.sec}>
+              <h2 className={styles.secTitulo}>
+                Por que escolher a Maravilha{' '}
+                <em className={styles.secTituloEm}>para suas persianas?</em>
+              </h2>
+              <p className={styles.texto}>
+                Fabricamos nossas próprias persianas aqui em Ibitinga. Isso significa que você não paga o custo de um intermediário, tem acesso a um catálogo completo de modelos, e conta com instalação profissional disponível (sob consulta).
+              </p>
+
+              <ul className={styles.listaNum}>
+                {beneficios.map((item, i) => (
+                  <li key={item.titulo} className={styles.listaNumItem}>
+                    <div className={styles.listaNumEsquerda}>
+                      <span className={styles.listaNumIndice}>{String(i + 1).padStart(2, '0')}</span>
+                      <h3 className={styles.listaNumTitulo}>{item.titulo}</h3>
+                    </div>
+                    <span className={styles.listaNumLegenda}>{item.legenda}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        </div>
 
         <Persianas />
 

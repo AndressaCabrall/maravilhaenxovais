@@ -100,6 +100,46 @@
     transform:  translateY(-2px);
   }
   
+  /* ── Intro grid 2 colunas (texto + imagem) ── */
+  .introGrid {
+    display:     grid;
+    grid-template-columns: 1fr;
+    gap:         32px;
+    align-items: center;
+    padding:     var(--section-py) 0;
+    border-bottom: 0.5px solid var(--color-areia);
+  }
+
+  .introTitulo {
+    font-family:    var(--font-body);
+    font-size:      clamp(28px, 3.6vw, 40px);
+    font-weight:    800;
+    line-height:    1.05;
+    text-transform: uppercase;
+    color:          var(--color-grafite);
+    letter-spacing: -0.02em;
+    margin:         0 0 18px;
+  }
+
+  .introTexto {
+    font-family: var(--font-body);
+    font-size:   16px;
+    font-weight: 400;
+    color:       var(--color-taupe);
+    line-height: 1.85;
+    margin:      0 0 28px;
+  }
+
+  .introImgWrap {
+    position:      relative;
+    width:         100%;
+    max-width:     420px;
+    aspect-ratio:  3 / 4;
+    margin:        0 auto;
+    border-radius: var(--radius-md);
+    overflow:      hidden;
+  }
+
   /* ── Seção ── */
   .sec {
     padding:        var(--section-py) 0;
@@ -138,35 +178,126 @@
     margin:      0;
   }
   
-  /* ── Lista ── */
+  /* ── Lista (cards) ── */
   .lista {
     list-style:            none;
     padding:               0;
     margin:                0;
     display:               grid;
     grid-template-columns: 1fr;
-    gap:                   1px;
-    background:            var(--color-areia);
+    gap:                   16px;
     width:                 100%;
   }
-  
+
   .listaItem {
-    display:     flex;
-    align-items: center;
-    gap:         14px;
-    background:  var(--color-white);
-    padding:     18px 20px;
-    font-family: var(--font-body);
-    font-size:   16px;
-    font-weight: 300;
-    color:       var(--color-taupe);
-    min-height:  52px;
-    width:       100%;
-    transition:  background var(--duration) var(--ease);
+    display:       flex;
+    align-items:   center;
+    gap:           14px;
+    background:    var(--color-white);
+    border:        0.5px solid var(--color-areia-dark);
+    border-radius: var(--radius-md);
+    padding:       20px 22px;
+    font-family:   var(--font-body);
+    font-size:     16px;
+    font-weight:   300;
+    color:         var(--color-taupe);
+    min-height:    52px;
+    width:         100%;
+    transition:    background var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
   }
   
-  .listaItem:hover { background: var(--color-linho); }
-  
+  .listaItem:hover {
+    background: var(--color-linho);
+    box-shadow: var(--shadow-sm);
+    transform:  translateY(-2px);
+  }
+
+  /* ── Selo de avaliação (estrelas + métricas) ── */
+  .selo {
+    display:       flex;
+    align-items:   center;
+    gap:           10px;
+    font-family:   var(--font-body);
+    font-size:     14px;
+    font-weight:   500;
+    color:         var(--color-taupe);
+    margin-bottom: 8px;
+  }
+
+  .seloEstrelas {
+    color:          var(--color-pink);
+    font-size:      14px;
+    letter-spacing: 2px;
+  }
+
+  /* ── Lista numerada (linhas com divisor) ── */
+  .listaNum {
+    list-style: none;
+    padding:    0;
+    margin:     0;
+    border-top: 0.5px solid var(--color-areia-dark);
+  }
+
+  .listaNumItem {
+    display:        flex;
+    align-items:    baseline;
+    justify-content: space-between;
+    gap:            16px;
+    padding:        22px 12px;
+    margin:         0 -12px;
+    border-bottom:  0.5px solid var(--color-areia-dark);
+    border-radius:  var(--radius-sm);
+    transition:     background var(--duration) var(--ease), padding-left var(--duration) var(--ease);
+  }
+
+  .listaNumItem:hover {
+    background:  var(--color-linho);
+    padding-left: 20px;
+  }
+
+  .listaNumItem:hover .listaNumIndice,
+  .listaNumItem:hover .listaNumTitulo {
+    color: var(--color-pink);
+  }
+
+  .listaNumEsquerda {
+    display:     flex;
+    align-items: baseline;
+    gap:         18px;
+  }
+
+  .listaNumIndice {
+    font-family: var(--font-body);
+    font-size:   12px;
+    font-weight: 500;
+    color:       var(--color-taupe-light);
+    flex-shrink: 0;
+    transition:  color var(--duration) var(--ease);
+  }
+
+  .listaNumTitulo {
+    font-family: var(--font-body);
+    font-size:   clamp(19px, 2.2vw, 24px);
+    font-weight: 700;
+    color:       var(--color-grafite);
+    margin:      0;
+    transition:  color var(--duration) var(--ease);
+  }
+
+  .listaNumLegenda {
+    font-family:  var(--font-body);
+    font-size:    13px;
+    font-weight:  400;
+    color:        var(--color-taupe);
+    white-space:  nowrap;
+    flex-shrink:  0;
+  }
+
+  @media (max-width: 480px) {
+    .listaNumItem      { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .listaNumLegenda   { white-space: normal; }
+  }
+
   .listaIco {
     color:       var(--color-pink);
     flex-shrink: 0;
@@ -356,13 +487,15 @@
     .container  { padding: 0 var(--gap); }
     .lista      { grid-template-columns: repeat(2, 1fr); }
     .blogLinks  { grid-template-columns: repeat(2, 1fr); }
+    .introGrid  { grid-template-columns: 1fr 1fr; gap: 56px; }
   }
-  
+
   /* ══ DESKTOP ≥ 1024px ══ */
   @media (min-width: 1024px) {
     .pagina    { padding-top: 140px; }
     .lista     { grid-template-columns: repeat(3, 1fr); }
     .blogLinks { grid-template-columns: repeat(3, 1fr); }
+    .introGrid { gap: 80px; }
   }
   
   /* ══ REDUCED MOTION ══ */
@@ -372,5 +505,8 @@
     .listaItem,
     .faqItem,
     .blogCard,
-    .btnVoltar { transition: none; }
+    .btnVoltar,
+    .listaNumItem,
+    .listaNumIndice,
+    .listaNumTitulo { transition: none; }
   }

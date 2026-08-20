@@ -1,5 +1,6 @@
 // src/app/produtos-e-servicos/motorizacao/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
+import Image           from 'next/image'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Motorizacao    from '@/components/sections/Motorizacao/Motorizacao'
 import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
@@ -7,6 +8,7 @@ import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
 import heroImg        from '@/assets/images/motorizacao/webp/cortina-motorizada-trilho-automatizado-maravilha-ibitinga-sp.webp'
+import introImg       from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -41,11 +43,22 @@ const schema = {
 }
 
 const faq = [
-  { pergunta: 'Vocês fazem motorização de cortinas e persianas?', resposta: 'Sim! Trabalhamos com motorização compatível com controle remoto, Alexa e Google Home. Ideal para pé direito alto e janelas de difícil acesso.' },
+  { pergunta: 'Qual é a diferença real entre uma persiana motorizada e uma persiana automatizada?', resposta: 'Uma persiana motorizada é aquela que possui um motor interno acionado individualmente por um controle remoto via radiofrequência. Já a persiana automatizada vai além: ela é conectada a uma central Wi-Fi (Hub ou Gateway). Isso permite que ela se integre ao seu smartphone e assistentes de voz (Alexa/Google), possibilitando que ela funcione de forma 100% autônoma através de agendamentos de horários e rotinas inteligentes.' },
   { pergunta: 'A motorização funciona com Alexa e Google Home?', resposta: 'Sim! O sistema é compatível com os principais assistentes de voz, além de controle pelo aplicativo do celular.' },
-  { pergunta: 'É possível programar horários automáticos?', resposta: 'Sim! Você pode programar abertura e fechamento por horário, direto pelo aplicativo.' },
-  { pergunta: 'O motor faz barulho?', resposta: 'Não. Trabalhamos com motores silenciosos, com operação suave mesmo em ambientes de home office ou quarto.' },
-  { pergunta: 'Dá para motorizar uma cortina ou persiana já instalada?', resposta: 'Depende do modelo e do trilho existente — em muitos casos é possível. Consulte pelo WhatsApp e avaliamos o seu caso.' },
+  { pergunta: 'Posso programar as persianas para abrirem ou fecharem sozinhas em horários específicos?', resposta: 'Sim, essa é uma das grandes vantagens da automação. Através do aplicativo instalado no seu celular (ou pelo sistema da Alexa/Google Home), você pode criar agendamentos automáticos. É possível programar as persianas para abrirem 30% logo cedo para o despertar diurno, fecharem totalmente ao meio-dia para proteger os móveis do sol forte, ou descerem ao anoitecer para garantir total privacidade.' },
+  { pergunta: 'As persianas motorizadas duram mais tempo do que as persianas manuais?', resposta: 'Sim, os modelos motorizados possuem uma vida útil superior. Isso acontece porque o motor realiza uma subida e descida com velocidade constante, força controlada e sem trancos. Nas persianas manuais, o usuário costuma puxar a corda com intensidades diferentes, inclinações incorretas ou força excessiva, o que acelera o desgaste das engrenagens, desalinhamento do tecido e quebras do cordão.' },
+  { pergunta: 'Quanto custa motorizar uma cortina ou persiana sob medida?', resposta: 'O preço de um projeto automatizado varia de acordo com o tamanho do vão (janela), o peso do tecido escolhido (que define a potência necessária do motor) e o tipo de acionamento (bateria, fiação direta, controle remoto ou integração Wi-Fi). Hoje, a tecnologia se tornou muito mais acessível. Na Maravilha Enxovais, nós desenvolvemos orçamentos sob medida direto de fábrica, garantindo o melhor custo-benefício para o seu bolso.' },
+]
+
+const beneficios = [
+  { titulo: 'Loja da Fábrica',              legenda: 'Sem intermediários' },
+  { titulo: 'Visita de medição',            legenda: 'Mediante agendamento' },
+  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
+  { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
+  { titulo: 'Alexa e Google Home',          legenda: 'Integração por voz' },
+  { titulo: 'Motores silenciosos',          legenda: 'Operação suave' },
+  { titulo: 'Prazo garantido',              legenda: 'Informado no orçamento' },
 ]
 
 const faqSchema = {
@@ -79,6 +92,53 @@ export default function MotorizacaoPage() {
           cta="Solicitar orçamento →"
           ctaHref={WA}
         />
+
+        <div className={styles.pagina}>
+          <div className={styles.container}>
+            <div className={styles.introGrid}>
+              <div>
+                <h2 className={styles.introTitulo}>Controle total na palma da mão</h2>
+                <p className={styles.introTexto}>
+                  Motorize cortinas e persianas. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação profissional disponível em Ibitinga e região.
+                </p>
+                <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
+                  Fale conosco →
+                </a>
+              </div>
+              <div className={styles.introImgWrap}>
+                <Image
+                  src={introImg}
+                  alt="Cortina wave motorizada instalada em quarto — Maravilha Cortinas Ibitinga SP"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+
+            <section className={styles.sec}>
+              <h2 className={styles.secTitulo}>
+                Por que escolher a Maravilha{' '}
+                <em className={styles.secTituloEm}>para motorizar seu ambiente?</em>
+              </h2>
+              <p className={styles.texto}>
+                Trabalhamos com motores silenciosos de alta qualidade, configurados por profissionais especializados. O sistema é integrado de forma discreta ao seu ambiente, com instalação profissional disponível (sob consulta).
+              </p>
+
+              <ul className={styles.listaNum}>
+                {beneficios.map((item, i) => (
+                  <li key={item.titulo} className={styles.listaNumItem}>
+                    <div className={styles.listaNumEsquerda}>
+                      <span className={styles.listaNumIndice}>{String(i + 1).padStart(2, '0')}</span>
+                      <h3 className={styles.listaNumTitulo}>{item.titulo}</h3>
+                    </div>
+                    <span className={styles.listaNumLegenda}>{item.legenda}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        </div>
 
         <Motorizacao />
 

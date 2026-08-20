@@ -1,5 +1,6 @@
 // src/app/produtos-e-servicos/cortinas/page.jsx — Maravilha Cortinas
 import Link           from 'next/link'
+import Image           from 'next/image'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
 import Cortinas       from '@/components/sections/Cortinas/Cortinas'
 import HeroPagina     from '@/components/sections/HeroPagina/HeroPagina'
@@ -7,6 +8,7 @@ import FaqAccordion   from '@/components/ui/FaqAccordion/FaqAccordion'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import styles         from '@/app/seo-page.module.css'
 import heroImg        from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
+import { CORTINAS }   from '@/data/cortinas'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
@@ -42,9 +44,9 @@ const schema = {
 
 const faq = [
   { pergunta: 'Como funciona a visita de medição?', resposta: 'A visita técnica é agendada pelo WhatsApp no horário mais conveniente para você. Nossa equipe vai até o seu ambiente, mede com precisão e apresenta as opções de tecido e modelo.' },
-  { pergunta: 'A instalação está inclusa no preço?', resposta: 'A instalação possui custo adicional, informado no orçamento. Trabalhamos com instalação profissional — sem surpresas no processo.' },
+  { pergunta: 'Qual é a diferença entre a cortina wave e os modelos tradicionais?', resposta: 'A cortina wave (ou efeito onda) possui um sistema de cordões e deslizantes que mantém as dobras do tecido sempre alinhadas, retas e simétricas, mesmo quando a cortina é aberta ou fechada. Ela oferece um visual clean e moderno, sendo ideal para trilhos suíços ou varões específicos. Já modelos como a prega macho ou franzida trazem um visual mais clássico e volumoso.' },
   { pergunta: 'Quais tipos de cortina vocês fazem?', resposta: 'Trabalhamos com cortina wave, franzido, blackout, linho, voil, duplex e muito mais — todos os modelos sob medida.' },
-  { pergunta: 'Atendem cidades próximas de Ibitinga?', resposta: 'Sim! Atendemos Taquaritinga, Araraquara, Matão, Itápolis, Tabatinga, Nova Europa, Borborema e toda a região — consulte disponibilidade pelo WhatsApp.' },
+  { pergunta: 'Quero uma cortina de alto padrão para a minha sala. Quais são os tecidos mais procurados em Ibitinga?', resposta: 'Hoje, os tecidos nobres campeões de pedidos para projetos de alto padrão são a Gaze de Linho (pelo caimento fluido e elegante), o Flam (que imita a textura rústica do linho, mas oferece excelente praticidade na lavagem), e o Jacquard (para quem busca texturas encorpadas e clássicas). Na Maravilha Enxovais, combinamos esses tecidos com os sistemas de prega Wave para criar aquele efeito de ondas perfeitas no ambiente.' },
   { pergunta: 'Quanto tempo leva para ficar pronto?', resposta: 'A partir de 20 dias úteis após confirmação do pedido. O prazo exato é informado no orçamento.' },
   { pergunta: 'Vocês fazem cortinas para pé direito duplo?', resposta: 'Sim, somos especialistas! Atendemos ambientes com pé direito alto e duplo — com trilho embutido em sanca de gesso, tecidos adequados para cada altura e instalação com caimento perfeito.' },
 ]
@@ -61,14 +63,14 @@ const modelos = [
 ]
 
 const beneficios = [
-  'Loja da Fábrica — sem intermediários',
-  'Visita técnica mediante agendamento em Ibitinga e região',
-  'Instalação profissional disponível (custo adicional)',
-  'Mais de 16 anos de experiência',
-  'Nota 5,0 no Google',
-  'Atendimento personalizado pela Mara',
-  'Produção própria com controle de qualidade',
-  'Prazo garantido no orçamento',
+  { titulo: 'Loja da Fábrica',              legenda: 'Sem intermediários' },
+  { titulo: 'Visita de medição',            legenda: 'Mediante agendamento' },
+  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
+  { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
+  { titulo: 'Atendimento pela Mara',        legenda: 'Personalizado' },
+  { titulo: 'Produção própria',             legenda: 'Controle de qualidade' },
+  { titulo: 'Prazo garantido',              legenda: 'Informado no orçamento' },
 ]
 
 const faqSchema = {
@@ -96,15 +98,36 @@ export default function CortinasPage() {
           imagem={heroImg}
           alt="Cortina Wave com blackout instalada em quarto — Maravilha Cortinas Ibitinga SP"
           eyebrow="Ibitinga — SP — Loja da Fábrica"
-          titulo="Cortinas sob medida —"
-          tituloEm="tecido certo, ambiente transformado"
-          sub="Somos a Loja da Fábrica de cortinas sob medida em Ibitinga/SP. Fabricamos e medimos com mais de 16 anos de experiência — sem intermediários, com preço justo e resultado impecável. Instalação sob consulta."
+          titulo="Cortinas de tecido sob medida:"
+          tituloEm="sofisticação e caimento impecável"
+          sub="Modelos Wave, Prega Macho e Blackout em linho e tecidos nobres com a qualidade exclusiva de Ibitinga."
           cta="Solicitar orçamento →"
           ctaHref={WA}
         />
 
         <div className={styles.pagina}>
           <div className={styles.container}>
+            <div className={styles.introGrid}>
+              <div>
+                <h2 className={styles.introTitulo}>Vista cada janela do seu lar</h2>
+                <p className={styles.introTexto}>
+                  Wave, Prega Macho, Blackout e muito mais. Cada modelo produzido sob medida com os melhores tecidos. Visita técnica e instalação disponível em Ibitinga SP.
+                </p>
+                <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
+                  Fale conosco →
+                </a>
+              </div>
+              <div className={styles.introImgWrap}>
+                <Image
+                  src={CORTINAS[0].imagem}
+                  alt={CORTINAS[0].alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+
             <section className={styles.sec}>
               <h2 className={styles.secTitulo}>
                 Por que escolher a Maravilha{' '}
@@ -113,11 +136,15 @@ export default function CortinasPage() {
               <p className={styles.texto}>
                 Fabricamos nossas próprias cortinas aqui em Ibitinga. Isso significa que você não paga o custo de um intermediário, tem acesso a um catálogo completo de tecidos e modelos, e conta com instalação profissional disponível (sob consulta).
               </p>
-              <ul className={styles.lista}>
-                {beneficios.map((item) => (
-                  <li key={item} className={styles.listaItem}>
-                    <span className={styles.listaIco} aria-hidden="true">✦</span>
-                    {item}
+
+              <ul className={styles.listaNum}>
+                {beneficios.map((item, i) => (
+                  <li key={item.titulo} className={styles.listaNumItem}>
+                    <div className={styles.listaNumEsquerda}>
+                      <span className={styles.listaNumIndice}>{String(i + 1).padStart(2, '0')}</span>
+                      <h3 className={styles.listaNumTitulo}>{item.titulo}</h3>
+                    </div>
+                    <span className={styles.listaNumLegenda}>{item.legenda}</span>
                   </li>
                 ))}
               </ul>

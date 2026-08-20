@@ -21,15 +21,12 @@ const LINKS_DEPOIS = [
 const LINKS = [...LINKS_ANTES, ...LINKS_DEPOIS]
 
 const PRODUTOS = [
-  { href: '/#projetos',                        label: 'Projetos' },
   { href: '/produtos-e-servicos/cortinas',     label: 'Cortinas' },
   { href: '/produtos-e-servicos/persianas',    label: 'Persianas' },
   { href: '/produtos-e-servicos/motorizacao',  label: 'Motorização' },
 ]
 
-// No drawer mobile, "Projetos" fica como link direto (fora do accordion)
-const PRODUTOS_ACCORDION = PRODUTOS.filter((p) => p.label !== 'Projetos')
-const PROJETOS_LINK = PRODUTOS.find((p) => p.label === 'Projetos')
+const PRODUTOS_ACCORDION = PRODUTOS
 
 function IconeWA() {
   return (
@@ -225,14 +222,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-
-          {PROJETOS_LINK && (
-            <li style={{ '--i': LINKS_ANTES.length }}>
-              <a href={PROJETOS_LINK.href} className={styles.drawerLink} onClick={fechar}>
-                {PROJETOS_LINK.label}
-              </a>
-            </li>
-          )}
 
           <li style={{ '--i': LINKS_ANTES.length + 1 }}>
             <button

@@ -32,7 +32,6 @@ export default function Persianas() {
 
         <div className={styles.header}>
           <div className={styles.eyebrow}>
-            <span className={styles.eyebrowLine} aria-hidden="true" />
             <span className={styles.eyebrowText}>Persianas sob medida</span>
           </div>
           <h2 id="persianas-titulo" className={styles.titulo}>

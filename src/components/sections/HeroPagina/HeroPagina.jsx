@@ -21,7 +21,6 @@ export default function HeroPagina({ imagem, alt, eyebrow, titulo, tituloEm, sub
       <div className={styles.container}>
         <div className={styles.inner}>
           <div className={styles.eyebrow}>
-            <span className={styles.eyebrowLine} aria-hidden="true" />
             <span className={styles.eyebrowText}>{eyebrow}</span>
           </div>
 

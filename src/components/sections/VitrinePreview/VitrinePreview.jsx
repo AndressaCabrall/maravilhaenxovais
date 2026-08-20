@@ -56,7 +56,6 @@ export default function VitrinePreview() {
         <div className={styles.editorial}>
           <div className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Nossos Produtos e serviços</span>
             </div>
             <h2 id="vitrine-titulo" className={styles.titulo}>

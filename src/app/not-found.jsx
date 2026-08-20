@@ -22,7 +22,6 @@ export default function NotFound() {
       <main className={styles.pagina}>
         <div className={styles.container}>
           <div className={styles.eyebrow}>
-            <span className={styles.eyebrowLine} aria-hidden="true" />
             <span className={styles.eyebrowText}>Erro 404</span>
           </div>
           <h1 className={styles.titulo}>

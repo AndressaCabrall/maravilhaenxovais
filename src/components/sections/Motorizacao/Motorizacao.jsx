@@ -68,7 +68,6 @@ export default function Motorizacao() {
 
           <div className={styles.copy}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Cortinas & Persianas Motorizadas</span>
             </div>
             <h2 id="motorizacao-titulo" className={styles.titulo}>

@@ -32,7 +32,6 @@ export default function BlogPage() {
           {/* ── Header ── */}
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Blog · Dicas e tendências</span>
             </div>
             <h1 className={styles.titulo}>

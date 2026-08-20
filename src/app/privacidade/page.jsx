@@ -19,7 +19,6 @@ export default function Privacidade() {
 
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Legal</span>
             </div>
             <h1 className={styles.titulo}>

@@ -96,7 +96,6 @@ export default function HeroSlider() {
           <div className={`${styles.inner} ${entrando ? '' : styles.innerVisible}`}>
 
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Ibitinga · SP </span>
             </div>
 

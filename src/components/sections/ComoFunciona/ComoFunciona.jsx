@@ -12,7 +12,6 @@ export default function ComoFunciona() {
         <div className={styles.header}>
           <div className={styles.headerLeft}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Como funciona</span>
             </div>
             <h2 id="como-funciona-titulo" className={styles.titulo}>

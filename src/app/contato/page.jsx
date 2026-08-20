@@ -24,7 +24,6 @@ export default function ContatoPage() {
 
           <header className={styles.header}>
             <div className={styles.eyebrow}>
-              <span className={styles.eyebrowLine} aria-hidden="true" />
               <span className={styles.eyebrowText}>Fale com a gente</span>
             </div>
             <h1 className={styles.titulo}>
