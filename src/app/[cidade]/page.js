@@ -2,7 +2,7 @@
 // Páginas SEO local — cidades da região de Ibitinga/SP
 import { notFound } from 'next/navigation'
 import Link         from 'next/link'
-import styles       from './cidade.module.css'
+import styles       from '@/app/seo-page.module.css'
 import { CIDADES }  from '@/data/cidades'
 import { CONTATO, DOMINIO } from '@/lib/constants'
 import CtaFooterPin  from '@/components/sections/Cta/CtaFooterPin'

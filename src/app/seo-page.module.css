@@ -304,6 +304,125 @@
     font-size:   18px;
   }
   
+  /* ── Serviços (grid de itens, página de cidade) ── */
+  .servicos {
+    list-style:            none;
+    padding:               0;
+    margin:                0;
+    display:               grid;
+    grid-template-columns: 1fr;
+    gap:                   1px;
+    background:            var(--color-areia);
+    width:                 100%;
+  }
+
+  .servicoItem {
+    display:     flex;
+    align-items: center;
+    gap:         14px;
+    background:  var(--color-white);
+    padding:     16px 20px;
+    font-family: var(--font-body);
+    font-size:   16px;
+    font-weight: 300;
+    color:       var(--color-taupe);
+    min-height:  52px;
+    width:       100%;
+    transition:  background var(--duration) var(--ease);
+  }
+
+  .servicoItem:hover { background: var(--color-linho); }
+
+  .servicoIco {
+    color:       var(--color-pink);
+    flex-shrink: 0;
+  }
+
+  /* ── Diferenciais (cards, página de cidade) ── */
+  .difs {
+    display:               grid;
+    grid-template-columns: 1fr;
+    gap:                   1px;
+    background:            var(--color-areia);
+    width:                 100%;
+  }
+
+  .difCard {
+    background:     var(--color-white);
+    padding:        28px 24px;
+    display:        flex;
+    flex-direction: column;
+    gap:            8px;
+    width:          100%;
+    min-height:     160px;
+    transition:     background var(--duration) var(--ease);
+  }
+
+  .difCard:hover { background: var(--color-linho); }
+
+  .difNum {
+    font-family: var(--font-display);
+    font-size:   13px;
+    font-style:  italic;
+    color:       var(--color-pink);
+    opacity:     0.6;
+  }
+
+  .difTitulo {
+    font-family: var(--font-display);
+    font-size:   clamp(1.1rem, 1.8vw, 1.3rem);
+    font-weight: 400;
+    color:       var(--color-grafite);
+    margin:      0;
+  }
+
+  .difDesc {
+    font-family: var(--font-body);
+    font-size:   15px;
+    font-weight: 300;
+    color:       var(--color-taupe);
+    line-height: 1.8;
+    margin:      0;
+  }
+
+  /* ── Outras cidades (página de cidade) ── */
+  .cidadesGrid {
+    display:               grid;
+    grid-template-columns: 1fr;
+    gap:                   1px;
+    background:            var(--color-areia);
+    width:                 100%;
+  }
+
+  .cidadeLink {
+    background:      var(--color-white);
+    padding:         16px 20px;
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    text-decoration: none;
+    min-height:      60px;
+    transition:      background var(--duration) var(--ease);
+    width:           100%;
+  }
+
+  .cidadeLink:hover { background: var(--color-linho); }
+
+  .cidadeNome {
+    font-family: var(--font-display);
+    font-size:   17px;
+    font-style:  italic;
+    color:       var(--color-grafite);
+  }
+
+  .cidadeDist {
+    font-family:    var(--font-body);
+    font-size:      12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:          var(--color-pink);
+  }
+
   /* ── FAQ ── */
   .faqLista {
     display:        flex;
@@ -483,21 +602,28 @@
   
   /* ══ TABLET ≥ 768px ══ */
   @media (min-width: 768px) {
-    .pagina     { padding-top: 130px; }
-    .container  { padding: 0 var(--gap); }
-    .lista      { grid-template-columns: repeat(2, 1fr); }
-    .blogLinks  { grid-template-columns: repeat(2, 1fr); }
-    .introGrid  { grid-template-columns: 1fr 1fr; gap: 56px; }
+    .pagina      { padding-top: 130px; }
+    .container   { padding: 0 var(--gap); }
+    .lista       { grid-template-columns: repeat(2, 1fr); }
+    .blogLinks   { grid-template-columns: repeat(2, 1fr); }
+    .introGrid   { grid-template-columns: 1fr 1fr; gap: 56px; }
+    .servicos    { grid-template-columns: repeat(2, 1fr); }
+    .difs        { grid-template-columns: repeat(2, 1fr); }
+    .cidadesGrid { grid-template-columns: repeat(2, 1fr); }
   }
 
   /* ══ DESKTOP ≥ 1024px ══ */
   @media (min-width: 1024px) {
-    .pagina    { padding-top: 140px; }
-    .lista     { grid-template-columns: repeat(3, 1fr); }
-    .blogLinks { grid-template-columns: repeat(3, 1fr); }
-    .introGrid { gap: 80px; }
+    .pagina      { padding-top: 140px; }
+    .lista       { grid-template-columns: repeat(3, 1fr); }
+    .blogLinks   { grid-template-columns: repeat(3, 1fr); }
+    .introGrid   { gap: 80px; }
+    .servicos    { grid-template-columns: repeat(3, 1fr); }
+    .difs        { grid-template-columns: repeat(4, 1fr); }
+    .cidadesGrid { grid-template-columns: repeat(3, 1fr); }
+    .difCard     { min-height: 200px; }
   }
-  
+
   /* ══ REDUCED MOTION ══ */
   @media (prefers-reduced-motion: reduce) {
     .ctaHero,
@@ -508,5 +634,8 @@
     .btnVoltar,
     .listaNumItem,
     .listaNumIndice,
-    .listaNumTitulo { transition: none; }
+    .listaNumTitulo,
+    .servicoItem,
+    .difCard,
+    .cidadeLink { transition: none; }
   }

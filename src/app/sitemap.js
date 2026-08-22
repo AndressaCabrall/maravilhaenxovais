@@ -14,10 +14,6 @@ export default function sitemap() {
     { url: `${DOMINIO}/produtos-e-servicos/persianas`, lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/produtos-e-servicos/motorizacao`, lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/contato`,                       lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${DOMINIO}/cortina-wave-ibitinga`,         lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${DOMINIO}/cortina-pe-direito-duplo`,      lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${DOMINIO}/cortina-motorizada-ibitinga`,   lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${DOMINIO}/persiana-blackout-ibitinga`,    lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMINIO}/blog`,                          lastModified: hoje, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${DOMINIO}/privacidade`,                   lastModified: hoje, changeFrequency: 'yearly',  priority: 0.3 },
   ]

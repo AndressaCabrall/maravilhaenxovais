@@ -49,7 +49,7 @@ A cortina é a opção certa quando você quer elegância, volume e aconchego. O
 
 Escolha cortina quando a decoração for clássica, eclética ou sofisticada. Ambientes com móveis em madeira, sofás de tecido encorpado, tapetes e objetos decorativos — a cortina completa esse estilo de forma natural e harmônica.
 
-> **Dica da Mara:** em salas com pé direito acima de 3 metros, a cortina instalada do teto ao chão valoriza cada centímetro de altura. O [modelo wave](/cortina-wave-ibitinga) é o mais pedido nesse caso — as ondas uniformes criam uma linha vertical perfeita.
+> **Dica da Mara:** em salas com pé direito acima de 3 metros, a cortina instalada do teto ao chão valoriza cada centímetro de altura. O [modelo wave](/produtos-e-servicos/cortinas) é o mais pedido nesse caso — as ondas uniformes criam uma linha vertical perfeita.
 
 A cortina também tem uma vantagem que pouca gente considera: **função acústica**. O tecido absorve o som e reduz o eco no ambiente — algo que faz diferença real em salas grandes, home offices e apartamentos com barulho externo.
 
@@ -80,7 +80,7 @@ Essa combinação é especialmente inteligente em salas: a persiana tela solar f
 
 **Sala de estar:** cortina wave ou prega macho em linho para ambientes sofisticados; persiana double vision ou rolô para o estilo contemporâneo. A combinação dos dois é sempre uma excelente escolha.
 
-**Quarto de casal:** cortina blackout com voil no trilho duplo — controle total de luz com visual elegante. Ou [persiana blackout](/persiana-blackout-ibitinga) rolô para quem prefere praticidade e visual limpo.
+**Quarto de casal:** cortina blackout com voil no trilho duplo — controle total de luz com visual elegante. Ou [persiana blackout](/produtos-e-servicos/persianas) rolô para quem prefere praticidade e visual limpo.
 
 **Quarto de criança:** persiana blackout, sem dúvida. Prática, lavável e bloqueia a luz no horário de sono a qualquer hora do dia.
 
@@ -121,11 +121,11 @@ Em um pé direito convencional de 2,70m, uma cortina padrão funciona bem com pe
 
 Além disso, a proporção importa muito mais. O tecido precisa ter volume e caimento adequados para preencher visualmente aquela altura toda. Tecidos finos e leves em ambientes muito altos podem parecer "sumidos" — o ambiente fica sem âncora visual.
 
-> **Dica da Mara:** antes de qualquer compra, o profissional deve definir a posição exata do trilho — e só depois medir. Em [pé direito duplo](/cortina-pe-direito-duplo), a decisão de onde instalar o trilho muda tudo.
+> **Dica da Mara:** antes de qualquer compra, o profissional deve definir a posição exata do trilho — e só depois medir. Em [pé direito duplo](/produtos-e-servicos/cortinas), a decisão de onde instalar o trilho muda tudo.
 
 ## O modelo certo para cada estilo
 
-**[Cortina Wave](/cortina-wave-ibitinga)** é, sem dúvida, o modelo mais indicado para pé direito duplo. As ondas uniformes e simétricas criam uma linha vertical que valoriza cada centímetro de altura. O resultado é contemporâneo, sofisticado e atemporal — o favorito dos arquitetos de interiores.
+**[Cortina Wave](/produtos-e-servicos/cortinas)** é, sem dúvida, o modelo mais indicado para pé direito duplo. As ondas uniformes e simétricas criam uma linha vertical que valoriza cada centímetro de altura. O resultado é contemporâneo, sofisticado e atemporal — o favorito dos arquitetos de interiores.
 
 **Cortina com prega macho** funciona muito bem em decorações mais clássicas e tradicionais. As pregas estruturadas criam volume e presença que combinam especialmente com linho, veludo e tecidos encorpados. Em um pé direito de 4 metros, a prega macho cria um efeito grandioso.
 
@@ -143,7 +143,7 @@ O trilho é o elemento mais crítico — e onde os erros acontecem com mais freq
 
 - Em vãos acima de 2,5m de largura: suportes intermediários são obrigatórios para evitar que o trilho flambe com o peso.
 - Para pé direito acima de 4m: trilho em alumínio reforçado ou aço — materiais que suportam o peso de cortinas longas sem deformar.
-- Motorização: em pé direito duplo, abrir e fechar a cortina manualmente todos os dias pode ser incômodo. Uma [cortina motorizada](/cortina-motorizada-ibitinga) facilita muito e dura muito mais que o cordão convencional.
+- Motorização: em pé direito duplo, abrir e fechar a cortina manualmente todos os dias pode ser incômodo. Uma [cortina motorizada](/produtos-e-servicos/motorizacao) facilita muito e dura muito mais que o cordão convencional.
 
 ## O tecido certo para cada altura
 
@@ -178,7 +178,7 @@ O trilho é o elemento mais crítico — e onde os erros acontecem com mais freq
     tempoLeitura:   '7 min',
     conteudo: `São 5h30 da manhã. O sol já entrou pelo quarto, o sono acabou e você ainda estava exausto. Isso é rotina para muita gente — especialmente nos quartos voltados para o leste, onde o sol bate cedo com força. E não precisa ser assim.
 
-A [persiana blackout](/persiana-blackout-ibitinga) é a solução mais eficiente para bloquear a luz e garantir um sono de qualidade. Mas atenção: nem toda persiana chamada de "blackout" realmente bloqueia a luz como deveria. E uma instalação mal feita desperdiça até o melhor produto do mercado.
+A [persiana blackout](/produtos-e-servicos/persianas) é a solução mais eficiente para bloquear a luz e garantir um sono de qualidade. Mas atenção: nem toda persiana chamada de "blackout" realmente bloqueia a luz como deveria. E uma instalação mal feita desperdiça até o melhor produto do mercado.
 
 Ao longo de 16 anos trabalhando com persianas sob medida, a persiana blackout é um dos produtos mais solicitados — e também um dos que mais geram dúvidas na hora da escolha. Veja tudo que você precisa saber.
 
@@ -202,7 +202,7 @@ Para trabalhadores que dormem durante o dia, o blackout é essencial — não é
 
 **Persiana double vision blackout** alterna faixas opacas e translúcidas. Quando as faixas opacas se alinham, o bloqueio é quase total. Uma opção inteligente para quem quer versatilidade — privacidade total à noite e controle preciso de luz durante o dia.
 
-**Cortina blackout** é muito pedida em suítes e quartos de casal. Diferente da persiana, ela cria volume e aconchego com um visual mais sofisticado. Funciona especialmente bem em ambientes decorados e quartos com [pé direito alto](/cortina-pe-direito-duplo), onde o tecido caindo do teto ao chão cria uma presença visual elegante.
+**Cortina blackout** é muito pedida em suítes e quartos de casal. Diferente da persiana, ela cria volume e aconchego com um visual mais sofisticado. Funciona especialmente bem em ambientes decorados e quartos com [pé direito alto](/produtos-e-servicos/cortinas), onde o tecido caindo do teto ao chão cria uma presença visual elegante.
 
 - **Quarto de bebê:** rolô blackout com acionamento silencioso — não acorda a criança ao abrir ou fechar.
 - **Suíte de casal:** cortina blackout com voil no trilho duplo — blackout à noite, voil de dia com entrada de luz filtrada.
@@ -247,7 +247,7 @@ Com cuidados simples, uma persiana blackout de qualidade dura muitos anos sem pe
     tempoLeitura:   '7 min',
     conteudo: `A primeira reação de quase todo mundo quando ouve "cortina motorizada" é a mesma: deve ser caro demais. E a segunda é: deve ser complicado de usar e de manter.
 
-As duas suposições são cada vez menos verdadeiras — e quem já instalou uma [cortina motorizada](/cortina-motorizada-ibitinga) raramente volta para o modelo com cordão.
+As duas suposições são cada vez menos verdadeiras — e quem já instalou uma [cortina motorizada](/produtos-e-servicos/motorizacao) raramente volta para o modelo com cordão.
 
 Nos últimos anos, a procura por cortinas motorizadas cresceu muito nos projetos de alto padrão — especialmente em casas novas, apartamentos e projetos com arquitetos. Vou responder com honestidade quando vale a pena e quando não vale.
 
@@ -259,11 +259,11 @@ O motor é silencioso, eficiente e tem vida útil longa — os modelos de qualid
 
 ## Quando a motorização faz sentido de verdade
 
-**[Pé direito alto](/cortina-pe-direito-duplo)** é o caso mais óbvio. Em janelas de 3m, 4m ou mais, alcançar o cordão ou o trilho da cortina é difícil — e em alguns casos impossível sem escada. A motorização elimina completamente esse problema. Você controla de qualquer lugar do ambiente com um toque.
+**[Pé direito alto](/produtos-e-servicos/cortinas)** é o caso mais óbvio. Em janelas de 3m, 4m ou mais, alcançar o cordão ou o trilho da cortina é difícil — e em alguns casos impossível sem escada. A motorização elimina completamente esse problema. Você controla de qualquer lugar do ambiente com um toque.
 
 **Janelas de difícil acesso** — atrás de um sofá grande, ao lado de uma escada, em ambientes integrados onde você precisaria desviar de móveis para chegar ao cordão. Quem já lidou com isso sabe o incômodo diário.
 
-**Conforto no quarto** é onde a motorização convence mais rápido. Quem usa [blackout para dormir melhor](/persiana-blackout-ibitinga) sabe o incômodo de precisar levantar da cama para abrir a cortina de manhã. Com a motorização, você abre do celular antes mesmo de sair da cama — e programa para abrir automaticamente no horário que quiser.
+**Conforto no quarto** é onde a motorização convence mais rápido. Quem usa [blackout para dormir melhor](/produtos-e-servicos/persianas) sabe o incômodo de precisar levantar da cama para abrir a cortina de manhã. Com a motorização, você abre do celular antes mesmo de sair da cama — e programa para abrir automaticamente no horário que quiser.
 
 **Acessibilidade** — para quem tem mobilidade reduzida por idade, lesão ou deficiência, a motorização não é luxo. É autonomia.
 
@@ -349,12 +349,12 @@ A double vision também tem uma vantagem prática importante: quando totalmente 
 
 A faixa translúcida pode ser em tecido leve — que filtra a luz mas não o calor — ou em tecido tela solar, que bloqueia parte da radiação UV e infravermelha. A escolha depende da orientação da janela: janelas voltadas para o oeste, onde o sol da tarde bate forte, se beneficiam muito da faixa em tela solar.
 
-A faixa opaca é geralmente em tecido [blackout de qualidade](/persiana-blackout-ibitinga), garantindo o bloqueio real de luz quando as faixas se alinham.
+A faixa opaca é geralmente em tecido [blackout de qualidade](/produtos-e-servicos/persianas), garantindo o bloqueio real de luz quando as faixas se alinham.
 
 - **Cores mais pedidas:** branco, off-white, linho, bege e cinza claro — tons neutros que combinam com a maioria das decorações contemporâneas.
 - **Operação por cordão:** solução padrão, funcional e de longa durabilidade.
 - **Operação por corrente de metal:** mais suave e precisa — facilita o ajuste em posições intermediárias.
-- **Operação motorizada:** ideal para janelas grandes, pé direito alto ou [integração com automação residencial](/cortina-motorizada-ibitinga).
+- **Operação motorizada:** ideal para janelas grandes, pé direito alto ou [integração com automação residencial](/produtos-e-servicos/motorizacao).
 
 > **Dica da Mara:** para banheiros e áreas úmidas, existe a double vision em tecido impermeável. O visual é idêntico, mas o tecido resiste à umidade e pode ser limpo com pano úmido sem risco de mofar.
 
@@ -407,7 +407,7 @@ O que não é correto: cortina ficando 5cm ou mais acima do chão parecendo curt
 
 ## Sinal 3: as ondas ou pregas estão uniformes
 
-Para modelos como [cortina wave](/cortina-wave-ibitinga), prega macho ou franzido, a uniformidade é o principal indicador de qualidade da instalação.
+Para modelos como [cortina wave](/produtos-e-servicos/cortinas), prega macho ou franzido, a uniformidade é o principal indicador de qualidade da instalação.
 
 Na **cortina wave**, as ondas precisam ser idênticas em tamanho e espaçamento da primeira à última — em toda a extensão da cortina. Ondas maiores em um lado, menores no outro, ou ondas irregulares indicam instalação mal calculada.
 
