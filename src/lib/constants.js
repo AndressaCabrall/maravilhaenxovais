@@ -55,7 +55,6 @@ export const GMB = {
 export const DOMINIO = 'https://www.maravilhaenxovais.com.br'
 
 export const AREA_ATENDIMENTO = [
-  { nome: 'Ibitinga', slug: 'cortinas-e-persianas-sob-medida-ibitinga', dist: 'Sede', highlight: true },
   { nome: 'Itápolis', slug: 'cortinas-e-persianas-sob-medida-itapolis', dist: '~20 km', highlight: true },
   { nome: 'Tabatinga', slug: 'cortinas-e-persianas-sob-medida-tabatinga', dist: '~25 km', highlight: true },
   { nome: 'Nova Europa', slug: 'cortinas-e-persianas-sob-medida-nova-europa', dist: '~30 km', highlight: true },

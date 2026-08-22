@@ -15,7 +15,6 @@ export default function sitemap() {
     { url: `${DOMINIO}/contato`,                       lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMINIO}/blog`,                          lastModified: hoje, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${DOMINIO}/privacidade`,                   lastModified: hoje, changeFrequency: 'yearly',  priority: 0.3 },
-    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-ibitinga`,     lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis`,     lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-taquaritinga`, lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-matao`,        lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
