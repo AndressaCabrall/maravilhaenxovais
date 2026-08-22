@@ -55,15 +55,15 @@ export const GMB = {
 export const DOMINIO = 'https://www.maravilhaenxovais.com.br'
 
 export const AREA_ATENDIMENTO = [
-  { nome: 'Ibitinga', slug: 'cortinas-ibitinga', dist: 'Sede', highlight: true },
-  { nome: 'Itápolis', slug: 'cortinas-itapolis', dist: '~20 km', highlight: true },
-  { nome: 'Tabatinga', slug: 'cortinas-tabatinga', dist: '~25 km', highlight: true },
-  { nome: 'Nova Europa', slug: 'cortinas-nova-europa', dist: '~30 km', highlight: true },
-  { nome: 'Borborema', slug: 'cortinas-borborema', dist: '~25 km', highlight: false },
-  { nome: 'Matão', slug: 'cortinas-matao', dist: '~35 km', highlight: true },
-  { nome: 'Taquaritinga', slug: 'cortinas-taquaritinga', dist: '~25 km', highlight: true },
-  { nome: 'Araraquara', slug: 'cortinas-araraquara', dist: '~60 km', highlight: false },
-  { nome: 'Jaboticabal', slug: 'cortinas-jaboticabal', dist: '~40 km', highlight: false },
+  { nome: 'Ibitinga', slug: 'cortinas-e-persianas-sob-medida-ibitinga', dist: 'Sede', highlight: true },
+  { nome: 'Itápolis', slug: 'cortinas-e-persianas-sob-medida-itapolis', dist: '~20 km', highlight: true },
+  { nome: 'Tabatinga', slug: 'cortinas-e-persianas-sob-medida-tabatinga', dist: '~25 km', highlight: true },
+  { nome: 'Nova Europa', slug: 'cortinas-e-persianas-sob-medida-nova-europa', dist: '~30 km', highlight: true },
+  { nome: 'Borborema', slug: 'cortinas-e-persianas-sob-medida-borborema', dist: '~25 km', highlight: false },
+  { nome: 'Matão', slug: 'cortinas-e-persianas-sob-medida-matao', dist: '~35 km', highlight: true },
+  { nome: 'Taquaritinga', slug: 'cortinas-e-persianas-sob-medida-taquaritinga', dist: '~25 km', highlight: true },
+  { nome: 'Araraquara', slug: 'cortinas-e-persianas-sob-medida-araraquara', dist: '~60 km', highlight: false },
+  { nome: 'Jaboticabal', slug: 'cortinas-e-persianas-sob-medida-jaboticabal', dist: '~40 km', highlight: false },
 ]
 
 export const MODELO_NEGOCIO = {

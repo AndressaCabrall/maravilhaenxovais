@@ -1,6 +1,5 @@
 // src/app/sitemap.js — gerado automaticamente a partir das rotas reais
 import { DOMINIO } from '@/lib/constants'
-import { CIDADES } from '@/data/cidades'
 import { POSTS } from '@/data/posts'
 
 export default function sitemap() {
@@ -16,14 +15,16 @@ export default function sitemap() {
     { url: `${DOMINIO}/contato`,                       lastModified: hoje, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMINIO}/blog`,                          lastModified: hoje, changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${DOMINIO}/privacidade`,                   lastModified: hoje, changeFrequency: 'yearly',  priority: 0.3 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-ibitinga`,     lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis`,     lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-taquaritinga`, lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-matao`,        lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-araraquara`,   lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-jaboticabal`,  lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-tabatinga`,    lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-nova-europa`,  lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema`,    lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
   ]
-
-  const cidades = CIDADES.map((c) => ({
-    url:             `${DOMINIO}/${c.slug}`,
-    lastModified:    hoje,
-    changeFrequency: 'monthly',
-    priority:        c.highlight ? 0.9 : 0.7,
-  }))
 
   const posts = POSTS.map((p) => ({
     url:             `${DOMINIO}/blog/${p.slug}`,
@@ -32,5 +33,5 @@ export default function sitemap() {
     priority:        0.7,
   }))
 
-  return [...estaticas, ...cidades, ...posts]
+  return [...estaticas, ...posts]
 }
