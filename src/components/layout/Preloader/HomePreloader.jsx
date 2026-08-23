@@ -9,14 +9,17 @@ const CHAVE = 'maravilha-preloader-exibido'
 
 export default function HomePreloader() {
   const pathname = usePathname()
-  const [mostrar, setMostrar] = useState(false)
+  // Decide já na primeira renderização (sem useEffect) para não deixar
+  // a hero aparecer por um instante antes do preloader montar.
+  const [mostrar, setMostrar] = useState(() => {
+    if (typeof window === 'undefined') return pathname === '/'
+    if (pathname !== '/') return false
+    return !sessionStorage.getItem(CHAVE)
+  })
 
   useEffect(() => {
-    if (pathname !== '/') return
-    if (sessionStorage.getItem(CHAVE)) return
-    sessionStorage.setItem(CHAVE, '1')
-    setMostrar(true)
-  }, [pathname])
+    if (mostrar) sessionStorage.setItem(CHAVE, '1')
+  }, [mostrar])
 
   if (!mostrar) return null
   return <Preloader />
