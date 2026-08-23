@@ -5,7 +5,7 @@ import peDireito  from '@/assets/images/cortinas/webp/cortina-pe-direito-duplo-l
 import waveBlackout from '@/assets/images/cortinas/webp/cortina-wave-blackout-70-quarto-ibitinga-sp.webp'
 import pregaMacho from '@/assets/images/cortinas/webp/cortina-prega-macho-linho-sala-ibitinga-sp.webp'
 import waveTubo   from '@/assets/images/cortinas/webp/cortina-wave-tubo-sob-medida-ibitinga-sp.webp'
-import cortineiro from '@/assets/images/cortinas/webp/cortinas-sob-medida-ibitinga-sp.png'
+import cortineiro from '@/assets/images/cortinas/webp/cortinas-sob-medida-ibitinga-sp.webp'
 import voalCortineiro from '@/assets/images/cortinas/webp/cortina-voal-cortineiro-quarto-ibitinga-sp.webp'
 
 export const CORTINAS = [

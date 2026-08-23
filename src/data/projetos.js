@@ -1,7 +1,7 @@
 // src/data/projetos.js
 // Maravilha Cortinas & Persianas — Ibitinga/SP
 
-import p6  from '@/assets/images/projetos/webp/cortinas-sob-medida-ibitinga-sp.png'
+import p6  from '@/assets/images/projetos/webp/cortinas-sob-medida-ibitinga-sp.webp'
 import p4  from '@/assets/images/projetos/webp/cortina-franzida-quarto-ibitinga-sp.webp'
 import p3  from '@/assets/images/projetos/webp/cortinas-pe-direito-duplo-linho-sala-ibitinga-sp.webp'
 import p2  from '@/assets/images/projetos/webp/cortina-pe-direito-duplo-sala-ibitinga-sp.webp'

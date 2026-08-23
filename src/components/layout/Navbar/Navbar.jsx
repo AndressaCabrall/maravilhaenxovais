@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './Navbar.module.css'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 import { CONTATO, EMPRESA, HORARIO } from '@/lib/constants'
@@ -110,7 +111,7 @@ export default function Navbar() {
         <div className={styles.inner}>
 
           {/* ── Logo header ── */}
-          <a href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — página inicial`} onClick={fechar}>
+          <Link href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — página inicial`} onClick={fechar}>
             <Image
               src={logo}
               alt={EMPRESA.nome}
@@ -119,30 +120,30 @@ export default function Navbar() {
               priority
               className={styles.logoImg}
             />
-          </a>
+          </Link>
 
           <div className={styles.navGroup}>
             <nav className={styles.nav} aria-label="Navegação principal">
               {LINKS.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   className={`${styles.link} ${naHero ? styles.linkHero : ''}`}
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
             <nav className={styles.navProdutos} aria-label="Nossos produtos">
               {PRODUTOS.map((p) => (
-                <a
+                <Link
                   key={p.href}
                   href={p.href}
                   className={`${styles.linkProduto} ${naHero ? styles.linkHero : ''}`}
                 >
                   {p.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
@@ -217,9 +218,9 @@ export default function Navbar() {
         <ul className={styles.drawerLista} role="list">
           {LINKS_ANTES.map((l, i) => (
             <li key={l.href} style={{ '--i': i }}>
-              <a href={l.href} className={styles.drawerLink} onClick={fechar}>
+              <Link href={l.href} className={styles.drawerLink} onClick={fechar}>
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
 
@@ -248,12 +249,12 @@ export default function Navbar() {
             >
               {PRODUTOS_ACCORDION.map((p) => (
                 <li key={p.href}>
-                  <a href={p.href} className={styles.drawerLinkProduto} onClick={fechar}>
+                  <Link href={p.href} className={styles.drawerLinkProduto} onClick={fechar}>
                     {p.label}
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
                       <path d="M9 18l6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -261,9 +262,9 @@ export default function Navbar() {
 
           {LINKS_DEPOIS.map((l, i) => (
             <li key={l.href} style={{ '--i': LINKS_ANTES.length + 2 + i }}>
-              <a href={l.href} className={styles.drawerLink} onClick={fechar}>
+              <Link href={l.href} className={styles.drawerLink} onClick={fechar}>
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

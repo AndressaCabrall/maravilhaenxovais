@@ -2,6 +2,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from '@/assets/images/logo/logo.png'
 import styles from './Footer.module.css'
 import { CONTATO, ENDERECO, EMPRESA, AREA_ATENDIMENTO } from '@/lib/constants'
@@ -59,9 +60,9 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.faixaGrade}>
 
-            <a href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — início`}>
+            <Link href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — início`}>
               <Image src={logo} alt={EMPRESA.nome} width={150} height={52} className={styles.logoImg} />
-            </a>
+            </Link>
 
             <div className={styles.faixaItem}>
               <span className={styles.faixaLabel}>Sobre</span>
@@ -102,7 +103,7 @@ export default function Footer() {
               <ul className={styles.lista}>
                 {NAV_PRINCIPAL.map(l => (
                   <li key={l.href}>
-                    <a href={l.href} className={styles.listaLink}>{l.label}</a>
+                    <Link href={l.href} className={styles.listaLink}>{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -113,7 +114,7 @@ export default function Footer() {
               <ul className={styles.lista}>
                 {NAV_PRODUTOS.map(l => (
                   <li key={l.href}>
-                    <a href={l.href} className={styles.listaLink}>{l.label}</a>
+                    <Link href={l.href} className={styles.listaLink}>{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -124,7 +125,7 @@ export default function Footer() {
               <ul className={styles.lista}>
                 {cidadesDestaque.map(c => (
                   <li key={c.nome}>
-                    <a href={`/${c.slug}`} className={styles.listaLink}>{c.nome}</a>
+                    <Link href={`/${c.slug}`} className={styles.listaLink}>{c.nome}</Link>
                   </li>
                 ))}
               </ul>
@@ -159,7 +160,7 @@ export default function Footer() {
           {/* Bottom bar */}
           <div className={styles.bottom}>
             <p className={styles.copy}>© {ano} {EMPRESA.nome}. Todos os direitos reservados.</p>
-            <a href="/privacidade" className={styles.bottomLink}>Privacidade</a>
+            <Link href="/privacidade" className={styles.bottomLink}>Privacidade</Link>
             <p className={styles.cred}>
               Desenvolvido por{' '}
               <a href="https://outvisionxr.com" target="_blank" rel="noopener noreferrer" className={styles.credLink}>

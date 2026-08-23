@@ -143,7 +143,7 @@
 .cardData {
   font-family:    var(--font-body);
   font-size:      14px;
-  color:          var(--color-taupe-light);
+  color:          var(--color-taupe);
   letter-spacing: 0.04em;
 }
 
