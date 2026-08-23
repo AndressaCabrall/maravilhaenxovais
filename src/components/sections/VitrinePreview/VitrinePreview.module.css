@@ -207,6 +207,14 @@
   color:        #fff;
 }
 
+/* ══ MOBILE < 768px ══ */
+@media (max-width: 767px) {
+  .fotoWrap {
+    aspect-ratio: auto;
+    height:       420px;
+  }
+}
+
 /* ══ TABLET ≥ 768px ══ */
 @media (min-width: 768px) and (max-width: 1023px) {
   .img { object-position: var(--pos-tablet, center); }
