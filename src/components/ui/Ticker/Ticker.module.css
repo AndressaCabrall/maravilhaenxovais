@@ -42,8 +42,12 @@
   to   { transform: translateX(-50%); }
 }
 
-.wrap:hover .inner {
-  animation-play-state: paused;
+/* Pausar no hover só em dispositivos com mouse real — em touch,
+   :hover pode "grudar" após o toque e nunca soltar. */
+@media (hover: hover) {
+  .wrap:hover .inner {
+    animation-play-state: paused;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
