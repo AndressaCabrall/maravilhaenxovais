@@ -1,7 +1,7 @@
 // src/components/layout/Preloader/Preloader.jsx — Maravilha Cortinas
 'use client'
 
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import logo from '@/assets/images/logo/logo.png'
 import styles from './Preloader.module.css'
@@ -19,6 +19,8 @@ export default function Preloader() {
   // Lê a decisão já tomada pelo script inline do <head>, em vez de decidir
   // aqui — o script roda antes do paint, este componente só depois da hydration.
   const [visivel, setVisivel]         = useState(false)
+
+  const concluido = useRef(false) // true só quando a animação terminou de verdade (evita o cleanup de StrictMode limpar cedo demais)
 
   useLayoutEffect(() => {
     if (document.documentElement.getAttribute(ATTR) !== 'ativo') return
@@ -46,6 +48,7 @@ export default function Preloader() {
         // evita "travar em 0%" e depois sumir de repente se a hidratação atrasar
         setSaindo(true)
         timerRemove = setTimeout(() => {
+          concluido.current = true
           limpar()
           setVisivel(false)
         }, FADE_DURACAO * 1000)
@@ -59,8 +62,15 @@ export default function Preloader() {
     }
   }, [visivel])
 
-  // Garante que o conteúdo volte a aparecer se o componente for desmontado antes da saída
-  useEffect(() => limpar, [])
+  // Garante que o conteúdo volte a aparecer se o componente for desmontado
+  // antes da saída natural — mas só nesse caso. Sem o guard `concluido`,
+  // este cleanup também disparava no double-invoke de effects do
+  // StrictMode (mount → cleanup → mount), apagando o atributo ~200ms
+  // depois do primeiro paint e revelando a hero por baixo do preloader
+  // ainda rodando a barra de progresso.
+  useEffect(() => () => {
+    if (!concluido.current) limpar()
+  }, [])
 
   if (!visivel) return null
 

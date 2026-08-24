@@ -203,7 +203,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <head>
         {/* Decide o preloader antes do primeiro paint, evitando a corrida com
             a hydration (a hero não chega a aparecer antes do preloader cobrir

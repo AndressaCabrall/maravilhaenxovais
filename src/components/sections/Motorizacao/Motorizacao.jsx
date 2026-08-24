@@ -111,27 +111,6 @@ export default function Motorizacao() {
             </div>
           </div>
 
-          <div className={styles.visual}>
-            <div className={styles.visualCard}>
-              <div className={styles.visualIcone} aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                </svg>
-              </div>
-              <p className={styles.visualTitulo}>Motorização</p>
-              <p className={styles.visualDesc}>
-                Compatível com Alexa, Google Home e controle remoto.
-                Motor silencioso instalado por equipe especializada em Ibitinga e região.
-              </p>
-              <div className={styles.visualBadges}>
-                <span className={styles.visualBadge}>Alexa</span>
-                <span className={styles.visualBadge}>Google Home</span>
-                <span className={styles.visualBadge}>App</span>
-                <span className={styles.visualBadge}>Controle remoto</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
