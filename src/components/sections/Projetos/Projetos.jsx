@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image                from 'next/image'
 import Lightbox             from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
@@ -9,26 +9,49 @@ import { CORTINAS }  from '@/data/cortinas'
 import { PERSIANAS } from '@/data/persianas'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 
-function Marquee({ itens, direcao, onOpen, offset = 0 }) {
-  // Duplica a lista para o loop infinito ficar contínuo
-  const loop = [...itens, ...itens]
-  const [tocando, setTocando] = useState(false)
+function Slider({ itens, onOpen, offset = 0 }) {
+  const trackRef = useRef(null)
+  const [pausado, setPausado] = useState(false)
+
+  const scrollByCard = (dir) => {
+    const track = trackRef.current
+    if (!track) return
+    const card = track.querySelector(`.${styles.item}`)
+    const largura = card ? card.offsetWidth + 16 : 300
+
+    // Loop: se já está no fim/início, volta pro outro extremo
+    const noFim   = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4
+    const noInicio = track.scrollLeft <= 4
+    if (dir > 0 && noFim) {
+      track.scrollTo({ left: 0, behavior: 'smooth' })
+    } else if (dir < 0 && noInicio) {
+      track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' })
+    } else {
+      track.scrollBy({ left: dir * largura, behavior: 'smooth' })
+    }
+  }
+
+  // Avanço automático leve, pausa em hover/toque
+  useEffect(() => {
+    if (pausado) return
+    const id = setInterval(() => scrollByCard(1), 3200)
+    return () => clearInterval(id)
+  }, [pausado])
 
   return (
     <div
-      className={`${styles.marqueeWrap} ${tocando ? styles.marqueeWrapTocando : ''}`}
-      onTouchStart={() => setTocando(true)}
-      onTouchEnd={() => setTocando(false)}
-      onTouchCancel={() => setTocando(false)}
+      className={styles.sliderWrap}
+      onMouseEnter={() => setPausado(true)}
+      onMouseLeave={() => setPausado(false)}
+      onTouchStart={() => setPausado(true)}
+      onTouchEnd={() => setPausado(false)}
     >
-      <div
-        className={`${styles.marqueeTrack} ${direcao === 'reversa' ? styles.marqueeReversa : ''}`}
-      >
-        {loop.map((item, i) => (
-          <article key={`${item.id}-${i}`} className={styles.item}>
+      <div ref={trackRef} className={styles.sliderTrack}>
+        {itens.map((item, i) => (
+          <article key={item.id} className={styles.item}>
             <button
               className={styles.imgWrap}
-              onClick={() => onOpen(offset + (i % itens.length))}
+              onClick={() => onOpen(offset + i)}
               aria-label={`Ver imagem ampliada de ${item.nome}`}
             >
               <Image
@@ -48,6 +71,23 @@ function Marquee({ itens, direcao, onOpen, offset = 0 }) {
           </article>
         ))}
       </div>
+
+      <button
+        type="button"
+        className={`${styles.navBtn} ${styles.navPrev}`}
+        onClick={() => scrollByCard(-1)}
+        aria-label="Ver anterior"
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        className={`${styles.navBtn} ${styles.navNext}`}
+        onClick={() => scrollByCard(1)}
+        aria-label="Ver próximo"
+      >
+        ›
+      </button>
     </div>
   )
 }
@@ -80,14 +120,14 @@ export default function Projetos() {
 
       </div>
 
-      {/* Carrossel infinito — Cortinas */}
+      {/* Slider — Cortinas */}
       <div className={styles.marqueeGrupo}>
-        <Marquee itens={CORTINAS} direcao="normal" onOpen={setIndex} offset={0} />
+        <Slider itens={CORTINAS} onOpen={setIndex} offset={0} />
       </div>
 
-      {/* Carrossel infinito — Persianas */}
+      {/* Slider — Persianas */}
       <div className={styles.marqueeGrupo}>
-        <Marquee itens={PERSIANAS} direcao="reversa" onOpen={setIndex} offset={CORTINAS.length} />
+        <Slider itens={PERSIANAS} onOpen={setIndex} offset={CORTINAS.length} />
       </div>
 
       <div className={styles.container}>

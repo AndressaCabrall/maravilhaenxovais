@@ -70,40 +70,65 @@
   margin:      0;
 }
 
-/* ── Marquee — carrossel infinito ── */
+/* ── Slider — arraste/setas com scroll-snap ── */
 .marqueeGrupo {
   margin-top: 32px;
 }
 
-.marqueeWrap {
-  width:      100%;
-  overflow:   hidden;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+.sliderWrap {
+  position: relative;
 }
 
-.marqueeTrack {
-  display:      flex;
-  align-items:  flex-start;
-  gap:          16px;
-  width:        max-content;
-  padding:      4px 4px 8px;
-  animation:    marqueeScroll 56s linear infinite;
+@media (min-width: 1024px) {
+  .sliderWrap {
+    max-width: 1440px;
+    margin:    0 auto;
+  }
 }
 
-.marqueeReversa {
-  animation-direction: reverse;
-  animation-duration:  66s;
+.sliderTrack {
+  display:            flex;
+  align-items:        flex-start;
+  gap:                16px;
+  padding:            4px var(--gap) 8px;
+  overflow-x:         auto;
+  scroll-snap-type:   x mandatory;
+  scroll-padding-left: var(--gap);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width:    none;
 }
 
-.marqueeWrap:hover .marqueeTrack,
-.marqueeWrapTocando .marqueeTrack {
-  animation-play-state: paused;
+.sliderTrack::-webkit-scrollbar { display: none; }
+
+.navBtn {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+  position:        absolute;
+  top:             38%;
+  transform:       translateY(-50%);
+  width:           40px;
+  height:          40px;
+  border-radius:   4px;
+  border:          none;
+  background:      rgba(255, 255, 255, 0.7);
+  color:           var(--color-grafite);
+  font-size:       20px;
+  line-height:     1;
+  cursor:          pointer;
+  backdrop-filter: blur(2px);
+  transition:      background var(--duration) var(--ease), color var(--duration) var(--ease);
 }
 
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.navBtn:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.navPrev { left: 4px; }
+.navNext { right: 4px; }
+
+@media (max-width: 767px) {
+  .navBtn { width: 32px; height: 32px; font-size: 17px; background: rgba(255, 255, 255, 0.55); }
 }
 
 /* ── Item ── */
@@ -111,8 +136,18 @@
   display:        flex;
   flex-direction: column;
   gap:            20px;
-  width:          375px;
+  width:          calc(100vw - var(--gap) * 2);
   flex:           0 0 auto;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 480px) {
+  .item { width: 375px; }
+}
+
+/* Desktop: exatamente 4 cards visíveis dentro do sliderWrap (max 1440px) */
+@media (min-width: 1024px) {
+  .item { width: calc((100% - var(--gap) * 2 - 40px * 3) / 4); }
 }
 
 .imgWrap {
@@ -200,27 +235,20 @@
   color:        #fff;
 }
 
-/* ══ MOBILE < 768px — passagem mais lenta ══ */
-@media (max-width: 767px) {
-  .marqueeTrack  { animation-duration: 84s; }
-  .marqueeReversa{ animation-duration: 96s; }
-}
-
 /* ══ TABLET ≥ 768px ══ */
 @media (min-width: 768px) {
   .rodapeBtn   { font-size: 14px; padding: 14px 30px; min-height: 48px; }
-  .marqueeTrack{ gap: 28px; }
+  .sliderTrack { gap: 28px; }
 }
 
 /* ══ DESKTOP ≥ 1024px ══ */
 @media (min-width: 1024px) {
   .rodapeBtn   { font-size: 15px; padding: 16px 36px; min-height: 52px; }
-  .marqueeTrack{ gap: 40px; }
+  .sliderTrack { gap: 40px; }
 }
 
 /* ══ REDUCED MOTION ══ */
 @media (prefers-reduced-motion: reduce) {
-  .marqueeTrack        { animation: none; }
   .img, .rodapeBtn     { transition: none; }
   .imgWrap:hover .img  { transform: none; }
 }
