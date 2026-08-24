@@ -6,25 +6,38 @@ import Image from 'next/image'
 import logo from '@/assets/images/logo/logo.png'
 import styles from './Preloader.module.css'
 
+const FADE_DURACAO = 0.8
+
 export default function Preloader() {
   const [porcentagem, setPorcentagem] = useState(0)
   const [saindo, setSaindo]           = useState(false)
   const [visivel, setVisivel]         = useState(true)
 
   useEffect(() => {
-    let atual = 0
-    const intervalo = setInterval(() => {
-      atual += 1
-      setPorcentagem(Math.min(atual, 100))
-      if (atual >= 100) clearInterval(intervalo)
-    }, 26)
+    const isMobile = window.innerWidth < 768
+    const duracao  = isMobile ? 0.6 : 1.6
 
-    const timerSair   = setTimeout(() => setSaindo(true), 2800)
-    const timerRemove = setTimeout(() => setVisivel(false), 3600)
+    let inicio = null
+    let rafId
+    let timerRemove
+
+    const tick = (agora) => {
+      if (inicio === null) inicio = agora // referência tirada do próprio relógio do rAF, evita drift com performance.now()
+      const progresso = Math.min(Math.max((agora - inicio) / 1000 / duracao, 0), 1)
+      setPorcentagem(Math.round(progresso * 100))
+      if (progresso < 1) {
+        rafId = requestAnimationFrame(tick)
+      } else {
+        // só começa a sair quando a barra realmente terminou de encher —
+        // evita "travar em 0%" e depois sumir de repente se a hidratação atrasar
+        setSaindo(true)
+        timerRemove = setTimeout(() => setVisivel(false), FADE_DURACAO * 1000)
+      }
+    }
+    rafId = requestAnimationFrame(tick)
 
     return () => {
-      clearInterval(intervalo)
-      clearTimeout(timerSair)
+      cancelAnimationFrame(rafId)
       clearTimeout(timerRemove)
     }
   }, [])

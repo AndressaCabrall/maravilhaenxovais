@@ -200,6 +200,12 @@
   color:        #fff;
 }
 
+/* ══ MOBILE < 768px — passagem mais lenta ══ */
+@media (max-width: 767px) {
+  .marqueeTrack  { animation-duration: 84s; }
+  .marqueeReversa{ animation-duration: 96s; }
+}
+
 /* ══ TABLET ≥ 768px ══ */
 @media (min-width: 768px) {
   .rodapeBtn   { font-size: 14px; padding: 14px 30px; min-height: 48px; }

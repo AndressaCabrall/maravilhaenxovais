@@ -4,7 +4,7 @@
   position:        relative;
   display:         block;
   width:           100%;
-  height:          clamp(340px, 48vw, 520px);
+  height:          480px;
   overflow:        hidden;
   text-decoration: none;
   background:      var(--color-grafite);
@@ -87,6 +87,7 @@
 }
 
 @media (min-width: 768px) {
+  .card { height: clamp(340px, 48vw, 520px); }
   .conteudo { padding: 36px 40px 40px; }
 }
 
