@@ -1,26 +1,14 @@
 // src/components/layout/Preloader/HomePreloader.jsx — só exibe o Preloader no primeiro carregamento da home
 'use client'
 
-import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Preloader from './Preloader'
 
-const CHAVE = 'maravilha-preloader-exibido'
-
 export default function HomePreloader() {
   const pathname = usePathname()
-  // Decide já na primeira renderização (sem useEffect) para não deixar
-  // a hero aparecer por um instante antes do preloader montar.
-  const [mostrar, setMostrar] = useState(() => {
-    if (typeof window === 'undefined') return pathname === '/'
-    if (pathname !== '/') return false
-    return !sessionStorage.getItem(CHAVE)
-  })
-
-  useEffect(() => {
-    if (mostrar) sessionStorage.setItem(CHAVE, '1')
-  }, [mostrar])
-
-  if (!mostrar) return null
+  // A decisão real já foi tomada pelo script inline no <head> (antes do
+  // primeiro paint, via data-preloader no <html>) — aqui só filtramos
+  // fora da home, onde o preloader nunca deve montar.
+  if (pathname !== '/') return null
   return <Preloader />
 }

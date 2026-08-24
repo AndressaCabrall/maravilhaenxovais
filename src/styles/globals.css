@@ -74,6 +74,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Enquanto o script inline do <head> decidiu mostrar o preloader, esconde
+   o resto do body por CSS puro — não espera o React montar nada. O React
+   ainda leva alguns ms pra hidratar depois do HTML já estar na tela, e
+   nessa janela a hero ficava visível sem cobertura (flash). Regra pareada
+   com o script inline em layout.jsx e o data-preloader lido em Preloader.jsx. */
+html[data-preloader='ativo'] body > *:not([data-preloader]) {
+  visibility: hidden;
+}
+
 body {
   font-family:      var(--font-body);
   font-size:        17px;

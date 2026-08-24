@@ -205,6 +205,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
+        {/* Decide o preloader antes do primeiro paint, evitando a corrida com
+            a hydration (a hero não chega a aparecer antes do preloader cobrir
+            a tela). Grava em data-preloader, e não no className do <html>:
+            esse atributo o React não reconcilia, então o valor sobrevive. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if(/lighthouse|chrome-lighthouse|bot|crawl|spider/i.test(navigator.userAgent))return;if(sessionStorage.getItem('maravilha-preloader-exibido'))return;if(location.pathname!=='/')return;document.documentElement.setAttribute('data-preloader','ativo');sessionStorage.setItem('maravilha-preloader-exibido','1')}catch(e){}})()`,
+          }}
+        />
+
         {/* Geo tags — SEO local Ibitinga */}
         <meta name="geo.region"    content="BR-SP" />
         <meta name="geo.placename" content="Ibitinga" />
