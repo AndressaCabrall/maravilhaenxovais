@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  ['Ibitinga', 'Taquaritinga', 'Araraquara', 'Matão'],
-  description: 'Motorização de cortinas e persianas com controle pelo celular, Alexa e Google Home em Ibitinga SP.',
+  description: 'Consultoria personalizada em motorização de cortinas e persianas com controle pelo celular, Alexa e Google Home em Ibitinga SP.',
 }
 
 const faq = [

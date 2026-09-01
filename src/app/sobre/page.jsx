@@ -14,7 +14,7 @@ const FAQ_GERAL = [
   { pergunta: 'Vocês trazem as amostras de tecido na consultoria?', resposta: 'Sim! Na consultoria levamos nossos books com todas as opções de tecido, cor e modelo disponíveis. Você pode ver, tocar e comparar as amostras no próprio ambiente antes de decidir — sem precisar ir até o ateliê.' },
   { pergunta: 'Vocês atendem apartamentos, casas e comércios?', resposta: 'Atendemos residências, apartamentos, escritórios, lojas e qualquer ambiente comercial em Ibitinga, Taquaritinga, Araraquara, Matão e toda a região.' },
   { pergunta: 'Quais formas de pagamento vocês aceitam?', resposta: 'Aceitamos cartão de crédito, cartão de débito, PIX e dinheiro. As condições de parcelamento são informadas no momento do orçamento.' },
-  { pergunta: 'Quanto tempo leva da visita até a instalação?', resposta: 'A partir de 20 dias úteis após a confirmação do pedido, dependendo do modelo e da quantidade de peças. O prazo exato é informado no orçamento.' },
+  { pergunta: 'Quanto tempo leva da consultoria até a instalação?', resposta: 'A partir de 20 dias úteis após a confirmação do pedido, dependendo do modelo e da quantidade de peças. O prazo exato é informado no orçamento.' },
 ]
 
 export const metadata = {

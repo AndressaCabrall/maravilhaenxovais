@@ -43,7 +43,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Taquaritinga?', a: 'Sim! Taquaritinga fica a ~25km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de visita pelo WhatsApp.' },
+  { q: 'A Maravilha Cortinas atende em Taquaritinga?', a: 'Sim! Taquaritinga fica a ~25km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
   { q: 'Há taxa de deslocamento para Taquaritinga?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — respondemos rápido e alinhamos o melhor formato para o seu caso.' },
   { q: 'Quais produtos estão disponíveis em Taquaritinga?', a: 'Todos os produtos: cortinas wave, blackout, linho, prega macho, persianas rolô, double vision, blackout, tela solar e motorização.' },
   { q: 'Quanto tempo leva do pedido à instalação?', a: 'A partir de 20 dias úteis após confirmação do pedido. O prazo exato é informado no orçamento.' },

@@ -134,12 +134,12 @@ export const metadata = {
     template: '%s | Maravilha Cortinas',
   },
 
-  description: 'Cortinas e persianas sob medida em Ibitinga SP — wave, blackout, double vision, linho e motorização. Mais de 16 anos de experiência. Nota 5,0 no Google. Entrega a partir de 20 dias úteis.',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga SP — wave, blackout, double vision, linho e motorização. Consultoria personalizada. Mais de 16 anos de experiência. Nota 5,0 no Google.',
 
   keywords: [
     'cortinas sob medida Ibitinga',
     'persianas sob medida Ibitinga',
-    'loja de cortinas Ibitinga SP',
+    'ateliê de cortinas Ibitinga SP',
     'cortina wave Ibitinga',
     'cortina blackout Ibitinga',
     'persiana rolô Ibitinga',
@@ -165,7 +165,7 @@ export const metadata = {
     url:         'https://www.maravilhaenxovais.com.br',
     siteName:    'Maravilha Cortinas',
     title:       'Maravilha Cortinas | Cortinas e Persianas Sob Medida em Ibitinga SP',
-    description: 'Cortinas e persianas sob medida em Ibitinga SP. Mais de 16 anos de experiência. Wave, blackout, double vision e motorização. Entrega a partir de 20 dias úteis.',
+    description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga SP. Consultoria personalizada. Wave, blackout, double vision e motorização. Mais de 16 anos de experiência.',
     images: [{
       url:    'https://www.maravilhaenxovais.com.br/images/og-image.jpg',
       width:  1200,
@@ -177,7 +177,7 @@ export const metadata = {
   twitter: {
     card:        'summary_large_image',
     title:       'Maravilha Cortinas | Cortinas e Persianas Sob Medida em Ibitinga SP',
-    description: 'Cortinas e persianas sob medida em Ibitinga SP. Mais de 16 anos de experiência. Entrega a partir de 20 dias úteis.',
+    description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga SP. Consultoria personalizada. Mais de 16 anos de experiência.',
     images:      ['https://www.maravilhaenxovais.com.br/images/og-image.jpg'],
   },
 

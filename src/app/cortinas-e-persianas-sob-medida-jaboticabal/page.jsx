@@ -43,7 +43,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Jaboticabal?', a: 'Sim! Jaboticabal fica a ~40km de Ibitinga e está na nossa área de atendimento. Consulte disponibilidade e condições de visita pelo WhatsApp.' },
+  { q: 'A Maravilha Cortinas atende em Jaboticabal?', a: 'Sim! Jaboticabal fica a ~40km de Ibitinga e está na nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
   { q: 'Quais modelos estão disponíveis em Jaboticabal?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
   { q: 'A instalação está inclusa?', a: 'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional em Jaboticabal.' },
   { q: 'Como entro em contato?', a: 'Pelo WhatsApp — respondemos rápido e alinhamos disponibilidade de agenda para Jaboticabal.' },

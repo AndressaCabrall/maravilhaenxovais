@@ -43,10 +43,10 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Araraquara?', a: 'Sim! Araraquara está dentro da nossa área de atendimento. Consulte disponibilidade e condições de visita pelo WhatsApp.' },
+  { q: 'A Maravilha Cortinas atende em Araraquara?', a: 'Sim! Araraquara está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
   { q: 'Atendem projetos de arquitetura em Araraquara?', a: 'Sim! Temos experiência em projetos com arquitetos e designers de interiores — cortina wave, pé direito duplo, trilho embutido e motorização.' },
   { q: 'Qual o prazo de entrega para Araraquara?', a: 'A partir de 20 dias úteis após confirmação do pedido, mais o prazo de agendamento da instalação.' },
-  { q: 'Como solicitar orçamento?', a: 'Pelo WhatsApp — respondemos rápido e consultamos disponibilidade de agenda para Araraquara.' },
+  { q: 'Como funciona a consultoria?', a: 'Pelo WhatsApp — respondemos rápido e consultamos disponibilidade de agenda para Araraquara.' },
 ]
 
 const servicos = [
