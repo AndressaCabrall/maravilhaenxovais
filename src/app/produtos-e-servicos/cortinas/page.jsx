@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Vim pelo site e gostaria de uma consultoria person
 
 export const metadata = {
   title:       'Cortinas Sob Medida — Wave, Blackout, Linho e Mais | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Cortinas sob medida do ateliê em Ibitinga SP com consultoria personalizada, atendemos todo o Brasil. Wave, blackout, linho, prega macho, franzida e pé direito duplo. Instalação sob consulta.',
+  description: 'Cortinas sob medida com consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Wave, blackout, linho, prega macho, franzida e pé direito duplo. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Ibitinga', 'cortina wave Ibitinga', 'cortina blackout Ibitinga', 'cortina linho Ibitinga', 'orçamento cortinas sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/cortinas` },
 }
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  'BR',
-  description: 'Cortinas sob medida com consultoria personalizada do ateliê em Ibitinga SP, atendemos todo o Brasil. Instalação sob consulta.',
+  description: 'Cortinas sob medida com consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.',
 }
 
 const faq = [
@@ -110,7 +110,7 @@ export default function CortinasPage() {
               <div>
                 <h2 className={styles.introTitulo}>Vista cada janela do seu lar</h2>
                 <p className={styles.introTexto}>
-                  Wave, Prega Macho, Blackout e muito mais. Escolhemos com você o modelo e o tecido certos para cada ambiente. Consultoria personalizada do ateliê em Ibitinga SP, atendemos todo o Brasil. Instalação sob consulta.
+                  Wave, Prega Macho, Blackout e muito mais. Escolhemos com você o modelo e o tecido certos para cada ambiente. Consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -211,7 +211,7 @@ export default function CortinasPage() {
                 <em className={styles.ctaFinalEm}>A gente cuida de tudo.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Consultoria personalizada do ateliê em Ibitinga, atendemos todo o Brasil. Instalação sob consulta.
+                Consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →

@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada para per
 
 export const metadata = {
   title:       'Persianas Sob Medida — Rolô, Blackout, Double Vision | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Persianas sob medida do ateliê em Ibitinga SP — rolô, blackout, double vision, tela solar. Consultoria personalizada, atendemos todo o Brasil. Instalação sob consulta.',
+  description: 'Persianas sob medida — rolô, blackout, double vision, tela solar. Consultoria personalizada, o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.',
   keywords:    ['persianas sob medida Ibitinga', 'persiana blackout Ibitinga', 'persiana double vision Ibitinga', 'persiana rolô Ibitinga SP', 'persiana sob medida preço'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/persianas` },
 }
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  'BR',
-  description: 'Persianas sob medida com consultoria personalizada do ateliê em Ibitinga SP, atendemos todo o Brasil. Instalação sob consulta.',
+  description: 'Persianas sob medida com consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.',
 }
 
 const faq = [
@@ -106,7 +106,7 @@ export default function PersianasPage() {
           eyebrow="Ibitinga — SP — Atendemos Todo o Brasil"
           titulo="Persianas sob medida —"
           tituloEm="a luz certa pro seu ambiente"
-          sub="Todos os modelos de persiana sob medida, indicados em consultoria personalizada. Ateliê em Ibitinga, atendemos todo o Brasil, com mais de 16 anos de experiência."
+          sub="Todos os modelos de persiana sob medida, indicados em consultoria personalizada. O ateliê é em Ibitinga, mas atendemos em todo o Brasil, com mais de 16 anos de experiência."
           cta="Consultoria personalizada →"
           ctaHref={WA}
         />
@@ -117,7 +117,7 @@ export default function PersianasPage() {
               <div>
                 <h2 className={styles.introTitulo}>Controle de luz com sofisticação</h2>
                 <p className={styles.introTexto}>
-                  Rolô, Double Vision, Blackout, Tela Solar e muito mais. Indicamos o modelo certo pra luz e privacidade de cada ambiente. Consultoria personalizada do ateliê em Ibitinga SP, atendemos todo o Brasil. Instalação sob consulta.
+                  Rolô, Double Vision, Blackout, Tela Solar e muito mais. Indicamos o modelo certo pra luz e privacidade de cada ambiente. Consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -236,7 +236,7 @@ export default function PersianasPage() {
                 <em className={styles.ctaFinalEm}>A gente te ajuda a escolher.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Consultoria personalizada do ateliê em Ibitinga, atendemos todo o Brasil.
+                Consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →

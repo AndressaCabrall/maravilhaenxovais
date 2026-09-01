@@ -10,7 +10,7 @@ import motorImg       from '@/assets/images/motorizacao/webp/cortina-motorizada-
 
 export const metadata = {
   title:       'Produtos e Serviços — Cortinas, Persianas e Motorização | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Conheça toda a linha do ateliê Maravilha Cortinas: cortinas sob medida, persianas sob medida e motorização, com consultoria personalizada — ateliê em Ibitinga, atendemos todo o Brasil.',
+  description: 'Conheça toda a linha do ateliê Maravilha Cortinas: cortinas sob medida, persianas sob medida e motorização, com consultoria personalizada. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.',
   keywords:    ['produtos Maravilha Cortinas', 'cortinas e persianas Ibitinga', 'motorização cortinas Ibitinga'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos` },
 }
@@ -61,7 +61,7 @@ export default function ProdutosPage() {
               <em className={styles.tituloEm}>uma solução diferente.</em>
             </h1>
             <p className={styles.sub}>
-              Do tecido ao motor, cada peça nasce de uma consultoria pensada pro seu ambiente — ateliê em Ibitinga, atendemos todo o Brasil.
+              Do tecido ao motor, cada peça nasce de uma consultoria pensada pro seu ambiente. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.
               Escolha abaixo o que você procura para ver modelos, diferenciais e perguntas frequentes.
             </p>
           </header>

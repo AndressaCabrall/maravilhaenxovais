@@ -10,7 +10,7 @@ import slide4 from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-me
 export const SLIDES = [
   {
     id:             1,
-    eyebrow:        'Consultoria personalizada · Ibitinga e Região',
+    eyebrow:        'Consultoria personalizada · Ibitinga · Atendemos Todo o Brasil',
     position:       'center center',
     titulo:         'Ateliê de cortinas e persianas',
     tituloDestaque: 'sob medida, com consultoria em Ibitinga.',
@@ -29,7 +29,7 @@ export const SLIDES = [
     position:       'center center',
     titulo:         'Cada cortina wave nasce de um projeto',
     tituloDestaque: 'pensado pro seu ambiente.',
-    subtitulo:      'Do linho ao blackout — escolhemos com você o tecido certo pra luz, privacidade e decoração da sua sala. Atendemos Ibitinga, Itápolis, Tabatinga e região.',
+    subtitulo:      'Do linho ao blackout — escolhemos com você o tecido certo pra luz, privacidade e decoração da sua sala. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.',
     ctaPrimario: {
       texto: 'Fazer consultoria personalizada',
       wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para um projeto de cortina wave sob medida.',
@@ -55,11 +55,11 @@ export const SLIDES = [
   },
   {
     id:             4,
-    eyebrow:        'Persianas Sob Medida · Consultoria Personalizada · Ibitinga SP',
+    eyebrow:        'Persianas Sob Medida · Consultoria Personalizada · Atendemos Todo o Brasil',
     position:       'center center',
     titulo:         'A persiana certa depende da luz',
     tituloDestaque: 'que entra na sua janela.',
-    subtitulo:      'Analisamos a incidência solar e a privacidade de cada ambiente antes de indicar o modelo — como a tela solar, que filtra o calor sem perder a vista. Ibitinga, Itápolis, Tabatinga e toda a região.',
+    subtitulo:      'Analisamos a incidência solar e a privacidade de cada ambiente antes de indicar o modelo — como a tela solar, que filtra o calor sem perder a vista. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.',
     ctaPrimario: {
       texto: 'Fazer consultoria personalizada',
       wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para um projeto de persiana tela solar.',
