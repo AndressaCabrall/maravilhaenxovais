@@ -4,7 +4,7 @@
 import { notFound }   from 'next/navigation'
 import Image          from 'next/image'
 import Link           from 'next/link'
-import { POSTS, AUTORA, INDICACOES } from '@/data/posts'
+import { POSTS, AUTORA } from '@/data/posts'
 import { siteConfig } from '@/lib/config'
 import styles         from './slug.module.css'
 import CtaFooterPin   from '@/components/sections/Cta/CtaFooterPin'
@@ -366,30 +366,6 @@ export default function PostPage({ params }) {
               </div>
             </aside>
           )}
-
-          {/* ── Indicações regionais ── */}
-          <aside className={styles.indicacoes} aria-label="Especialistas em outras regiões">
-            <h2 className={styles.indicacoesTitulo}>Especialistas em outras regiões</h2>
-            <p className={styles.indicacoesDesc}>
-              A Maravilha Cortinas atende Ibitinga e região. Se você está em outra cidade,
-              confira estas especialistas indicadas:
-            </p>
-            <ul className={styles.indicacoesLista}>
-              {INDICACOES.map((ind) => (
-                <li key={ind.url} className={styles.indicacoesItem}>
-                  <a
-                    href={ind.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.indicacoesLink}
-                  >
-                    <span className={styles.indicacoesCidade}>{ind.cidade}</span>
-                    <span className={styles.indicacoesNome}>{ind.nome} →</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </aside>
 
         </div>
       </main>

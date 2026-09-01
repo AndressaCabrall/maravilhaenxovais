@@ -24,6 +24,13 @@
   padding:        40px 0;
 }
 
+.marca {
+  display:     flex;
+  align-items: center;
+  gap:         48px;
+  flex-wrap:   wrap;
+}
+
 .logo {
   text-decoration: none;
   display:         inline-flex;

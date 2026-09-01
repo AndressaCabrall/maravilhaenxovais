@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/assets/images/logo/logo.png'
 import styles from './Footer.module.css'
-import { CONTATO, ENDERECO, EMPRESA, AREA_ATENDIMENTO } from '@/lib/constants'
+import { CONTATO, ENDERECO, EMPRESA } from '@/lib/constants'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 
 const NAV_PRINCIPAL = [
@@ -50,7 +50,6 @@ function IconeWA() {
 
 export default function Footer() {
   const ano = new Date().getFullYear()
-  const cidadesDestaque = AREA_ATENDIMENTO.filter((c) => c.highlight)
 
   return (
     <footer id="footer" className={styles.footer} role="contentinfo">
@@ -60,33 +59,15 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.faixaGrade}>
 
-            <Link href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — início`}>
-              <Image src={logo} alt={EMPRESA.nome} width={150} height={52} className={styles.logoImg} />
-            </Link>
+            <div className={styles.marca}>
+              <Link href="/" className={styles.logo} aria-label={`${EMPRESA.nome} — início`}>
+                <Image src={logo} alt={EMPRESA.nome} width={150} height={52} className={styles.logoImg} />
+              </Link>
 
-            <div className={styles.faixaItem}>
-              <span className={styles.faixaLabel}>Sobre</span>
-              <span className={styles.faixaValor}>Ateliê especializado em cortinas e persianas desde 2011</span>
-            </div>
-
-            <div className={styles.faixaItem}>
-              <span className={styles.faixaLabel}>Endereço</span>
-              <span className={styles.faixaValor}>
-                {ENDERECO.logradouro}, {ENDERECO.bairro}, {ENDERECO.cidade}–{ENDERECO.estado}
-              </span>
-            </div>
-
-            <div className={styles.faixaItem}>
-              <a href={`tel:${CONTATO.telefoneFormatado}`} className={styles.faixaLink}>{CONTATO.telefone}</a>
-              <a
-                href={WHATSAPP_URLS.geral}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.faixaLink}
-                onClick={() => trackWhatsApp('footer-faixa')}
-              >
-                WhatsApp
-              </a>
+              <div className={styles.faixaItem}>
+                <span className={styles.faixaLabel}>Sobre</span>
+                <span className={styles.faixaValor}>Especialista de Ibitinga e região em cortinas elegantes, atemporais e sob medida</span>
+              </div>
             </div>
 
           </div>
@@ -121,13 +102,25 @@ export default function Footer() {
             </div>
 
             <div className={styles.col}>
-              <h3 className={styles.colTitulo}>Atendemos em</h3>
+              <h3 className={styles.colTitulo}>Contato</h3>
               <ul className={styles.lista}>
-                {cidadesDestaque.map(c => (
-                  <li key={c.nome}>
-                    <Link href={`/${c.slug}`} className={styles.listaLink}>{c.nome}</Link>
-                  </li>
-                ))}
+                <li>
+                  <a href={`tel:${CONTATO.telefoneFormatado}`} className={styles.listaLink}>{CONTATO.telefone}</a>
+                </li>
+                <li className={styles.listaLink}>
+                  {ENDERECO.logradouro}, {ENDERECO.bairro}, {ENDERECO.cidade}–{ENDERECO.estado}
+                </li>
+                <li>
+                  <a
+                    href={WHATSAPP_URLS.geral}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.listaLink}
+                    onClick={() => trackWhatsApp('footer-faixa')}
+                  >
+                    WhatsApp
+                  </a>
+                </li>
               </ul>
             </div>
 

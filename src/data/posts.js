@@ -17,13 +17,6 @@ export const AUTORA = {
   avatar:    '/images/mara-pavan.webp',
 }
 
-export const INDICACOES = [
-  { nome: 'Ateliê Dona Menina',            cidade: 'Florianópolis/SC', url: 'https://ateliedonamenina.com.br' },
-  { nome: 'D Coração Cortinas e Persianas', cidade: 'Itatiba/SP',       url: 'https://dcoracaocortinasepersianas.com.br' },
-  { nome: 'Regina Cortinas & Decorações',   cidade: 'Cachoeirinha/RS',  url: 'https://reginacortinasedecoracoes.com.br' },
-  { nome: 'Artmari Decor',                  cidade: 'Barra Velha/SC',   url: 'https://artmaridecor.com.br' },
-]
-
 export const POSTS = [
   // ── POST 1 ──────────────────────────────────
   {
