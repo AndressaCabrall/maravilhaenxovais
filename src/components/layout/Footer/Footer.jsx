@@ -17,8 +17,8 @@ const NAV_PRINCIPAL = [
 ]
 
 const NAV_PRODUTOS = [
-  { href: '/produtos-e-servicos/cortinas',    label: 'Cortinas' },
-  { href: '/produtos-e-servicos/persianas',   label: 'Persianas' },
+  { href: '/produtos-e-servicos/cortinas',    label: 'Cortinas sob medida' },
+  { href: '/produtos-e-servicos/persianas',   label: 'Persianas sob medida' },
   { href: '/produtos-e-servicos/motorizacao', label: 'Motorização' },
 ]
 

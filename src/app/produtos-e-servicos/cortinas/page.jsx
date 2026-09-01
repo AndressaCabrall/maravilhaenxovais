@@ -100,7 +100,7 @@ export default function CortinasPage() {
           eyebrow="Ibitinga — SP — Ateliê Especializado"
           titulo="Cortinas de tecido sob medida:"
           tituloEm="sofisticação e caimento impecável"
-          sub="Modelos Wave, Prega Macho e Blackout em linho e tecidos nobres, escolhidos em consultoria pro seu ambiente."
+          sub="Modelos Wave, Prega Macho e Blackout, com tecidos em linho e tecidos nobres escolhidos em consultoria pro seu ambiente."
           cta="Consultoria personalizada →"
           ctaHref={WA}
         />
