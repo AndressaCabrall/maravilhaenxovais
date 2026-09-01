@@ -107,7 +107,7 @@ export default function Persianas() {
 
         <div className={styles.rodape}>
           <p className={styles.rodapeTxt}>
-            Atendemos com visita técnica em Ibitinga, Taquaritinga,
+            Atendemos com consultoria personalizada em Ibitinga, Taquaritinga,
             Araraquara, Matão e toda a região.{' '}
             <a
              href={WHATSAPP_URLS.orcamento}

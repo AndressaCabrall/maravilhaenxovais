@@ -237,7 +237,7 @@ export default function PersianasPage() {
                 <em className={styles.ctaFinalEm}>A gente te ajuda a escolher.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Visita técnica mediante agendamento em Ibitinga e região.
+                Consultoria personalizada em Ibitinga e região.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →

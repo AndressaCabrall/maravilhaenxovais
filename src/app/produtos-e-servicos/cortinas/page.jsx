@@ -43,7 +43,7 @@ const schema = {
 }
 
 const faq = [
-  { pergunta: 'Como funciona a visita de medição?', resposta: 'A visita técnica é agendada pelo WhatsApp no horário mais conveniente para você. Nossa equipe vai até o seu ambiente, mede com precisão e apresenta as opções de tecido e modelo.' },
+  { pergunta: 'Como funciona a consultoria?', resposta: 'A consultoria é combinada pelo WhatsApp no horário mais conveniente para você. Vamos até o seu ambiente, medimos com precisão e apresentamos as opções de tecido e modelo mais adequadas.' },
   { pergunta: 'Qual é a diferença entre a cortina wave e os modelos tradicionais?', resposta: 'A cortina wave (ou efeito onda) possui um sistema de cordões e deslizantes que mantém as dobras do tecido sempre alinhadas, retas e simétricas, mesmo quando a cortina é aberta ou fechada. Ela oferece um visual clean e moderno, sendo ideal para trilhos suíços ou varões específicos. Já modelos como a prega macho ou franzida trazem um visual mais clássico e volumoso.' },
   { pergunta: 'Quais tipos de cortina vocês fazem?', resposta: 'Trabalhamos com cortina wave, franzido, blackout, linho, voil, duplex e muito mais — todos os modelos sob medida.' },
   { pergunta: 'Quero uma cortina de alto padrão para a minha sala. Quais são os tecidos mais procurados em Ibitinga?', resposta: 'Hoje, os tecidos nobres campeões de pedidos para projetos de alto padrão são a Gaze de Linho (pelo caimento fluido e elegante), o Flam (que imita a textura rústica do linho, mas oferece excelente praticidade na lavagem), e o Jacquard (para quem busca texturas encorpadas e clássicas). Na Maravilha Enxovais, combinamos esses tecidos com os sistemas de prega Wave para criar aquele efeito de ondas perfeitas no ambiente.' },

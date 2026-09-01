@@ -115,7 +115,7 @@ export default function Page() {
               <em className={styles.secTituloEm}>em Taquaritinga.</em>
             </h2>
             <p className={styles.texto}>A Maravilha Cortinas atende Taquaritinga com o mesmo padrão de qualidade que oferece em Ibitinga há mais de 16 anos. Somos um ateliê especializado — oferecemos consultoria personalizada e cuidamos de tudo: escolha do tecido, produção sob medida e instalação profissional.</p>
-            <p className={styles.texto}>Taquaritinga fica a aproximadamente 25km de Ibitinga. Agendamos a visita de medição no seu espaço, apresentamos as opções de tecido e modelo — sem surpresas no orçamento. Instalação sob consulta.</p>
+            <p className={styles.texto}>Taquaritinga fica a aproximadamente 25km de Ibitinga. Fazemos a consultoria personalizada no seu espaço, apresentamos as opções de tecido e modelo — sem surpresas no orçamento. Instalação sob consulta.</p>
           </section>
 
           <section className={styles.sec}>

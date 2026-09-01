@@ -19,7 +19,7 @@ export const CORTINAS = [
     beneficios: [
       'Linho natural com caimento perfeito',
       'Trilhos estruturados para alturas grandes',
-      'Medição técnica especializada',
+      'Consultoria técnica especializada',
       'Instalação segura com equipe qualificada',
     ],
     imagem: peDireito,

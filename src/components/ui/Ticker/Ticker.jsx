@@ -4,7 +4,7 @@ import styles from './Ticker.module.css'
 const ITENS = [
   'Cortinas Sob Medida',
   'Persianas Sob Medida',
-  'Visita Técnica Agendada',
+  'Consultoria Personalizada',
   'Instalação Sob Consulta',
   'Ibitinga · Taquaritinga  · Itapólis · Araraquara · Matão',
   '5 Estrelas no Google',

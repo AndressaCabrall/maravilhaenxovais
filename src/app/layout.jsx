@@ -76,10 +76,10 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name:    'A visita de medição tem algum custo?',
+      name:    'Como funciona a consultoria personalizada?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'A consultoria personalizada é feita pelo WhatsApp. Em Ibitinga e Itápolis, consulte disponibilidade. Para cidades mais distantes, entre em contato antes.',
+        text:    'A consultoria é combinada pelo WhatsApp. Em Ibitinga e Itápolis, consulte disponibilidade. Para cidades mais distantes, entre em contato antes.',
       },
     },
     {
