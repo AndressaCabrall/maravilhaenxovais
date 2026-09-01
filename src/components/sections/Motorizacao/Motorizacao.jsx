@@ -71,12 +71,12 @@ export default function Motorizacao() {
               <span className={styles.eyebrowText}>Cortinas & Persianas Motorizadas</span>
             </div>
             <h2 id="motorizacao-titulo" className={styles.titulo}>
-              Seu ambiente{' '}
-              <em className={styles.tituloEm}>mais inteligente.</em>
+              Automação pensada{' '}
+              <em className={styles.tituloEm}>pro seu ambiente.</em>
             </h2>
             <p className={styles.sub}>
-              Acorde com luz natural entrando aos poucos.
-              Feche tudo com um comando de voz antes de dormir.
+              Em consultoria, avaliamos onde a motorização realmente faz diferença —
+              da luz natural que entra aos poucos ao comando de voz antes de dormir.
               O detalhe que separa um imóvel comum de um imóvel premium
               em Ibitinga e região.
             </p>

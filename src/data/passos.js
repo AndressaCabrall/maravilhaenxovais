@@ -9,14 +9,14 @@ export const PASSOS = [
   },
   {
     numero:    '2',
-    titulo:    'Agendamos a visita de medição',
-    descricao: 'Nossa equipe vai até o seu espaço em Ibitinga e região para fazer as medições com precisão. Sem erro de medida, sem retrabalho.',
-    detalhe:   'Medição in loco',
+    titulo:    'Agendamos sua consultoria',
+    descricao: 'Nossa equipe vai até o seu espaço em Ibitinga e região, mede com precisão e ajuda a escolher o tecido certo para o seu ambiente.',
+    detalhe:   'Consultoria no local',
   },
   {
     numero:    '3',
     titulo:    'Você escolhe e confirma',
-    descricao: 'Receba o orçamento com os modelos e tecidos recomendados para o seu espaço. Confirmou? A produção começa com prazo garantido.',
+    descricao: 'Receba o projeto com os modelos e tecidos recomendados para valorizar o seu espaço. Confirmou? A produção começa com prazo garantido.',
     detalhe:   'Prazo garantido',
   },
   {

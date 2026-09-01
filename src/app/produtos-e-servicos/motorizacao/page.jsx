@@ -12,7 +12,7 @@ import introImg       from '@/assets/images/cortinas/webp/cortina-wave-blackout-
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Tenho interesse em motorização de cortinas ou persianas. Pode me ajudar?')
+const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada sobre motorização de cortinas ou persianas.')
 
 export const metadata = {
   title:       'Motorização de Cortinas e Persianas | Ibitinga SP',
@@ -47,12 +47,12 @@ const faq = [
   { pergunta: 'A motorização funciona com Alexa e Google Home?', resposta: 'Sim! O sistema é compatível com os principais assistentes de voz, além de controle pelo aplicativo do celular.' },
   { pergunta: 'Posso programar as persianas para abrirem ou fecharem sozinhas em horários específicos?', resposta: 'Sim, essa é uma das grandes vantagens da automação. Através do aplicativo instalado no seu celular (ou pelo sistema da Alexa/Google Home), você pode criar agendamentos automáticos. É possível programar as persianas para abrirem 30% logo cedo para o despertar diurno, fecharem totalmente ao meio-dia para proteger os móveis do sol forte, ou descerem ao anoitecer para garantir total privacidade.' },
   { pergunta: 'As persianas motorizadas duram mais tempo do que as persianas manuais?', resposta: 'Sim, os modelos motorizados possuem uma vida útil superior. Isso acontece porque o motor realiza uma subida e descida com velocidade constante, força controlada e sem trancos. Nas persianas manuais, o usuário costuma puxar a corda com intensidades diferentes, inclinações incorretas ou força excessiva, o que acelera o desgaste das engrenagens, desalinhamento do tecido e quebras do cordão.' },
-  { pergunta: 'Quanto custa motorizar uma cortina ou persiana sob medida?', resposta: 'O preço de um projeto automatizado varia de acordo com o tamanho do vão (janela), o peso do tecido escolhido (que define a potência necessária do motor) e o tipo de acionamento (bateria, fiação direta, controle remoto ou integração Wi-Fi). Hoje, a tecnologia se tornou muito mais acessível. Na Maravilha Enxovais, nós desenvolvemos orçamentos sob medida direto de fábrica, garantindo o melhor custo-benefício para o seu bolso.' },
+  { pergunta: 'Quanto custa motorizar uma cortina ou persiana sob medida?', resposta: 'O preço de um projeto automatizado varia de acordo com o tamanho do vão (janela), o peso do tecido escolhido (que define a potência necessária do motor) e o tipo de acionamento (bateria, fiação direta, controle remoto ou integração Wi-Fi). Hoje, a tecnologia se tornou muito mais acessível. Na Maravilha Enxovais, nós desenvolvemos orçamentos sob medida a partir de uma consultoria personalizada, garantindo o melhor custo-benefício para o seu bolso.' },
 ]
 
 const beneficios = [
-  { titulo: 'Loja da Fábrica',              legenda: 'Sem intermediários' },
-  { titulo: 'Visita de medição',            legenda: 'Mediante agendamento' },
+  { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
+  { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
   { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
@@ -87,9 +87,9 @@ export default function MotorizacaoPage() {
           alt="Cortina motorizada com trilho automatizado controlada por comando remoto — Maravilha Cortinas Ibitinga SP"
           eyebrow="Cortinas & Persianas Motorizadas"
           titulo="Motorização —"
-          tituloEm="seu ambiente mais inteligente"
-          sub="Acorde com luz natural entrando aos poucos. Feche tudo com um comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium em Ibitinga e região."
-          cta="Solicitar orçamento →"
+          tituloEm="automação pensada pro seu ambiente"
+          sub="Em consultoria, avaliamos onde a motorização faz diferença: da luz natural que entra aos poucos ao comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium em Ibitinga e região."
+          cta="Consultoria personalizada →"
           ctaHref={WA}
         />
 
@@ -99,7 +99,7 @@ export default function MotorizacaoPage() {
               <div>
                 <h2 className={styles.introTitulo}>Controle total na palma da mão</h2>
                 <p className={styles.introTexto}>
-                  Motorize cortinas e persianas. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação profissional disponível em Ibitinga e região.
+                  Motorize cortinas e persianas com consultoria sobre onde a automação faz diferença no seu ambiente. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação profissional disponível em Ibitinga e região.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →

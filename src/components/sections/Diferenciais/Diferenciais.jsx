@@ -65,9 +65,9 @@ export default function Diferenciais() {
               <em className={styles.tituloEm}>cuidamos de tudo.</em>
             </h2>
             <p className={styles.sub}>
-              Somos de Ibitinga. Medimos, produzimos e entregamos
-              sob medida, sem intermediários — do projeto
-              à entrega final, cuidamos de cada detalhe.
+              Somos de Ibitinga. Um ateliê especializado: a consultoria
+              define o projeto, e cada detalhe do seu ambiente guia
+              a produção, da medida ao acabamento.
             </p>
           </div>
 

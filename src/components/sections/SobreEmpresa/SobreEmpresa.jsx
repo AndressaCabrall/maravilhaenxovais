@@ -86,10 +86,11 @@ export default function SobreEmpresa() {
 
             <p className={styles.desc}>
               A Maravilha Cortinas e Persianas nasceu em Ibitinga, em 2011, com um
-              propósito simples: oferecer cortinas e persianas sob medida com o
-              cuidado que só quem é da região consegue entregar. Somos Loja da
-              Fábrica: produzimos tudo aqui mesmo, sem intermediários — mais
-              qualidade, prazo garantido e preço justo, do projeto à instalação.
+              propósito simples: ir muito além de vender uma cortina. Somos um
+              ateliê especializado — cada projeto começa com uma consultoria
+              personalizada, onde ajudamos a escolher o tecido certo para a
+              iluminação, a privacidade e a decoração do seu espaço, do primeiro
+              risco à instalação final.
             </p>
           </div>
 

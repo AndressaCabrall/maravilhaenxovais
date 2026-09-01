@@ -40,7 +40,7 @@ export default function Cortinas() {
             <em className={styles.tituloEm}>Ambiente transformado.</em>
           </h2>
           <p className={styles.sub}>
-            Do linho natural ao blackout — cada cortina produzida sob medida com trilho, tecido e acabamento escolhidos por você. Visita técnica e instalação profissional incluídas.
+            Do linho natural ao blackout — escolhemos com você o trilho, tecido e acabamento certos pra luz e privacidade do ambiente. Consultoria personalizada e instalação profissional disponíveis.
           </p>
         </div>
 

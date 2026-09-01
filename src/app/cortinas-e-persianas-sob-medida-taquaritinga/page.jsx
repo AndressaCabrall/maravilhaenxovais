@@ -6,16 +6,16 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de solicitar um orçamento em Taquaritinga.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Taquaritinga.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Taquaritinga SP',
-  description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — +16 anos de experiência.',
+  description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Taquaritinga', 'persianas Taquaritinga SP', 'cortinas Taquaritinga', 'instalação cortinas Taquaritinga'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-taquaritinga` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Taquaritinga SP',
-    description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — +16 anos de experiência.',
+    description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-taquaritinga`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Taquaritinga SP' }],
   },
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Taquaritinga' },
-  description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — +16 anos de experiência.',
+  description: 'Cortinas e persianas sob medida em Taquaritinga SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
 }
 
 const faq = [
@@ -65,9 +65,9 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Visita de medição', desc: 'Vamos até você em Taquaritinga mediante agendamento. Medição profissional antes de qualquer compromisso.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Taquaritinga e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
-  { num: '03', titulo: 'Loja da Fábrica', desc: 'Produção própria em Ibitinga — sem intermediários. Você paga pelo produto, não pela cadeia de distribuição.' },
+  { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Taquaritinga e toda a região recomendam.' },
 ]
 
@@ -102,10 +102,10 @@ export default function Page() {
               <em className={styles.tituloEm}>em Taquaritinga, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Atendimento da Maravilha Cortinas de Ibitinga — instalação profissional disponível em Taquaritinga e toda a região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada e instalação profissional disponível em Taquaritinga e toda a região. Instalação possui custo adicional.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Agendar visita em Taquaritinga →
+              Consultoria personalizada em Taquaritinga →
             </a>
           </header>
 
@@ -114,7 +114,7 @@ export default function Page() {
               Cortinas e persianas sob medida{' '}
               <em className={styles.secTituloEm}>em Taquaritinga.</em>
             </h2>
-            <p className={styles.texto}>A Maravilha Cortinas atende Taquaritinga com o mesmo padrão de qualidade que oferece em Ibitinga há mais de 16 anos. Somos Loja da Fábrica — produzimos nossas próprias cortinas e persianas, sem intermediários, e fazemos tudo: medição, produção sob medida e instalação profissional.</p>
+            <p className={styles.texto}>A Maravilha Cortinas atende Taquaritinga com o mesmo padrão de qualidade que oferece em Ibitinga há mais de 16 anos. Somos um ateliê especializado — oferecemos consultoria personalizada e cuidamos de tudo: escolha do tecido, produção sob medida e instalação profissional.</p>
             <p className={styles.texto}>Taquaritinga fica a aproximadamente 25km de Ibitinga. Agendamos a visita de medição no seu espaço, apresentamos as opções de tecido e modelo — sem surpresas no orçamento. Instalação sob consulta.</p>
           </section>
 
@@ -170,10 +170,10 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Taquaritinga?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Visita de medição sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
+              Consultoria personalizada sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Agendar visita em Taquaritinga →
+              Consultoria personalizada em Taquaritinga →
             </a>
           </div>
 

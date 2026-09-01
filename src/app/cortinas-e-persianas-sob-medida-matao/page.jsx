@@ -6,16 +6,16 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de solicitar um orçamento em Matão.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Matão.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Matão SP',
-  description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — loja da fábrica, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Matão', 'persianas Matão SP', 'cortinas Matão', 'instalação cortinas Matão SP'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-matao` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Matão SP',
-    description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — loja da fábrica, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-matao`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Matão SP' }],
   },
@@ -39,14 +39,14 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Matão' },
-  description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — loja da fábrica, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Matão SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
 }
 
 const faq = [
   { q: 'A Maravilha Cortinas atende em Matão?', a: 'Sim! Matão fica a ~35km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de visita pelo WhatsApp.' },
   { q: 'Há taxa de deslocamento para Matão?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — alinhamos o melhor formato para o seu caso.' },
   { q: 'Atendem apartamentos e casas em Matão?', a: 'Sim! Atendemos residências, apartamentos, escritórios e comércios em Matão e região.' },
-  { q: 'Como faço para agendar a visita?', a: 'Pelo WhatsApp — respondemos rápido e alinhamos disponibilidade de agenda para Matão.' },
+  { q: 'Como funciona a consultoria?', a: 'Pelo WhatsApp — respondemos rápido e alinhamos disponibilidade de agenda para Matão.' },
 ]
 
 const servicos = [
@@ -65,9 +65,9 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Visita de medição', desc: 'Vamos até você em Matão mediante agendamento. Medição profissional antes de qualquer compromisso.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Matão e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
-  { num: '03', titulo: 'Loja da Fábrica', desc: 'Produção própria em Ibitinga — sem intermediários. Você paga pelo produto, não pela cadeia de distribuição.' },
+  { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Matão e toda a região recomendam.' },
 ]
 
@@ -102,10 +102,10 @@ export default function Page() {
               <em className={styles.tituloEm}>em Matão, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Atendimento da Maravilha Cortinas de Ibitinga — instalação profissional disponível em Matão e toda a região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada e instalação profissional disponível em Matão e toda a região. Instalação possui custo adicional.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Agendar visita em Matão →
+              Consultoria personalizada em Matão →
             </a>
           </header>
 
@@ -114,7 +114,7 @@ export default function Page() {
               Cortinas e persianas sob medida{' '}
               <em className={styles.secTituloEm}>em Matão.</em>
             </h2>
-            <p className={styles.texto}>A Maravilha Cortinas atende Matão com toda a linha de cortinas e persianas sob medida. Somos Loja da Fábrica em Ibitinga — produzimos sob medida sem intermediários há mais de 16 anos. Instalação sob consulta.</p>
+            <p className={styles.texto}>A Maravilha Cortinas atende Matão com toda a linha de cortinas e persianas sob medida. Somos um ateliê especializado em Ibitinga — cada projeto nasce de uma consultoria personalizada há mais de 16 anos. Instalação sob consulta.</p>
             <p className={styles.texto}>Matão fica a aproximadamente 35km de Ibitinga. Trabalhamos com todos os modelos de cortina e persiana sob medida — do clássico ao contemporâneo, do blackout ao double vision motorizado.</p>
           </section>
 
@@ -170,10 +170,10 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Matão?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Visita de medição sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
+              Consultoria personalizada sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Agendar visita em Matão →
+              Consultoria personalizada em Matão →
             </a>
           </div>
 

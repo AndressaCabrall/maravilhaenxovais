@@ -10,7 +10,7 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       className={styles.botao}
-      aria-label="Agendar visita de medição pelo WhatsApp"
+      aria-label="Fazer consultoria personalizada pelo WhatsApp"
       onClick={() => trackWhatsApp('float-orcamento')}
     >
       <span className={styles.label}>Solicitar orçamento</span>

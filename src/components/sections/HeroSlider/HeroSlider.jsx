@@ -95,10 +95,6 @@ export default function HeroSlider() {
         <div className={styles.container}>
           <div className={`${styles.inner} ${entrando ? '' : styles.innerVisible}`}>
 
-            <div className={styles.eyebrow}>
-              <span className={styles.eyebrowText}>Ibitinga · SP </span>
-            </div>
-
             <h1 id="hero-titulo" ref={tituloRef} className={styles.titulo}>
               Cortinas e persianas sob medida
             </h1>

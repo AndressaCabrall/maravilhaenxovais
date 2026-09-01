@@ -79,7 +79,7 @@ const schemaFaq = {
       name:    'A visita de medição tem algum custo?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'A visita de medição é agendada pelo WhatsApp. Em Ibitinga e Itápolis, consulte disponibilidade. Para cidades mais distantes, entre em contato antes de agendar.',
+        text:    'A consultoria personalizada é feita pelo WhatsApp. Em Ibitinga e Itápolis, consulte disponibilidade. Para cidades mais distantes, entre em contato antes.',
       },
     },
     {

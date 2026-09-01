@@ -28,7 +28,7 @@ export default function Cta() {
 
           <h2 id="cta-titulo" className={styles.titulo}>
             Sua cortina ideal{' '}
-            <em className={styles.tituloEm}>começa com uma visita.</em>
+            <em className={styles.tituloEm}>começa com uma consultoria.</em>
           </h2>
 
           <a
@@ -36,10 +36,10 @@ export default function Cta() {
              target="_blank"
              rel="noopener noreferrer"
              className={styles.ctaPrimario}
-             aria-label="Marcar horário de visita pelo WhatsApp"
-             onClick={() => trackWhatsApp('cta-agendar')}
+             aria-label="Fazer consultoria personalizada pelo WhatsApp"
+             onClick={() => trackWhatsApp('cta-consultoria')}
           >
-            Marcar horário
+            Consultoria personalizada
             <span aria-hidden="true">+</span>
           </a>
 

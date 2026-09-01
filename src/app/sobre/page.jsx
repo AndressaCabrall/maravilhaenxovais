@@ -18,9 +18,9 @@ const FAQ_GERAL = [
 ]
 
 export const metadata = {
-  title:       'Sobre a Maravilha Cortinas — Loja da Fábrica em Ibitinga SP',
-  description: 'Conheça a história da Maravilha Cortinas: fundada por Mara Pavan em 2011, produção própria em Ibitinga sem intermediários, mais de 16 anos transformando ambientes.',
-  keywords:    ['Maravilha Cortinas Ibitinga', 'loja da fábrica cortinas Ibitinga SP', 'Mara Pavan cortinas', 'história Maravilha Cortinas'],
+  title:       'Sobre a Maravilha Cortinas — Ateliê Especializado em Ibitinga SP',
+  description: 'Conheça a história da Maravilha Cortinas: fundada por Mara Pavan em 2011, ateliê especializado em consultoria personalizada, mais de 16 anos transformando ambientes.',
+  keywords:    ['Maravilha Cortinas Ibitinga', 'ateliê de cortinas sob medida Ibitinga SP', 'Mara Pavan cortinas', 'história Maravilha Cortinas'],
   alternates:  { canonical: `${DOMINIO}/sobre` },
 }
 
@@ -90,11 +90,12 @@ export default function SobrePage() {
                   o cliente e o ambiente antes de vender qualquer coisa.
                 </p>
                 <p className={styles.desc}>
-                  Somos Loja da Fábrica: produzimos tudo aqui mesmo, sem intermediários.
-                  Isso significa mais qualidade, prazo garantido e preço justo para quem
-                  mora ou decora em Ibitinga, Itápolis, Taquaritinga, Araraquara, Matão e região.
-                  Da escolha do tecido ao último ponto da instalação, cada etapa passa pelas mesmas mãos
-                  que fundaram a empresa.
+                  Somos um ateliê especializado: cada projeto começa com uma consultoria
+                  personalizada, onde ajudamos a escolher o tecido certo para o seu espaço.
+                  Isso significa mais qualidade, prazo garantido e um resultado que valoriza
+                  o ambiente de quem mora ou decora em Ibitinga, Itápolis, Taquaritinga,
+                  Araraquara, Matão e região — da escolha do tecido ao último ponto da
+                  instalação, cada etapa passa pelas mesmas mãos que fundaram a empresa.
                 </p>
                 <p className={styles.desc}>
                   Nada de atendimento genérico. Nada de cortina que chega e não encaixa.

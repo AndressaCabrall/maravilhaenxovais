@@ -10,8 +10,8 @@ export const EMPRESA = {
   avaliacoes: 8,
   nota: '5,0',
   projetos: '500+',
-  slogan: 'Cortinas e persianas sob medida com visita técnica e instalação incluídas. Do clássico ao moderno — transformamos ambientes em Ibitinga e região.',
-  bio: 'Loja da Fábrica especializada em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Da medição à instalação, cuidamos de tudo para transformar seu ambiente.',
+  slogan: 'Cortinas e persianas sob medida com consultoria personalizada. Do clássico ao moderno — transformamos ambientes em Ibitinga e região.',
+  bio: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Da consultoria à instalação, cuidamos de cada detalhe para valorizar seu ambiente.',
 }
 
 export const CONTATO = {

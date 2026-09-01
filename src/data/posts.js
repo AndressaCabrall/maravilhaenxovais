@@ -94,7 +94,7 @@ Essa combinação é especialmente inteligente em salas: a persiana tela solar f
 
 Antes de escolher, avalie quatro fatores: a orientação solar da janela (janelas voltadas para o oeste recebem sol forte à tarde e precisam de proteção térmica), o estilo da decoração, a frequência de uso — cortinas exigem limpeza mais cuidadosa — e o orçamento disponível.
 
-Em caso de dúvida, entre em contato e agende uma visita de avaliação. Em pouco tempo você já tem clareza sobre o que funciona melhor para o seu espaço.`,
+Em caso de dúvida, entre em contato e fale sobre uma consultoria personalizada. Em pouco tempo você já tem clareza sobre o que funciona melhor para o seu espaço.`,
   },
 
   // ── POST 2 ──────────────────────────────────

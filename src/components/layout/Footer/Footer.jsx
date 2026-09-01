@@ -66,7 +66,7 @@ export default function Footer() {
 
             <div className={styles.faixaItem}>
               <span className={styles.faixaLabel}>Sobre</span>
-              <span className={styles.faixaValor}>Loja da Fábrica desde 2011</span>
+              <span className={styles.faixaValor}>Ateliê especializado desde 2011</span>
             </div>
 
             <div className={styles.faixaItem}>

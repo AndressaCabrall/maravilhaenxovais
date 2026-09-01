@@ -31,7 +31,7 @@ export default function ContatoPage() {
               <em className={styles.tituloEm}>o seu ambiente?</em>
             </h1>
             <p className={styles.sub}>
-              Agende sua visita técnica pelo WhatsApp ou venha até a loja. Atendemos Ibitinga e toda a região.
+              Fale sobre sua consultoria personalizada pelo WhatsApp ou venha até o ateliê. Atendemos Ibitinga e toda a região.
             </p>
           </header>
 
@@ -83,7 +83,7 @@ export default function ContatoPage() {
                 rel="noopener noreferrer"
                 className={styles.ctaWa}
               >
-                Agendar visita pelo WhatsApp →
+                Consultoria personalizada pelo WhatsApp →
               </a>
             </div>
 

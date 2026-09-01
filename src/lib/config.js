@@ -4,7 +4,7 @@
 export const siteConfig = {
   name:        'Maravilha Cortinas',
   url:         'https://maravilhaenxovais.com.br',
-  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga e região desde 2011. Loja da Fábrica com produção própria, visita técnica mediante agendamento. Instalação possui custo adicional.',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga e região desde 2011. Consultoria personalizada, projeto sob medida e instalação. Instalação possui custo adicional.',
   contact: {
     phone:     '(16) 99610-3132',
     waNumber:  '5516996103132',

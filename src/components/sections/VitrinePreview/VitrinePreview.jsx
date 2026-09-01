@@ -63,8 +63,8 @@ export default function VitrinePreview() {
               <em className={styles.tituloEm}>e motorização.</em>
             </h2>
             <p className={styles.sub}>
-              Tudo produzido sob medida na nossa própria fábrica em Ibitinga —
-              sem intermediários, com prazo cumprido e instalação profissional disponível.
+              Cada projeto pensado sob medida para o seu ambiente, com consultoria
+              especializada, prazo cumprido e instalação profissional disponível.
             </p>
           </div>
 

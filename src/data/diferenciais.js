@@ -4,9 +4,9 @@ export const DIFERENCIAIS = [
   {
     id:       'visita',
     icone:    'visita',
-    titulo:   'Visita de medição',
-    resumo:   'Medição no local',
-    descricao: 'Nossa equipe vai até você, mede com precisão e apresenta as opções ideais para o seu espaço. Consulte disponibilidade para sua região.',
+    titulo:   'Consultoria personalizada',
+    resumo:   'Projeto sob medida',
+    descricao: 'Nossa equipe vai até você, entende o ambiente e ajuda a escolher o tecido ideal para iluminação, privacidade e decoração. Consulte disponibilidade para sua região.',
   },
   {
     id:       'sob-medida',

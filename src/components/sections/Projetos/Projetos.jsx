@@ -137,10 +137,10 @@ export default function Projetos() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.rodapeBtn}
-            aria-label="Agendar visita de medição  pelo WhatsApp"
+            aria-label="Fazer consultoria personalizada pelo WhatsApp"
             onClick={() => trackWhatsApp('projetos-falar-sobre-projetos')}
           >
-            Agendar visita  →
+            Consultoria personalizada →
           </a>
         </div>
       </div>

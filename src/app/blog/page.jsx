@@ -35,7 +35,7 @@ export default function BlogPage() {
               <span className={styles.eyebrowText}>Blog · Dicas e tendências</span>
             </div>
             <h1 className={styles.titulo}>
-              Antes de comprar,{' '}
+              Antes do seu projeto,{' '}
               <em className={styles.tituloEm}>leia isso.</em>
             </h1>
             <p className={styles.subtitulo}>

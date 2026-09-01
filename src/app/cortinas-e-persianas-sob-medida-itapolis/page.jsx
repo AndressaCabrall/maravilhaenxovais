@@ -6,16 +6,16 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de solicitar um orçamento em Itápolis.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Itápolis.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
-  description: 'Cortinas e persianas sob medida em Itápolis SP com visita técnica. Instalação não inclusa. Atendimento da Maravilha Cortinas — +16 anos de experiência.',
+  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Itápolis', 'persianas Itápolis SP', 'cortinas Itápolis', 'instalação cortinas Itápolis'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
-    description: 'Cortinas e persianas sob medida em Itápolis SP com visita técnica. Instalação não inclusa. Atendimento da Maravilha Cortinas — +16 anos de experiência.',
+    description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Itápolis SP' }],
   },
@@ -39,14 +39,14 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Itápolis' },
-  description: 'Cortinas e persianas sob medida em Itápolis SP com visita técnica. Instalação não inclusa. Atendimento da Maravilha Cortinas — +16 anos de experiência.',
+  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
 }
 
 const faq = [
-  { q: 'Como funciona a visita de medição em Itápolis?', a: 'A visita é agendada pelo WhatsApp no horário que for melhor para você. Nossa fundadora mora em Itápolis — atendimento local sem taxa de deslocamento.' },
+  { q: 'Como funciona a consultoria em Itápolis?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Nossa fundadora mora em Itápolis — atendimento local sem taxa de deslocamento.' },
   { q: 'Quais modelos estão disponíveis em Itápolis?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
   { q: 'A instalação está inclusa no orçamento?', a: 'A instalação possui custo adicional, informado no orçamento. Trabalhamos com instalação profissional em Itápolis.' },
-  { q: 'Como faço para agendar?', a: 'Pelo WhatsApp — respondemos rápido e agendamos a visita de medição no horário que for melhor para você.' },
+  { q: 'Como funciona a consultoria?', a: 'Pelo WhatsApp — respondemos rápido e combinamos o melhor horário para a consultoria em Itápolis.' },
 ]
 
 const servicos = [
@@ -65,9 +65,9 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Visita de medição', desc: 'Vamos até você em Itápolis mediante agendamento. Medição profissional antes de qualquer compromisso.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Itápolis e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
-  { num: '03', titulo: 'Loja da Fábrica', desc: 'Produção própria em Ibitinga — sem intermediários. Você paga pelo produto, não pela cadeia de distribuição.' },
+  { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Itápolis e toda a região recomendam.' },
 ]
 
@@ -102,10 +102,10 @@ export default function Page() {
               <em className={styles.tituloEm}>em Itápolis, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Atendimento local da Maravilha Cortinas — visita técnica em Itápolis e toda a região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada em Itápolis e toda a região. Instalação possui custo adicional.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Agendar visita em Itápolis →
+              Consultoria personalizada em Itápolis →
             </a>
           </header>
 
@@ -114,7 +114,7 @@ export default function Page() {
               Cortinas e persianas sob medida{' '}
               <em className={styles.secTituloEm}>em Itápolis.</em>
             </h2>
-            <p className={styles.texto}>A Maravilha Cortinas atende Itápolis com atendimento local e visita de medição mediante agendamento. Nossa fundadora mora em Itápolis — você tem acesso direto a quem produz e instala, sem intermediários.</p>
+            <p className={styles.texto}>A Maravilha Cortinas atende Itápolis com um ateliê especializado — cada projeto começa com uma consultoria personalizada. Nossa fundadora mora em Itápolis — você tem acesso direto a quem projeta, produz e instala.</p>
             <p className={styles.texto}>Trabalhamos com todos os modelos de cortina e persiana sob medida: wave, blackout, linho, prega macho, rolô, double vision, tela solar e motorização. Do primeiro contato à instalação, cuidamos de tudo com mais de 16 anos de experiência.</p>
           </section>
 
@@ -170,10 +170,10 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Itápolis?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Visita de medição sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
+              Consultoria personalizada sem compromisso. Nossa equipe vai até você, mede e apresenta as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Agendar visita em Itápolis →
+              Consultoria personalizada em Itápolis →
             </a>
           </div>
 

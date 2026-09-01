@@ -35,11 +35,11 @@ export default function Persianas() {
             <span className={styles.eyebrowText}>Persianas sob medida</span>
           </div>
           <h2 id="persianas-titulo" className={styles.titulo}>
-            Controle a luz.{' '}
-            <em className={styles.tituloEm}>Transforme o ambiente.</em>
+            A luz certa.{' '}
+            <em className={styles.tituloEm}>O ambiente certo.</em>
           </h2>
           <p className={styles.sub}>
-            Blackout, tela solar, double vision e muito mais — sob medida para cada janela. Instalação profissional disponível com custo adicional. Desde 2011 cuidando de cada detalhe em Ibitinga e região.
+            Blackout, tela solar, double vision e muito mais — indicados em consultoria pra cada janela. Instalação profissional disponível com custo adicional. Desde 2011 cuidando de cada detalhe em Ibitinga e região.
           </p>
         </div>
 
@@ -114,9 +114,9 @@ export default function Persianas() {
              target="_blank"
              rel="noopener noreferrer"
              className={styles.rodapeLink}
-             onClick={() => trackWhatsApp('persianas-agendar')}
+             onClick={() => trackWhatsApp('persianas-consultoria')}
             >
-              Agende sua visita pelo WhatsApp
+              Fale sobre sua consultoria personalizada
             </a>
             .
           </p>

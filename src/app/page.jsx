@@ -10,8 +10,8 @@ import CtaFooterPin  from '@/components/sections/Cta/CtaFooterPin'
 import { DOMINIO } from '@/lib/constants'
 
 export const metadata = {
-  title:       'Cortinas e Persianas Sob Medida em Ibitinga SP',
-  description: 'Especialista em cortinas e persianas sob medida em Ibitinga e região desde 2011. Loja da Fábrica com +16 anos, visita técnica mediante agendamento. Nota 5,0 no Google.',
+  title:       'Ateliê de Cortinas e Persianas Sob Medida em Ibitinga SP',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga e região desde 2011. Consultoria personalizada, projeto sob medida e instalação. Nota 5,0 no Google.',
   alternates: {
     canonical: DOMINIO,
   },

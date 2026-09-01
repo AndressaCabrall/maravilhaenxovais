@@ -12,7 +12,7 @@ import { CORTINAS }   from '@/data/cortinas'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vim pelo site e gostaria de um orçamento de cortinas sob medida.')
+const WA = whatsappUrl('Olá! Vim pelo site e gostaria de uma consultoria personalizada para cortinas sob medida.')
 
 export const metadata = {
   title:       'Cortinas Sob Medida — Wave, Blackout, Linho e Mais | Ibitinga SP',
@@ -63,13 +63,13 @@ const modelos = [
 ]
 
 const beneficios = [
-  { titulo: 'Loja da Fábrica',              legenda: 'Sem intermediários' },
-  { titulo: 'Visita de medição',            legenda: 'Mediante agendamento' },
+  { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
+  { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
   { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
   { titulo: 'Atendimento pela Mara',        legenda: 'Personalizado' },
-  { titulo: 'Produção própria',             legenda: 'Controle de qualidade' },
+  { titulo: 'Projeto sob medida',           legenda: 'Controle de qualidade' },
   { titulo: 'Prazo garantido',              legenda: 'Informado no orçamento' },
 ]
 
@@ -97,11 +97,11 @@ export default function CortinasPage() {
         <HeroPagina
           imagem={heroImg}
           alt="Cortina Wave com blackout instalada em quarto — Maravilha Cortinas Ibitinga SP"
-          eyebrow="Ibitinga — SP — Loja da Fábrica"
+          eyebrow="Ibitinga — SP — Ateliê Especializado"
           titulo="Cortinas de tecido sob medida:"
           tituloEm="sofisticação e caimento impecável"
-          sub="Modelos Wave, Prega Macho e Blackout em linho e tecidos nobres com a qualidade exclusiva de Ibitinga."
-          cta="Solicitar orçamento →"
+          sub="Modelos Wave, Prega Macho e Blackout em linho e tecidos nobres, escolhidos em consultoria pro seu ambiente."
+          cta="Consultoria personalizada →"
           ctaHref={WA}
         />
 
@@ -111,7 +111,7 @@ export default function CortinasPage() {
               <div>
                 <h2 className={styles.introTitulo}>Vista cada janela do seu lar</h2>
                 <p className={styles.introTexto}>
-                  Wave, Prega Macho, Blackout e muito mais. Cada modelo produzido sob medida com os melhores tecidos. Visita técnica e instalação disponível em Ibitinga SP.
+                  Wave, Prega Macho, Blackout e muito mais. Escolhemos com você o modelo e o tecido certos para cada ambiente. Consultoria personalizada e instalação disponível em Ibitinga SP.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →

@@ -61,7 +61,7 @@ export default function ProdutosPage() {
               <em className={styles.tituloEm}>uma solução diferente.</em>
             </h1>
             <p className={styles.sub}>
-              Do tecido ao motor, toda a nossa linha é produzida sob medida em Ibitinga.
+              Do tecido ao motor, cada peça nasce de uma consultoria pensada pro seu ambiente em Ibitinga.
               Escolha abaixo o que você procura para ver modelos, diferenciais e perguntas frequentes.
             </p>
           </header>
