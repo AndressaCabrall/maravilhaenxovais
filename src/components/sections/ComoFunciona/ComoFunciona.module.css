@@ -260,19 +260,11 @@
   }
 
   .header {
-    flex-direction:  row;
-    align-items:     flex-start;
-    justify-content: space-between;
-    gap:             80px;
+    flex-direction: row;
+    align-items:    flex-start;
   }
 
-  .headerLeft { max-width: 480px; flex-shrink: 0; }
-
-  .sub {
-    max-width:  320px;
-    text-align: right;
-    padding-top: 8px;
-  }
+  .headerLeft { max-width: 720px; }
 
   .cta {
     flex-direction:  row;

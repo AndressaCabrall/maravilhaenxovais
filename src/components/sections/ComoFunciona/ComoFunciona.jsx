@@ -19,11 +19,6 @@ export default function ComoFunciona() {
               <em className={styles.tituloEm}>um projeto, passo a passo.</em>
             </h2>
           </div>
-          <p className={styles.sub}>
-            Da consultoria personalizada ao acabamento — cada etapa
-            pensada pro seu ambiente, cuidada pela nossa equipe.
-            Instalação sob consulta.
-          </p>
         </div>
 
         {/* Mobile — vertical com bolinha e linha */}

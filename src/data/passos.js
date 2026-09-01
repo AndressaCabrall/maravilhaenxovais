@@ -4,19 +4,19 @@ export const PASSOS = [
   {
     numero:    '1',
     titulo:    'Entre em contato pelo WhatsApp',
-    descricao: 'Mande uma mensagem contando o ambiente e o que você procura — cortinas, persianas ou os dois. Respondemos no mesmo dia.',
+    descricao: 'Mande uma mensagem contando sobre seu ambiente e o que você procura — cortinas, persianas ou os dois. Respondemos no mesmo dia.',
     detalhe:   'Resposta rápida',
   },
   {
     numero:    '2',
-    titulo:    'Agendamos sua consultoria',
-    descricao: 'Nossa equipe vai até o seu espaço em Ibitinga e região, mede com precisão e ajuda a escolher o tecido certo para o seu ambiente.',
+    titulo:    'Consultoria personalizada',
+    descricao: 'Analisamos seu ambiente e indicamos os melhores tecidos e modelos de cortinas e/ou persianas adequados para ele, com medição de precisão.',
     detalhe:   'Consultoria no local',
   },
   {
     numero:    '3',
     titulo:    'Você escolhe e confirma',
-    descricao: 'Receba o projeto com os modelos e tecidos recomendados para valorizar o seu espaço. Confirmou? A produção começa com prazo garantido.',
+    descricao: 'Receba o projeto com os modelos e tecidos recomendados para valorizar o seu espaço. Confirmou? Nosso ateliê começa a confecção com prazo garantido.',
     detalhe:   'Prazo garantido',
   },
   {
