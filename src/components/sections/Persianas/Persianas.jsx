@@ -39,7 +39,7 @@ export default function Persianas() {
             <em className={styles.tituloEm}>O ambiente certo.</em>
           </h2>
           <p className={styles.sub}>
-            Blackout, tela solar, double vision e muito mais — indicados em consultoria pra cada janela. Instalação profissional disponível com custo adicional. Desde 2011 cuidando de cada detalhe em Ibitinga e região.
+            Blackout, tela solar, double vision e muito mais — indicados em consultoria pra cada janela. Instalação sob consulta. Desde 2011 cuidando de cada detalhe em Ibitinga e região.
           </p>
         </div>
 

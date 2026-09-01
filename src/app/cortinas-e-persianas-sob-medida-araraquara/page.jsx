@@ -10,12 +10,12 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personaliz
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Araraquara SP',
-  description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Araraquara', 'persianas Araraquara SP', 'cortinas Araraquara', 'cortina wave Araraquara'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-araraquara` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Araraquara SP',
-    description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-araraquara`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Araraquara SP' }],
   },
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Araraquara' },
-  description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Araraquara SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
 }
 
 const faq = [
@@ -66,7 +66,7 @@ const servicos = [
 
 const diferenciais = [
   { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Araraquara e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
-  { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
+  { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Araraquara e toda a região recomendam.' },
 ]
@@ -102,7 +102,7 @@ export default function Page() {
               <em className={styles.tituloEm}>em Araraquara, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada e instalação profissional disponível em Araraquara e região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada em Araraquara e região. Instalação sob consulta.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria personalizada em Araraquara →

@@ -11,7 +11,7 @@ export const EMPRESA = {
   nota: '5,0',
   projetos: '500+',
   slogan: 'Cortinas e persianas sob medida com consultoria personalizada. Do clássico ao moderno — transformamos ambientes em Ibitinga e região.',
-  bio: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Da consultoria à instalação, cuidamos de cada detalhe para valorizar seu ambiente.',
+  bio: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Consultoria personalizada em cada detalhe para valorizar seu ambiente. Instalação sob consulta.',
 }
 
 export const CONTATO = {
@@ -68,7 +68,7 @@ export const AREA_ATENDIMENTO = [
 export const MODELO_NEGOCIO = {
   visitaTecnica: true,
   instalacao: true,
-  instalacaoNota: 'Realizamos visita técnica e instalação profissional in loco.',
+  instalacaoNota: 'Realizamos consultoria técnica in loco. Instalação profissional sob consulta.',
   entrega: true,
   entregaRegiao: 'Ibitinga e região — envio para todo o Brasil sob consulta',
 }

@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Vim pelo site e gostaria de uma consultoria person
 
 export const metadata = {
   title:       'Cortinas Sob Medida — Wave, Blackout, Linho e Mais | Ibitinga SP',
-  description: 'Cortinas sob medida em Ibitinga SP com visita técnica. Wave, blackout, linho, prega macho, franzida e pé direito duplo. Instalação possui custo adicional.',
+  description: 'Cortinas sob medida em Ibitinga SP com consultoria personalizada. Wave, blackout, linho, prega macho, franzida e pé direito duplo. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Ibitinga', 'cortina wave Ibitinga', 'cortina blackout Ibitinga', 'cortina linho Ibitinga', 'orçamento cortinas sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/cortinas` },
 }
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  ['Ibitinga', 'Taquaritinga', 'Araraquara', 'Matão'],
-  description: 'Cortinas sob medida com visita técnica em Ibitinga SP. Instalação possui custo adicional.',
+  description: 'Cortinas sob medida com consultoria personalizada em Ibitinga SP. Instalação sob consulta.',
 }
 
 const faq = [
@@ -65,7 +65,7 @@ const modelos = [
 const beneficios = [
   { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
   { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
-  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Instalação profissional',      legenda: 'Sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
   { titulo: 'Atendimento pela Mara',        legenda: 'Personalizado' },
@@ -111,7 +111,7 @@ export default function CortinasPage() {
               <div>
                 <h2 className={styles.introTitulo}>Vista cada janela do seu lar</h2>
                 <p className={styles.introTexto}>
-                  Wave, Prega Macho, Blackout e muito mais. Escolhemos com você o modelo e o tecido certos para cada ambiente. Consultoria personalizada e instalação disponível em Ibitinga SP.
+                  Wave, Prega Macho, Blackout e muito mais. Escolhemos com você o modelo e o tecido certos para cada ambiente. Consultoria personalizada em Ibitinga SP. Instalação sob consulta.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -134,7 +134,7 @@ export default function CortinasPage() {
                 <em className={styles.secTituloEm}>para suas cortinas?</em>
               </h2>
               <p className={styles.texto}>
-                Fabricamos nossas próprias cortinas aqui em Ibitinga. Isso significa que você não paga o custo de um intermediário, tem acesso a um catálogo completo de tecidos e modelos, e conta com instalação profissional disponível (sob consulta).
+                Cada projeto nasce em Ibitinga a partir de uma consultoria personalizada. Você tem acesso a um catálogo completo de tecidos e modelos e conta com instalação profissional sob consulta.
               </p>
 
               <ul className={styles.listaNum}>
@@ -212,7 +212,7 @@ export default function CortinasPage() {
                 <em className={styles.ctaFinalEm}>A gente cuida de tudo.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Visita técnica mediante agendamento em Ibitinga e toda a região. Instalação possui custo adicional.
+                Consultoria personalizada em Ibitinga e toda a região. Instalação sob consulta.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →

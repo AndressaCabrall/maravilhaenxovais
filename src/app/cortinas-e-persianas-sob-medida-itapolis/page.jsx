@@ -10,12 +10,12 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personaliz
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
-  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação sob consulta. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Itápolis', 'persianas Itápolis SP', 'cortinas Itápolis', 'instalação cortinas Itápolis'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
-    description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação sob consulta. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Itápolis SP' }],
   },
@@ -39,13 +39,13 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Itápolis' },
-  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação não inclusa. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação sob consulta. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
 }
 
 const faq = [
   { q: 'Como funciona a consultoria em Itápolis?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Nossa fundadora mora em Itápolis — atendimento local sem taxa de deslocamento.' },
   { q: 'Quais modelos estão disponíveis em Itápolis?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
-  { q: 'A instalação está inclusa no orçamento?', a: 'A instalação possui custo adicional, informado no orçamento. Trabalhamos com instalação profissional em Itápolis.' },
+  { q: 'A instalação está inclusa no orçamento?', a: 'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional em Itápolis.' },
   { q: 'Como funciona a consultoria?', a: 'Pelo WhatsApp — respondemos rápido e combinamos o melhor horário para a consultoria em Itápolis.' },
 ]
 
@@ -66,7 +66,7 @@ const servicos = [
 
 const diferenciais = [
   { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Itápolis e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
-  { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
+  { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Itápolis e toda a região recomendam.' },
 ]
@@ -102,7 +102,7 @@ export default function Page() {
               <em className={styles.tituloEm}>em Itápolis, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Itápolis e toda a região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada em Itápolis e toda a região. Instalação sob consulta.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria personalizada em Itápolis →

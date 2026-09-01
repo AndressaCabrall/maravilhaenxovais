@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada sobre mo
 
 export const metadata = {
   title:       'Motorização de Cortinas e Persianas | Ibitinga SP',
-  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Automação residencial em Ibitinga e região. Instalação possui custo adicional.',
+  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Automação residencial em Ibitinga e região. Instalação sob consulta.',
   keywords:    ['cortinas motorizadas Ibitinga', 'persiana motorizada Ibitinga SP', 'automação residencial Ibitinga', 'cortina motorizada sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/motorizacao` },
 }
@@ -53,7 +53,7 @@ const faq = [
 const beneficios = [
   { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
   { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
-  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Instalação profissional',      legenda: 'Sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
   { titulo: 'Alexa e Google Home',          legenda: 'Integração por voz' },
@@ -99,7 +99,7 @@ export default function MotorizacaoPage() {
               <div>
                 <h2 className={styles.introTitulo}>Controle total na palma da mão</h2>
                 <p className={styles.introTexto}>
-                  Motorize cortinas e persianas com consultoria sobre onde a automação faz diferença no seu ambiente. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação profissional disponível em Ibitinga e região.
+                  Motorize cortinas e persianas com consultoria sobre onde a automação faz diferença no seu ambiente. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação sob consulta em Ibitinga e região.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -122,7 +122,7 @@ export default function MotorizacaoPage() {
                 <em className={styles.secTituloEm}>para motorizar seu ambiente?</em>
               </h2>
               <p className={styles.texto}>
-                Trabalhamos com motores silenciosos de alta qualidade, configurados por profissionais especializados. O sistema é integrado de forma discreta ao seu ambiente, com instalação profissional disponível (sob consulta).
+                Trabalhamos com motores silenciosos de alta qualidade, configurados por profissionais especializados. O sistema é integrado de forma discreta ao seu ambiente. Instalação profissional sob consulta.
               </p>
 
               <ul className={styles.listaNum}>
@@ -172,7 +172,7 @@ export default function MotorizacaoPage() {
                 <em className={styles.ctaFinalEm}>A gente cuida de tudo.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Visita técnica mediante agendamento em Ibitinga e toda a região. Instalação possui custo adicional.
+                Consultoria personalizada em Ibitinga e toda a região. Instalação sob consulta.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →

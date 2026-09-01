@@ -64,7 +64,7 @@ export default function VitrinePreview() {
             </h2>
             <p className={styles.sub}>
               Cada projeto pensado sob medida para o seu ambiente, com consultoria
-              especializada, prazo cumprido e instalação profissional disponível.
+              especializada e prazo cumprido. Instalação sob consulta.
             </p>
           </div>
 

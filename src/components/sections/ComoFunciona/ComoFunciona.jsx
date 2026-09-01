@@ -20,8 +20,9 @@ export default function ComoFunciona() {
             </h2>
           </div>
           <p className={styles.sub}>
-            Da consultoria personalizada à instalação — cada etapa
+            Da consultoria personalizada ao acabamento — cada etapa
             pensada pro seu ambiente, cuidada pela nossa equipe.
+            Instalação sob consulta.
           </p>
         </div>
 

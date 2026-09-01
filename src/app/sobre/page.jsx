@@ -94,8 +94,8 @@ export default function SobrePage() {
                   personalizada, onde ajudamos a escolher o tecido certo para o seu espaço.
                   Isso significa mais qualidade, prazo garantido e um resultado que valoriza
                   o ambiente de quem mora ou decora em Ibitinga, Itápolis, Taquaritinga,
-                  Araraquara, Matão e região — da escolha do tecido ao último ponto da
-                  instalação, cada etapa passa pelas mesmas mãos que fundaram a empresa.
+                  Araraquara, Matão e região — da escolha do tecido ao acabamento, cada
+                  etapa passa pelas mesmas mãos que fundaram a empresa. Instalação sob consulta.
                 </p>
                 <p className={styles.desc}>
                   Nada de atendimento genérico. Nada de cortina que chega e não encaixa.

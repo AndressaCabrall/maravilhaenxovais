@@ -89,8 +89,8 @@ export default function SobreEmpresa() {
               propósito simples: ir muito além de vender uma cortina. Somos um
               ateliê especializado — cada projeto começa com uma consultoria
               personalizada, onde ajudamos a escolher o tecido certo para a
-              iluminação, a privacidade e a decoração do seu espaço, do primeiro
-              risco à instalação final.
+              iluminação, a privacidade e a decoração do seu espaço.
+              Instalação sob consulta.
             </p>
           </div>
 

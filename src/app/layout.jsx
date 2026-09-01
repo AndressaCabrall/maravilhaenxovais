@@ -29,7 +29,7 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type':    'LocalBusiness',
   name:        EMPRESA.nomeCompleto,
-  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Atendemos Ibitinga, Itápolis, Taquaritinga, Matão, Araraquara, Jaboticabal, Tabatinga, Nova Europa e Borborema. Instalação possui custo adicional.',
+  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Atendemos Ibitinga, Itápolis, Taquaritinga, Matão, Araraquara, Jaboticabal, Tabatinga, Nova Europa e Borborema. Instalação sob consulta.',
   url:         DOMINIO,
   areaServed:  AREA_ATENDIMENTO.map((c) => ({ '@type': 'City', name: c.nome })),
   telephone:   CONTATO.telefoneFormatado,
@@ -87,7 +87,7 @@ const schemaFaq = {
       name:    'A instalação está incluída no preço?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'A instalação possui custo adicional, informado no orçamento. Trabalhamos com instalação profissional e sem surpresas no processo.',
+        text:    'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional e sem surpresas no processo.',
       },
     },
     {

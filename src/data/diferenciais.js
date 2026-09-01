@@ -19,8 +19,8 @@ export const DIFERENCIAIS = [
     id:       'instalacao',
     icone:    'instalacao',
     titulo:   'Instalação profissional',
-    resumo:   'Custo adicional sob consulta',
-    descricao: 'Nossa equipe instala com cuidado e precisão. A instalação possui custo adicional — consulte as condições no orçamento.',
+    resumo:   'Sob consulta',
+    descricao: 'Nossa equipe instala com cuidado e precisão. Instalação sob consulta — condições informadas no orçamento.',
   },
   {
     id:       'google',
@@ -41,7 +41,7 @@ export const DIFERENCIAIS = [
     icone:    'regua',
     titulo:   'Prazo cumprido',
     resumo:   'Sem atraso, sem surpresa',
-    descricao: 'Combinamos uma data e entregamos. Do projeto à instalação final, sem atraso e sem surpresa.',
+    descricao: 'Combinamos uma data e entregamos, sem atraso e sem surpresa. Instalação sob consulta.',
   },
 ]
 

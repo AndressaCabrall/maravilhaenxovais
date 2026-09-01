@@ -14,7 +14,7 @@ export const SLIDES = [
     position:       'center center',
     titulo:         'Ateliê de cortinas e persianas',
     tituloDestaque: 'sob medida, com consultoria em Ibitinga.',
-    subtitulo:      'Um projeto pensado pro seu ambiente — da escolha do tecido ideal à instalação, com o cuidado de um ateliê especializado.',
+    subtitulo:      'Um projeto pensado pro seu ambiente — da escolha do tecido ideal ao acabamento, com o cuidado de um ateliê especializado. Instalação sob consulta.',
     ctaPrimario: {
       texto: 'Fazer consultoria personalizada',
       wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para meu projeto de cortinas sob medida.',

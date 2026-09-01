@@ -10,12 +10,12 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personaliz
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Jaboticabal SP',
-  description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
   keywords:    ['cortinas sob medida Jaboticabal', 'persianas Jaboticabal SP', 'cortinas Jaboticabal', 'instalação cortinas Jaboticabal'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-jaboticabal` },
   openGraph: {
     title:       'Cortinas e Persianas Sob Medida em Jaboticabal SP',
-    description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-jaboticabal`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Jaboticabal SP' }],
   },
@@ -39,13 +39,13 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Jaboticabal' },
-  description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação não inclusa. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Jaboticabal SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
 }
 
 const faq = [
   { q: 'A Maravilha Cortinas atende em Jaboticabal?', a: 'Sim! Jaboticabal fica a ~40km de Ibitinga e está na nossa área de atendimento. Consulte disponibilidade e condições de visita pelo WhatsApp.' },
   { q: 'Quais modelos estão disponíveis em Jaboticabal?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
-  { q: 'A instalação está inclusa?', a: 'A instalação possui custo adicional, informado no orçamento. Trabalhamos com instalação profissional em Jaboticabal.' },
+  { q: 'A instalação está inclusa?', a: 'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional em Jaboticabal.' },
   { q: 'Como entro em contato?', a: 'Pelo WhatsApp — respondemos rápido e alinhamos disponibilidade de agenda para Jaboticabal.' },
 ]
 
@@ -66,7 +66,7 @@ const servicos = [
 
 const diferenciais = [
   { num: '01', titulo: 'Consultoria personalizada', desc: 'Vamos até você em Jaboticabal e ajudamos a escolher o tecido certo para o seu ambiente. Medição profissional antes de qualquer compromisso.' },
-  { num: '02', titulo: 'Instalação profissional', desc: 'A instalação possui custo adicional, informado no orçamento. Sem surpresas no processo.' },
+  { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Jaboticabal e toda a região recomendam.' },
 ]
@@ -102,7 +102,7 @@ export default function Page() {
               <em className={styles.tituloEm}>em Jaboticabal, SP.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada e instalação profissional disponível em Jaboticabal e região. Instalação possui custo adicional.
+              Um ateliê especializado de Ibitinga — consultoria personalizada em Jaboticabal e região. Instalação sob consulta.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria personalizada em Jaboticabal →

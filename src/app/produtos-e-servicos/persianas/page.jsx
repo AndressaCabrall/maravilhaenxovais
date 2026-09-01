@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada para per
 
 export const metadata = {
   title:       'Persianas Sob Medida — Rolô, Blackout, Double Vision | Ibitinga SP',
-  description: 'Persianas sob medida em Ibitinga SP — rolô, blackout, double vision, tela solar. Visita técnica mediante agendamento. Instalação possui custo adicional.',
+  description: 'Persianas sob medida em Ibitinga SP — rolô, blackout, double vision, tela solar. Consultoria personalizada. Instalação sob consulta.',
   keywords:    ['persianas sob medida Ibitinga', 'persiana blackout Ibitinga', 'persiana double vision Ibitinga', 'persiana rolô Ibitinga SP', 'persiana sob medida preço'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/persianas` },
 }
@@ -39,7 +39,7 @@ const schema = {
     },
   },
   areaServed:  ['Ibitinga', 'Taquaritinga', 'Araraquara', 'Matão'],
-  description: 'Persianas sob medida com instalação profissional em Ibitinga SP.',
+  description: 'Persianas sob medida com consultoria personalizada em Ibitinga SP. Instalação sob consulta.',
 }
 
 const faq = [
@@ -63,7 +63,7 @@ const modelos = [
 const beneficios = [
   { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
   { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
-  { titulo: 'Instalação profissional',      legenda: 'Custo adicional sob consulta' },
+  { titulo: 'Instalação profissional',      legenda: 'Sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },
   { titulo: 'Atendimento pela Mara',        legenda: 'Personalizado' },
@@ -118,7 +118,7 @@ export default function PersianasPage() {
               <div>
                 <h2 className={styles.introTitulo}>Controle de luz com sofisticação</h2>
                 <p className={styles.introTexto}>
-                  Rolô, Double Vision, Blackout, Tela Solar e muito mais. Indicamos o modelo certo pra luz e privacidade de cada ambiente. Consultoria personalizada e instalação disponível em Ibitinga SP.
+                  Rolô, Double Vision, Blackout, Tela Solar e muito mais. Indicamos o modelo certo pra luz e privacidade de cada ambiente. Consultoria personalizada em Ibitinga SP. Instalação sob consulta.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -141,7 +141,7 @@ export default function PersianasPage() {
                 <em className={styles.secTituloEm}>para suas persianas?</em>
               </h2>
               <p className={styles.texto}>
-                Fabricamos nossas próprias persianas aqui em Ibitinga. Isso significa que você não paga o custo de um intermediário, tem acesso a um catálogo completo de modelos, e conta com instalação profissional disponível (sob consulta).
+                Cada projeto nasce em Ibitinga a partir de uma consultoria personalizada. Você tem acesso a um catálogo completo de modelos e conta com instalação profissional sob consulta.
               </p>
 
               <ul className={styles.listaNum}>
