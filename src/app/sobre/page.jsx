@@ -12,14 +12,14 @@ import { WHATSAPP_URLS } from '@/lib/whatsapp'
 
 const FAQ_GERAL = [
   { pergunta: 'Vocês trazem as amostras de tecido na consultoria?', resposta: 'Sim! Na consultoria levamos nossos books com todas as opções de tecido, cor e modelo disponíveis. Você pode ver, tocar e comparar as amostras no próprio ambiente antes de decidir — sem precisar ir até o ateliê.' },
-  { pergunta: 'Vocês atendem apartamentos, casas e comércios?', resposta: 'Atendemos residências, apartamentos, escritórios, lojas e qualquer ambiente comercial em Ibitinga, Taquaritinga, Araraquara, Matão e toda a região.' },
+  { pergunta: 'Vocês atendem apartamentos, casas e comércios?', resposta: 'Atendemos residências, apartamentos, escritórios, lojas e qualquer ambiente comercial. Ateliê em Ibitinga, atendemos todo o Brasil.' },
   { pergunta: 'Quais formas de pagamento vocês aceitam?', resposta: 'Aceitamos cartão de crédito, cartão de débito, PIX e dinheiro. As condições de parcelamento são informadas no momento do orçamento.' },
   { pergunta: 'Quanto tempo leva da consultoria até a instalação?', resposta: 'A partir de 20 dias úteis após a confirmação do pedido, dependendo do modelo e da quantidade de peças. O prazo exato é informado no orçamento.' },
 ]
 
 export const metadata = {
-  title:       'Sobre a Maravilha Cortinas — Ateliê Especializado em Ibitinga SP',
-  description: 'Conheça a história da Maravilha Cortinas: fundada por Mara Pavan em 2011, ateliê especializado em consultoria personalizada, mais de 16 anos transformando ambientes.',
+  title:       'Sobre a Maravilha Cortinas — Ateliê em Ibitinga SP — Atendemos Todo o Brasil',
+  description: 'Conheça a história da Maravilha Cortinas: fundada por Mara Pavan em 2011, ateliê especializado em consultoria personalizada, atendemos todo o Brasil, mais de 16 anos transformando ambientes.',
   keywords:    ['Maravilha Cortinas Ibitinga', 'ateliê de cortinas sob medida Ibitinga SP', 'Mara Pavan cortinas', 'história Maravilha Cortinas'],
   alternates:  { canonical: `${DOMINIO}/sobre` },
 }
@@ -85,7 +85,7 @@ export default function SobrePage() {
 
                 <p className={styles.desc}>
                   A Maravilha Cortinas e Persianas nasceu em Ibitinga, em 2011, com um propósito simples:
-                  oferecer cortinas e persianas sob medida com o cuidado que só quem é da região consegue entregar.
+                  oferecer cortinas e persianas sob medida com o cuidado de quem entende do assunto.
                   Mara Pavan fundou a empresa com a convicção de que atendimento de verdade começa por conhecer
                   o cliente e o ambiente antes de vender qualquer coisa.
                 </p>
@@ -93,8 +93,8 @@ export default function SobrePage() {
                   Somos um ateliê especializado: cada projeto começa com uma consultoria
                   personalizada, onde ajudamos a escolher o tecido certo para o seu espaço.
                   Isso significa mais qualidade, prazo garantido e um resultado que valoriza
-                  o ambiente de quem mora ou decora em Ibitinga, Itápolis, Taquaritinga,
-                  Araraquara, Matão e região — da escolha do tecido ao acabamento, cada
+                  o ambiente de quem mora ou decora — ateliê em Ibitinga, atendemos todo o
+                  Brasil — da escolha do tecido ao acabamento, cada
                   etapa passa pelas mesmas mãos que fundaram a empresa. Instalação sob consulta.
                 </p>
                 <p className={styles.desc}>

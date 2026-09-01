@@ -15,8 +15,8 @@ import { whatsappUrl } from '@/lib/whatsapp'
 const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada sobre motorização de cortinas ou persianas.')
 
 export const metadata = {
-  title:       'Motorização de Cortinas e Persianas | Ibitinga SP',
-  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Automação residencial em Ibitinga e região. Instalação sob consulta.',
+  title:       'Motorização de Cortinas e Persianas | Ibitinga SP — Atendemos Todo o Brasil',
+  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Automação residencial do ateliê em Ibitinga, atendemos todo o Brasil. Instalação sob consulta.',
   keywords:    ['cortinas motorizadas Ibitinga', 'persiana motorizada Ibitinga SP', 'automação residencial Ibitinga', 'cortina motorizada sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/motorizacao` },
 }
@@ -38,8 +38,8 @@ const schema = {
       addressCountry:  'BR',
     },
   },
-  areaServed:  ['Ibitinga', 'Taquaritinga', 'Araraquara', 'Matão'],
-  description: 'Consultoria personalizada em motorização de cortinas e persianas com controle pelo celular, Alexa e Google Home em Ibitinga SP.',
+  areaServed:  'BR',
+  description: 'Consultoria personalizada em motorização de cortinas e persianas com controle pelo celular, Alexa e Google Home. Ateliê em Ibitinga SP, atendemos todo o Brasil.',
 }
 
 const faq = [
@@ -87,7 +87,7 @@ export default function MotorizacaoPage() {
           eyebrow="Cortinas & Persianas Motorizadas"
           titulo="Motorização —"
           tituloEm="automação pensada pro seu ambiente"
-          sub="Em consultoria, avaliamos onde a motorização faz diferença: da luz natural que entra aos poucos ao comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium em Ibitinga e região."
+          sub="Em consultoria, avaliamos onde a motorização faz diferença: da luz natural que entra aos poucos ao comando de voz antes de dormir. O detalhe que separa um imóvel comum de um imóvel premium — ateliê em Ibitinga, atendemos todo o Brasil."
           cta="Consultoria personalizada →"
           ctaHref={WA}
         />
@@ -98,7 +98,7 @@ export default function MotorizacaoPage() {
               <div>
                 <h2 className={styles.introTitulo}>Controle total na palma da mão</h2>
                 <p className={styles.introTexto}>
-                  Motorize cortinas e persianas com consultoria sobre onde a automação faz diferença no seu ambiente. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Instalação sob consulta em Ibitinga e região.
+                  Motorize cortinas e persianas com consultoria sobre onde a automação faz diferença no seu ambiente. Controle remoto, smartphone ou voz — integração com Alexa e Google Home. Ateliê em Ibitinga, atendemos todo o Brasil. Instalação sob consulta.
                 </p>
                 <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
                   Fale conosco →
@@ -171,7 +171,7 @@ export default function MotorizacaoPage() {
                 <em className={styles.ctaFinalEm}>A gente cuida de tudo.</em>
               </h2>
               <p className={styles.ctaFinalSub}>
-                Consultoria personalizada em Ibitinga e toda a região. Instalação sob consulta.
+                Consultoria personalizada do ateliê em Ibitinga, atendemos todo o Brasil. Instalação sob consulta.
               </p>
               <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
                 Falar no WhatsApp →
