@@ -104,7 +104,7 @@ export default function Cortinas() {
            className={styles.ctaBtn}
            onClick={() => trackWhatsApp('cortinas-orcamento')}
           >
-            Solicitar orçamento de cortinas →
+            Consultoria personalizada de cortinas →
           </a>
         </div>
 

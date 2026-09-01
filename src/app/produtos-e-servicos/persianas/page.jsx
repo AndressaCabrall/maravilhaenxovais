@@ -61,8 +61,7 @@ const modelos = [
 ]
 
 const beneficios = [
-  { titulo: 'Ateliê Especializado',          legenda: 'Consultoria personalizada' },
-  { titulo: 'Consultoria no local',         legenda: 'Sob consulta de agenda' },
+  { titulo: 'Consultoria personalizada',    legenda: 'Sob consulta de agenda' },
   { titulo: 'Instalação profissional',      legenda: 'Sob consulta' },
   { titulo: 'Mais de 16 anos',              legenda: 'De experiência' },
   { titulo: '5,0 no Google',                legenda: 'Avaliações verificadas' },

@@ -11,7 +11,7 @@ export const PASSOS = [
     numero:    '2',
     titulo:    'Consultoria personalizada',
     descricao: 'Analisamos seu ambiente e indicamos os melhores tecidos e modelos de cortinas e/ou persianas adequados para ele, com medição de precisão.',
-    detalhe:   'Consultoria no local',
+    detalhe:   'Consultoria personalizada',
   },
   {
     numero:    '3',

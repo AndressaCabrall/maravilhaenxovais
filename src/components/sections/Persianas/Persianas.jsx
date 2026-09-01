@@ -101,7 +101,7 @@ export default function Persianas() {
            className={styles.ctaBtn}
            onClick={() => trackWhatsApp('persianas-orcamento')}
           >
-            Solicitar orçamento de persianas →
+            Consultoria personalizada de persianas →
           </a>
         </div>
 
