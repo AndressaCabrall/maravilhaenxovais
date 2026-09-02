@@ -29,7 +29,7 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type':    'LocalBusiness',
   name:        EMPRESA.nomeCompleto,
-  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Atendemos Ibitinga, Itápolis, Taquaritinga, Matão, Araraquara, Jaboticabal, Tabatinga, Nova Europa e Borborema. Instalação sob consulta.',
+  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Atendemos Ibitinga, Itápolis, Taquaritinga, Matão, Araraquara, Jaboticabal, Tabatinga, Nova Europa e Borborema. Instalação sob consulta e todo Brasil.',
   url:         DOMINIO,
   areaServed:  AREA_ATENDIMENTO.map((c) => ({ '@type': 'City', name: c.nome })),
   telephone:   CONTATO.telefoneFormatado,
@@ -79,15 +79,15 @@ const schemaFaq = {
       name:    'Como funciona a consultoria personalizada?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'A consultoria é combinada pelo WhatsApp. Em Ibitinga e Itápolis, consulte disponibilidade. Para cidades mais distantes, entre em contato antes.',
+        text:    'A consultoria é combinada pelo WhatsApp. Atendemos todo o Brasil.',
       },
     },
     {
       '@type': 'Question',
-      name:    'A instalação está incluída no preço?',
+      name:    'Como Funciona a instalação?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional e sem surpresas no processo.',
+        text:    ' A Instalação é sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional e sem surpresas no processo.',
       },
     },
     {
@@ -95,7 +95,7 @@ const schemaFaq = {
       name:    'Quanto tempo leva da consultoria até a instalação?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'A partir de 20 dias úteis após a confirmação do pedido, dependendo do modelo e quantidade.',
+        text:    'Todos nossos prazos são informados na consultoria personalizada do ateliê, depende do modelo e da quantidade de cortinas ou persianas.',
       },
     },
     {
@@ -103,7 +103,7 @@ const schemaFaq = {
       name:    'Vocês atendem apartamentos e comércios?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text:    'Sim! Atendemos residências, apartamentos, escritórios e comércios em Ibitinga, Itápolis e toda a região.',
+        text:    'Sim! Atendemos residências, apartamentos, escritórios e comércios em Ibitinga, e toda a região.',
       },
     },
     {
