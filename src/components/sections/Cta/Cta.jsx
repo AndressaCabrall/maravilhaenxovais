@@ -2,7 +2,7 @@
 'use client'
 
 import Image             from 'next/image'
-import ctaImg            from '@/assets/images/hero/webp/cortina-prega-macho-atendimento-Brasil-online.jpeg'
+import ctaImg            from '@/assets/images/hero/webp/cortina-prega-macho-atendimento-brasil-online.webp'
 import styles            from './Cta.module.css'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 

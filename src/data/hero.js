@@ -5,7 +5,7 @@
 import slide1 from '@/assets/images/hero/webp/cortina-sob-medida-instalacao-ibitinga-sp.webp'
 import slide2 from '@/assets/images/hero/webp/cortina-prega-macho-linho-ambiente-ibitinga-sp.webp'
 import slide3 from '@/assets/images/hero/webp/cortina-wave-sala-alto-padrao-ibitinga-sp.webp'
-import slide4 from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
+import slide4 from '@/assets/images/hero/webp/cortina-prega-macho-atendimento-brasil-online.webp'
 
 export const SLIDES = [
   {
@@ -29,7 +29,7 @@ export const SLIDES = [
     position:       'center center',
     titulo:         'Cada cortina wave nasce de um projeto',
     tituloDestaque: 'pensado pro seu ambiente.',
-    subtitulo:      'Do linho ao blackout — escolhemos com você o tecido certo pra luz, privacidade e decoração da sua sala. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.',
+    subtitulo:      'Do linho ao blackout — escolhemos com você o tecido certo pra luz, privacidade e decoração da sua sala. O ateliê é em Ibitinga, mas atendemos todo o Brasil.',
     ctaPrimario: {
       texto: 'Fazer consultoria personalizada',
       wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para um projeto de cortina wave sob medida.',
@@ -55,17 +55,17 @@ export const SLIDES = [
   },
   {
     id:             4,
-    eyebrow:        'Persianas Sob Medida · Consultoria Personalizada · Atendemos Todo o Brasil',
-    position:       'center center',
-    titulo:         'A persiana certa depende da luz',
+    eyebrow:        'Cortinas Sob Medida · Consultoria Personalizada · Atendemos Todo o Brasil',
+    position:       'center top',
+    titulo:         'A cortina certa depende da luz',
     tituloDestaque: 'que entra na sua janela.',
-    subtitulo:      'Analisamos a incidência solar e a privacidade de cada ambiente antes de indicar o modelo — como a tela solar, que filtra o calor sem perder a vista. O ateliê é em Ibitinga, mas atendemos em todo o Brasil.',
+    subtitulo:      'Analisamos a incidência solar e a privacidade de cada ambiente antes de indicar o modelo — como a cortina blackout, que bloqueia a luz por completo. O ateliê é em Ibitinga, mas atendemos todo o Brasil.',
     ctaPrimario: {
       texto: 'Fazer consultoria personalizada',
-      wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para um projeto de persiana tela solar.',
+      wa:    'Olá Mara! Gostaria de fazer uma consultoria personalizada para um projeto de cortina blackout.',
     },
-    ctaSecundario: { texto: 'Ver persianas', href: '/produtos-e-servicos/persianas' },
+    ctaSecundario: { texto: 'Ver cortinas', href: '/produtos-e-servicos/cortinas' },
     imagem: slide4,
-    alt:    'Persiana tela solar sob medida instalada em cozinha — Maravilha Cortinas Ibitinga SP',
+    alt:    'Cortina blackout sob medida instalada em ambiente — Maravilha Cortinas Ibitinga SP',
   },
 ]
