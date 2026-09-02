@@ -21,7 +21,7 @@
 
 .imagem {
   object-fit:      cover;
-  object-position: center;
+  object-position: top;
 }
 
 .overlay {
@@ -99,7 +99,7 @@
 
 /* ══ DESKTOP ≥ 1024px ══ */
 @media (min-width: 1024px) {
-  .titulo { font-size: clamp(36px, 3.5vw, 3.5rem); }
+  .titulo { font-size: clamp(34px, 3vw, 3rem); }
 }
 
 /* ══ REDUCED MOTION ══ */

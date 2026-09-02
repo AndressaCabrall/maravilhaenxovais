@@ -2,7 +2,7 @@
 'use client'
 
 import Image             from 'next/image'
-import ctaImg            from '@/assets/images/hero/webp/persiana-tela-solar-cozinha-sob-medida-ibitinga-sp.webp'
+import ctaImg            from '@/assets/images/hero/webp/cortina-prega-macho-atendimento-Brasil-online.jpeg'
 import styles            from './Cta.module.css'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 
@@ -27,8 +27,8 @@ export default function Cta() {
         <div className={styles.inner}>
 
           <h2 id="cta-titulo" className={styles.titulo}>
-            Sua cortina ideal{' '}
-            <em className={styles.tituloEm}>começa com uma consultoria.</em>
+            Especialista de Ibitinga e região{' '}
+            <em className={styles.tituloEm}>em cortinas elegantes, atemporais e sob medida.</em>
           </h2>
 
           <a
