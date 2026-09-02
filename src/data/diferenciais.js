@@ -6,7 +6,7 @@ export const DIFERENCIAIS = [
     icone:    'visita',
     titulo:   'Consultoria personalizada',
     resumo:   'Projeto sob medida',
-    descricao: 'Nossa equipe vai até você, entende o ambiente e ajuda a escolher o tecido ideal para iluminação, privacidade e decoração. Consulte disponibilidade para sua região.',
+    descricao: 'Entendemos o ambiente e ajudamos a escolher o tecido ideal para iluminação, privacidade e decoração. Consultoria personalizada pelo WhatsApp.',
   },
   {
     id:       'sob-medida',

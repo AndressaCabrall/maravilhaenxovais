@@ -92,7 +92,7 @@ const schemaFaq = {
     },
     {
       '@type': 'Question',
-      name:    'Quanto tempo leva da visita até a instalação?',
+      name:    'Quanto tempo leva da consultoria até a instalação?',
       acceptedAnswer: {
         '@type': 'Answer',
         text:    'A partir de 20 dias úteis após a confirmação do pedido, dependendo do modelo e quantidade.',

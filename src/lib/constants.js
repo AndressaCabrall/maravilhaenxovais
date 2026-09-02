@@ -66,7 +66,6 @@ export const AREA_ATENDIMENTO = [
 ]
 
 export const MODELO_NEGOCIO = {
-  visitaTecnica: true,
   instalacao: true,
   instalacaoNota: 'Realizamos consultoria técnica in loco. Instalação profissional sob consulta.',
   entrega: true,
