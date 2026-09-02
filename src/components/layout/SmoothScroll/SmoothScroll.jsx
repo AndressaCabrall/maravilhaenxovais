@@ -16,13 +16,17 @@ export default function SmoothScroll({ children }) {
   useLayoutEffect(() => {
     const mm = gsap.matchMedia()
 
-    mm.add('(prefers-reduced-motion: no-preference)', () => {
+    // Só em desktop: no touch, o sistema já entrega scroll suave nativo
+    // (momentum scrolling, direto no compositor/GPU) — o ScrollSmoother
+    // reimplementa isso em JS na main thread, o que em mobile só piora o
+    // INP sem ganho visual que compense. Em desktop o efeito de inércia/
+    // parallax é real (mouse não tem isso de graça), então mantemos.
+    mm.add('(prefers-reduced-motion: no-preference) and (min-width: 1024px)', () => {
       const smoother = ScrollSmoother.create({
         wrapper:        '#smooth-wrapper',
         content:        '#smooth-content',
         smooth:         1.2,
         effects:        true,
-        smoothTouch:    0.1,
         normalizeScroll: true,
       })
       return () => smoother.kill()
