@@ -2,10 +2,12 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import dynamic              from 'next/dynamic'
 import Image                from 'next/image'
-import Lightbox             from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css'
 import styles               from './Cortinas.module.css'
+
+// Lightbox (JS + CSS) só entra no bundle quando o usuário abre uma imagem.
+const Lightbox = dynamic(() => import('@/components/ui/LightboxLazy/LightboxLazy'), { ssr: false })
 import { CORTINAS }         from '@/data/cortinas'
 import { WHATSAPP_URLS, trackWhatsApp } from '@/lib/whatsapp'
 
@@ -126,13 +128,15 @@ export default function Cortinas() {
 
       </div>
 
-      <Lightbox
-        open={index >= 0}
-        index={index}
-        close={() => setIndex(-1)}
-        slides={slides}
-        styles={{ container: { backgroundColor: 'rgba(44,44,42,0.97)' } }}
-      />
+      {index >= 0 && (
+        <Lightbox
+          open
+          index={index}
+          close={() => setIndex(-1)}
+          slides={slides}
+          styles={{ container: { backgroundColor: 'rgba(44,44,42,0.97)' } }}
+        />
+      )}
     </section>
   )
 }

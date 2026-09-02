@@ -54,7 +54,7 @@
 .container {
   width:     100%;
   margin:    0 auto;
-  padding:   0 var(--gap) 0 calc(var(--gap) + 24px);
+  padding:   0 var(--gap);
 }
 
 .inner {
@@ -367,6 +367,10 @@
 
 /* ══ DESKTOP ≥ 1024px ══ */
 @media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--gap) 0 calc(var(--gap) + 24px);
+  }
+
   .inner {
     max-width: 1100px;
   }
