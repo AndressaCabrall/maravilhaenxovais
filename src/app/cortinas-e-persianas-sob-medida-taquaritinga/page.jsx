@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Taquaritinga.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com o ateliê especializado para um projeto em Taquaritinga.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Taquaritinga SP',
@@ -52,7 +52,8 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Taquaritinga?', a: 'Sim. Taquaritinga fica a cerca de 25 km de Ibitinga e faz parte da nossa área de atendimento. O contato começa pela consultoria personalizada no WhatsApp.' },
+  { q: 'Como funciona o ateliê especializado da Maravilha Enxovais para a região de Taquaritinga?', a: 'Atuamos como um ateliê especializado, voltado para a curadoria fina de ambientes. Analisamos a volumetria da sua casa, a incidência do sol da tarde na nossa região e o estilo do seu mobiliário. Guiamos você na escolha exata de tecidos com caimento impecável, como no sistema wave, e de sistemas modernos, para que o resultado final fique perfeitamente integrado ao design da sua residência.' },
+  { q: 'Como vocês ajudam a garantir a privacidade e o controle solar na minha casa?', a: "Projetos em condomínios de alto padrão — como o Villagio D'Itália ou o Tennis Park — exigem equilíbrio entre segurança visual e estética. Ajudamos a selecionar materiais tecnológicos e tramas nobres que barram a visibilidade externa e filtram os raios UV, protegendo os seus móveis planejados e pisos, mantendo a sofisticação e o conforto térmico dentro de casa." },
   { q: 'Vocês fazem cortina para sala com pé direito duplo em Taquaritinga?', a: 'Sim, é uma das nossas especialidades. Ambientes com pé direito alto pedem trilho adequado, tecido com o caimento certo e medição precisa — e a motorização costuma ser a melhor solução para janelas de difícil acesso.' },
 ]
 
@@ -105,14 +106,14 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Taquaritinga, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Taquaritinga, SP.</em>
+              A imponência da sua arquitetura merece a perfeição da alta costura.{' '}
+              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas para as residências mais exclusivas de Taquaritinga.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Taquaritinga e toda a região. Instalação sob consulta.
+              Valorize a luz natural e proteja a privacidade do seu lar com elegância.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Taquaritinga →
+              Consultoria com o ateliê especializado →
             </a>
           </header>
 
@@ -122,7 +123,7 @@ export default function Page() {
               <em className={styles.secTituloEm}>em Taquaritinga.</em>
             </h2>
             <p className={styles.texto}>A Maravilha Cortinas atende Taquaritinga com o mesmo padrão de qualidade que oferece em Ibitinga há mais de 16 anos. Somos um ateliê especializado — oferecemos consultoria personalizada e cuidamos de tudo: escolha do tecido, produção sob medida e instalação profissional.</p>
-            <p className={styles.texto}>Taquaritinga fica a aproximadamente 25km de Ibitinga. Fazemos a consultoria personalizada no seu espaço, apresentamos as opções de tecido e modelo — sem surpresas no orçamento. Instalação sob consulta.</p>
+            <p className={styles.texto}>Taquaritinga fica a aproximadamente 25km de Ibitinga. Na consultoria personalizada apresentamos as opções de tecido e modelo adequadas ao seu ambiente — sem surpresas no orçamento. Instalação sob consulta.</p>
           </section>
 
           <section className={styles.sec}>
@@ -180,7 +181,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Taquaritinga →
+              Consultoria com o ateliê especializado →
             </a>
           </div>
 
