@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Itápolis.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de falar com a consultora especializada sobre um projeto em Itápolis.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
@@ -106,14 +106,14 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Itápolis, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Itápolis, SP.</em>
+              Vista a sua casa com a alta costura do décor.{' '}
+              <em className={styles.tituloEm}>Cortinas e persianas sob medida para os projetos mais exigentes de Itápolis.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Itápolis e toda a região. Instalação sob consulta.
+              Esqueça as soluções genéricas. No nosso ateliê especializado, transformamos seus ambientes através de uma consultoria de design personalizada, selecionando os tecidos mais nobres e as tecnologias mais modernas para harmonizar perfeitamente com a arquitetura do seu lar.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Itápolis →
+              Quero falar com a consultora especializada →
             </a>
           </header>
 
