@@ -281,7 +281,7 @@ export default function PostPage({ params }) {
             <div className={styles.ctaPost}>
               <p className={styles.ctaTexto}>
                 Pronto para transformar o seu ambiente?{' '}
-                <em>A Mara vai até você, entende o projeto e cuida de cada detalhe.</em>
+                <em>A Mara é especialista: entende o seu projeto e cuida de cada detalhe.</em>
               </p>
               <a
                 href={waUrl}

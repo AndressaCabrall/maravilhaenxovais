@@ -67,7 +67,7 @@ export const AREA_ATENDIMENTO = [
 
 export const MODELO_NEGOCIO = {
   instalacao: true,
-  instalacaoNota: 'Realizamos consultoria técnica in loco. Instalação profissional sob consulta.',
+  instalacaoNota: 'Realizamos consultoria personalizada. Instalação profissional sob consulta.',
   entrega: true,
   entregaRegiao: 'Ibitinga e região — envio para todo o Brasil sob consulta',
 }
