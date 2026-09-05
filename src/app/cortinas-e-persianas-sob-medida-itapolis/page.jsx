@@ -52,9 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Itápolis?', a: 'Sim. Itápolis fica a cerca de 20 km do nosso ateliê em Ibitinga e é onde mora a nossa fundadora — você tem acesso direto a quem projeta, produz e instala.' },
+  { q: 'A Maravilha Cortinas atende Itápolis?', a: 'Sim. Itápolis fica a cerca de 20 km do nosso ateliê em Ibitinga e é onde mora a nossa fundadora — você tem acesso direto a quem projeta e produz o seu projeto. Instalação sob consulta.' },
   { q: 'Quais cortinas e persianas vocês fazem para Itápolis?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal. Também fazemos motorização com controle remoto, celular, Alexa e Google Home.' },
-  { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é profissional, feita por quem conhece o produto. Instalação sob consulta — as condições são informadas junto com o orçamento, sem surpresa depois.' },
+  { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é sob consulta, com as condições informadas junto com o orçamento — sem surpresa depois. Trabalhamos com instalação profissional.' },
 ]
 
 const servicos = [
@@ -122,7 +122,7 @@ export default function Page() {
               Cortinas e persianas sob medida{' '}
               <em className={styles.secTituloEm}>em Itápolis.</em>
             </h2>
-            <p className={styles.texto}>A Maravilha Cortinas atende Itápolis com um ateliê especializado — cada projeto começa com uma consultoria personalizada. Nossa fundadora mora em Itápolis — você tem acesso direto a quem projeta, produz e instala.</p>
+            <p className={styles.texto}>A Maravilha Cortinas atende Itápolis com um ateliê especializado — cada projeto começa com uma consultoria personalizada. Nossa fundadora mora em Itápolis — você tem acesso direto a quem projeta e produz o seu projeto. Instalação sob consulta.</p>
             <p className={styles.texto}>Trabalhamos com todos os modelos de cortina e persiana sob medida: wave, blackout, linho, prega macho, rolô, double vision, tela solar e motorização. Do primeiro contato à instalação, cuidamos de tudo com mais de 16 anos de experiência.</p>
           </section>
 

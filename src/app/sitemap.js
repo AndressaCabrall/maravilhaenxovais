@@ -19,9 +19,7 @@ export default function sitemap() {
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-taquaritinga`, lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-matao`,        lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-araraquara`,   lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-jaboticabal`,  lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-tabatinga`,    lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-nova-europa`,  lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema`,    lastModified: hoje, changeFrequency: 'monthly', priority: 0.9 },
   ]
 

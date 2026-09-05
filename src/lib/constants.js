@@ -57,12 +57,10 @@ export const DOMINIO = 'https://www.maravilhaenxovais.com.br'
 export const AREA_ATENDIMENTO = [
   { nome: 'Itápolis', slug: 'cortinas-e-persianas-sob-medida-itapolis', dist: '~20 km', highlight: true },
   { nome: 'Tabatinga', slug: 'cortinas-e-persianas-sob-medida-tabatinga', dist: '~25 km', highlight: true },
-  { nome: 'Nova Europa', slug: 'cortinas-e-persianas-sob-medida-nova-europa', dist: '~30 km', highlight: true },
   { nome: 'Borborema', slug: 'cortinas-e-persianas-sob-medida-borborema', dist: '~25 km', highlight: false },
   { nome: 'Matão', slug: 'cortinas-e-persianas-sob-medida-matao', dist: '~35 km', highlight: true },
   { nome: 'Taquaritinga', slug: 'cortinas-e-persianas-sob-medida-taquaritinga', dist: '~25 km', highlight: true },
   { nome: 'Araraquara', slug: 'cortinas-e-persianas-sob-medida-araraquara', dist: '~60 km', highlight: false },
-  { nome: 'Jaboticabal', slug: 'cortinas-e-persianas-sob-medida-jaboticabal', dist: '~40 km', highlight: false },
 ]
 
 export const MODELO_NEGOCIO = {
