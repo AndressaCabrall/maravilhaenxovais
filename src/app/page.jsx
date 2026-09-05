@@ -11,7 +11,7 @@ import { DOMINIO } from '@/lib/constants'
 
 export const metadata = {
   title:       'Ateliê de Cortinas e Persianas Sob Medida em Ibitinga SP',
-  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga e região desde 2011. Consultoria personalizada, projeto sob medida e instalação. Nota 5,0 no Google.',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga desde 2011. Consultoria personalizada e projeto sob medida. Nota 5,0 no Google.',
   alternates: {
     canonical: DOMINIO,
   },

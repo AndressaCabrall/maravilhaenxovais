@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Vim pelo site e gostaria de uma consultoria person
 
 export const metadata = {
   title:       'Cortinas Sob Medida — Wave, Blackout, Linho e Mais | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Cortinas sob medida com consultoria personalizada — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Wave, blackout, linho, prega macho, franzida e pé direito duplo. Instalação sob consulta.',
+  description: 'Cortinas sob medida: wave, blackout, linho, prega macho e pé direito duplo. Consultoria personalizada no ateliê em Ibitinga. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Ibitinga', 'cortina wave Ibitinga', 'cortina blackout Ibitinga', 'cortina linho Ibitinga', 'orçamento cortinas sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/cortinas` },
 }

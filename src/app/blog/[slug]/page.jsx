@@ -30,10 +30,21 @@ export async function generateMetadata({ params }) {
     keywords:    post.palavrasChave,
     alternates:  { canonical: `${siteConfig.url}/blog/${post.slug}` },
     openGraph: {
+      type:         'article',
+      locale:       'pt_BR',
+      siteName:     'Maravilha Cortinas',
+      title:        post.titulo,
+      description:  post.resumo,
+      url:          `${siteConfig.url}/blog/${post.slug}`,
+      publishedTime: post.dataPublicacao,
+      authors:      [AUTORA.nome],
+      images:       [{ url: post.imagem.src, width: 1200, height: 630, alt: post.alt }],
+    },
+    twitter: {
+      card:        'summary_large_image',
       title:       post.titulo,
       description: post.resumo,
-      url:         `${siteConfig.url}/blog/${post.slug}`,
-      images:      [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+      images:      [post.imagem.src],
     },
   }
 }

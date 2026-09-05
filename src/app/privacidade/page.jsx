@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/config'
 
 export const metadata = {
   title:       'Política de Privacidade',
-  description: 'Saiba como a Maravilha Cortinas coleta, usa e protege seus dados pessoais.',
+  description: 'Política de Privacidade da Maravilha Cortinas: saiba quais dados pessoais coletamos, como usamos e protegemos, e quais são os seus direitos pela LGPD.',
   alternates:  { canonical: `${siteConfig.url}/privacidade` },
   robots:      { index: false, follow: false },
 }

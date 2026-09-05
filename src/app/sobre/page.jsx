@@ -19,7 +19,7 @@ const FAQ_GERAL = [
 
 export const metadata = {
   title:       'Sobre a Maravilha Cortinas — Ateliê em Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Conheça a história da Maravilha Cortinas: fundada por Mara Pavan em 2011. O ateliê é em Ibitinga, mas atendemos em todo o Brasil, mais de 16 anos transformando ambientes.',
+  description: 'A história da Maravilha Cortinas, fundada por Mara Pavan em 2011: ateliê em Ibitinga, +16 anos transformando ambientes. Atendemos todo o Brasil.',
   keywords:    ['Maravilha Cortinas Ibitinga', 'ateliê de cortinas sob medida Ibitinga SP', 'Mara Pavan cortinas', 'história Maravilha Cortinas'],
   alternates:  { canonical: `${DOMINIO}/sobre` },
 }

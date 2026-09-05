@@ -69,62 +69,6 @@ const schemaLocalBusiness = {
   },
 }
 
-// ── Schema FAQ — único, sem duplicata ─────────────────────────
-const schemaFaq = {
-  '@context': 'https://schema.org',
-  '@type':    'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name:    'Como funciona a consultoria personalizada?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    'A consultoria é combinada pelo WhatsApp. Atendemos todo o Brasil.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name:    'Como Funciona a instalação?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    ' A Instalação é sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional e sem surpresas no processo.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name:    'Quanto tempo leva da consultoria até a instalação?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    'Todos nossos prazos são informados na consultoria personalizada do ateliê, depende do modelo e da quantidade de cortinas ou persianas.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name:    'Vocês atendem apartamentos e comércios?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    'Sim! Atendemos residências, apartamentos, escritórios e comércios em Ibitinga, e toda a região.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name:    'Vocês fazem cortinas para pé direito duplo?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    'Sim! Somos especialistas em cortinas sob medida para ambientes com pé direito alto e duplo — com trilho embutido e caimento impecável.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name:    'Vocês fazem motorização de cortinas e persianas?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text:    'Sim! Trabalhamos com motorização compatível com controle remoto, Alexa e Google Home. Ideal para pé direito alto e janelas de difícil acesso.',
-      },
-    },
-  ],
-}
-
 // ── Metadata global ───────────────────────────────────────────
 export const metadata = {
   metadataBase: new URL('https://www.maravilhaenxovais.com.br'),
@@ -134,7 +78,7 @@ export const metadata = {
     template: '%s | Maravilha Cortinas',
   },
 
-  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga SP — wave, blackout, double vision, linho e motorização. Consultoria personalizada. Mais de 16 anos de experiência. Nota 5,0 no Google.',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga SP — wave, blackout, double vision e motorização. Consultoria personalizada, +16 anos.',
 
   keywords: [
     'cortinas sob medida Ibitinga',
@@ -225,12 +169,6 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }}
-        />
-
-        {/* Schema FAQ */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
         />
 
         {/* Google Analytics 4 */}

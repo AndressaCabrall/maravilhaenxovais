@@ -14,10 +14,19 @@ export const metadata = {
   keywords:    ['cortinas sob medida Nova Europa', 'persianas Nova Europa SP', 'cortinas Nova Europa', 'instalação cortinas Nova Europa'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-nova-europa` },
   openGraph: {
+    type:        'website',
+    locale:      'pt_BR',
+    siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Nova Europa SP',
     description: 'Cortinas e persianas sob medida em Nova Europa SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-nova-europa`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Nova Europa SP' }],
+  },
+  twitter: {
+    card:        'summary_large_image',
+    title:       'Cortinas e Persianas Sob Medida em Nova Europa SP',
+    description: 'Cortinas e persianas sob medida em Nova Europa SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
 

@@ -14,10 +14,19 @@ export const metadata = {
   keywords:    ['cortinas sob medida Itápolis', 'persianas Itápolis SP', 'cortinas Itápolis', 'instalação cortinas Itápolis'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis` },
   openGraph: {
+    type:        'website',
+    locale:      'pt_BR',
+    siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
     description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação sob consulta. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-itapolis`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Itápolis SP' }],
+  },
+  twitter: {
+    card:        'summary_large_image',
+    title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
+    description: 'Cortinas e persianas sob medida em Itápolis SP. Instalação sob consulta. Atendimento da Maravilha Cortinas — ateliê especializado, +16 anos.',
+    images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
 

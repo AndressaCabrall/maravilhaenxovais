@@ -9,7 +9,7 @@ import { DOMINIO }    from '@/lib/constants'
 
 export const metadata = {
   title:       'Blog — Dicas e Tendências de Cortinas e Persianas',
-  description: 'Guias, comparativos e tendências de cortinas e persianas sob medida. Conteúdo criado pela Mara, especialista com 16 anos de experiência em Ibitinga e região SP.',
+  description: 'Guias, comparativos e tendências de cortinas e persianas sob medida, escritos pela Mara — especialista com +16 anos em Ibitinga SP.',
   alternates:  { canonical: `${DOMINIO}/blog` },
 }
 

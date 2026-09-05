@@ -14,10 +14,19 @@ export const metadata = {
   keywords:    ['cortinas sob medida Borborema', 'persianas Borborema SP', 'cortinas Borborema', 'instalação cortinas Borborema'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema` },
   openGraph: {
+    type:        'website',
+    locale:      'pt_BR',
+    siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Borborema SP',
     description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Borborema SP' }],
+  },
+  twitter: {
+    card:        'summary_large_image',
+    title:       'Cortinas e Persianas Sob Medida em Borborema SP',
+    description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
 

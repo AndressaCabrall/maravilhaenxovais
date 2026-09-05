@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada para per
 
 export const metadata = {
   title:       'Persianas Sob Medida — Rolô, Blackout, Double Vision | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Persianas sob medida — rolô, blackout, double vision, tela solar. Consultoria personalizada, o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.',
+  description: 'Persianas sob medida: rolô, blackout, double vision e tela solar. Consultoria personalizada no ateliê em Ibitinga. Instalação sob consulta.',
   keywords:    ['persianas sob medida Ibitinga', 'persiana blackout Ibitinga', 'persiana double vision Ibitinga', 'persiana rolô Ibitinga SP', 'persiana sob medida preço'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/persianas` },
 }

@@ -16,7 +16,7 @@ const WA = whatsappUrl('Olá! Gostaria de uma consultoria personalizada sobre mo
 
 export const metadata = {
   title:       'Motorização de Cortinas e Persianas | Ibitinga SP — Atendemos Todo o Brasil',
-  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Automação residencial — o ateliê é em Ibitinga, mas atendemos em todo o Brasil. Instalação sob consulta.',
+  description: 'Cortinas e persianas motorizadas com controle pelo celular, Alexa e Google Home. Consultoria personalizada no ateliê em Ibitinga. Instalação sob consulta.',
   keywords:    ['cortinas motorizadas Ibitinga', 'persiana motorizada Ibitinga SP', 'automação residencial Ibitinga', 'cortina motorizada sob medida'],
   alternates:  { canonical: `${DOMINIO}/produtos-e-servicos/motorizacao` },
 }
