@@ -52,6 +52,7 @@ const schema = {
 }
 
 const faq = [
+  { q: 'Como funciona a Consultoria Personalizada da Maravilha Enxovais?', a: 'Diferente de lojas comuns, que apenas vendem produtos, nós funcionamos como um ateliê especializado. Nossa consultoria analisa a arquitetura da sua casa, a incidência de luz em Itápolis e o estilo do seu mobiliário. Guiamos você na escolha técnica dos tecidos — como linhos puros e gazes de alta gramatura —, dos sistemas (wave, motorização) e dos caimentos, para que o resultado final seja digno de revista.' },
   { q: 'A Maravilha Cortinas atende Itápolis?', a: 'Sim. Itápolis fica a cerca de 20 km do nosso ateliê em Ibitinga e é onde mora a nossa fundadora — você tem acesso direto a quem projeta e produz o seu projeto. Instalação sob consulta.' },
   { q: 'Quais cortinas e persianas vocês fazem para Itápolis?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal. Também fazemos motorização com controle remoto, celular, Alexa e Google Home.' },
   { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é sob consulta, com as condições informadas junto com o orçamento — sem surpresa depois. Trabalhamos com instalação profissional.' },
