@@ -43,7 +43,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'Como funciona a consultoria em Itápolis?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente — nossa fundadora mora em Itápolis, sem taxa de deslocamento.' },
+  { q: 'Como funciona a consultoria em Itápolis?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente — nossa fundadora mora em Itápolis.' },
   { q: 'Quais modelos estão disponíveis em Itápolis?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
   { q: 'A instalação está inclusa no orçamento?', a: 'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional em Itápolis.' },
   { q: 'Qual o prazo de entrega para Itápolis?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
