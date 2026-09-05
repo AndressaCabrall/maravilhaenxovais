@@ -52,7 +52,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Araraquara?', a: 'Sim. Araraquara fica a cerca de 60 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. Consulte a disponibilidade pela consultoria personalizada no WhatsApp.' },
+  { q: 'A Maravilha Cortinas atende Araraquara?', a: 'Sim. Araraquara fica a cerca de 60 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. Faça sua consultoria personalizada — fale conosco pelo WhatsApp.' },
   { q: 'Vocês atendem projetos de arquitetura e design de interiores em Araraquara?', a: 'Sim. Trabalhamos com arquitetos e designers em projetos residenciais e comerciais, seguindo a especificação de tecido, trilho e acabamento definida no projeto — inclusive em salas de pé direito duplo.' },
   { q: 'Como funciona a consultoria personalizada e a instalação em Araraquara?', a: 'A consultoria personalizada é feita pelo WhatsApp: entendemos o ambiente e indicamos os modelos adequados, com orientação de medição. A instalação é profissional e sob consulta, com as condições informadas no orçamento.' },
 ]
@@ -123,7 +123,7 @@ export default function Page() {
               <em className={styles.secTituloEm}>em Araraquara.</em>
             </h2>
             <p className={styles.texto}>A Maravilha Cortinas atende Araraquara com a mesma qualidade e comprometimento que oferece em Ibitinga há mais de 16 anos. Nosso ateliê especializado garante consultoria personalizada, controle total da qualidade e um projeto pensado pro seu espaço.</p>
-            <p className={styles.texto}>Araraquara fica a aproximadamente 60km de Ibitinga. Trabalhamos com projetos residenciais e comerciais — de apartamentos a casas de alto padrão com pé direito duplo. Consulte disponibilidade de atendimento pelo WhatsApp.</p>
+            <p className={styles.texto}>Araraquara fica a aproximadamente 60km de Ibitinga. Trabalhamos com projetos residenciais e comerciais — de apartamentos a casas de alto padrão com pé direito duplo. Faça sua consultoria personalizada — fale conosco pelo WhatsApp.</p>
           </section>
 
           <section className={styles.sec}>
