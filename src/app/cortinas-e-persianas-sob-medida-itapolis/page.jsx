@@ -108,7 +108,7 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Itápolis, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Vista a sua casa com a alta costura do décor.{' '}
+              Vista a sua casa com a alta costura.{' '}
               <em className={styles.tituloEm}>Cortinas e persianas sob medida para os projetos mais exigentes de Itápolis.</em>
             </h1>
             <p className={styles.sub}>
