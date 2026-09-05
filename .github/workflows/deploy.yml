@@ -43,6 +43,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 65002
-          source: "./out/*"
+          source: "./out/."
           target: "/home/u211635012/domains/maravilhaenxovais.com.br/public_html"
           strip_components: 1

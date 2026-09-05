@@ -5,6 +5,10 @@
 
 RewriteEngine On
 
+# Forca o dominio canonico com www
+RewriteCond %{HTTP_HOST} ^maravilhaenxovais\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://www.maravilhaenxovais.com.br/$1 [R=301,L]
+
 # Redirects 301 — paginas de cidade descontinuadas
 RewriteRule ^cortinas-e-persianas-sob-medida-jaboticabal/?$ https://www.maravilhaenxovais.com.br/ [R=301,L]
 RewriteRule ^cortinas-e-persianas-sob-medida-nova-europa/?$ https://www.maravilhaenxovais.com.br/ [R=301,L]
