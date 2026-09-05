@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de agendar uma consultoria com a especialista para um projeto em Araraquara.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Araraquara.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Araraquara SP',
@@ -114,7 +114,7 @@ export default function Page() {
               Proteja o mobiliário do seu lar com elegância e domine a luz natural.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Agendar Consultoria com Especialista →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -182,7 +182,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Agendar Consultoria com Especialista →
+              Consultoria com a especialista →
             </a>
           </div>
 

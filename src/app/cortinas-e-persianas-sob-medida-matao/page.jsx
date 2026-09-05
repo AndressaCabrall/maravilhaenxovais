@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Matão.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Matão.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Matão SP',
@@ -52,7 +52,8 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Matão?', a: 'Sim. Matão fica a cerca de 35 km do ateliê em Ibitinga e faz parte da nossa área de atendimento. Comece pela consultoria personalizada no WhatsApp.' },
+  { q: 'Como funciona a consultoria da Maravilha Enxovais para a região de Matão?', a: 'Funcionamos como um ateliê especializado, voltado para a curadoria fina de ambientes. Nossa consultoria analisa a arquitetura da sua casa, a incidência do sol e o estilo do seu mobiliário. Guiamos você na escolha técnica dos tecidos, dos sistemas (wave, pregas embutidas) e das tecnologias, para que o resultado final fique perfeitamente integrado ao seu projeto arquitetônico.' },
+  { q: 'Como a consultoria me ajuda a lidar com o sol forte e a poeira de Matão?', a: 'O clima da nossa região exige escolhas inteligentes de materiais. Ajudamos você a selecionar tecidos nobres com tramas especiais, que não retêm poeira com facilidade, e persianas tecnológicas — como as telas solares com tratamento antiestático, indicadas para varandas e áreas gourmet. Isso garante proteção UV para os seus móveis planejados, conforto térmico e facilidade na manutenção do dia a dia.' },
   { q: 'Vocês atendem casas, apartamentos e comércios em Matão?', a: 'Sim — residências, apartamentos, escritórios, consultórios e espaços comerciais. Cada ambiente pede uma solução diferente, e é isso que definimos na consultoria personalizada.' },
   { q: 'Como funciona a instalação em Matão?', a: 'Instalação profissional, sob consulta, com as condições informadas no orçamento. Você recebe tudo detalhado antes de confirmar o pedido.' },
 ]
@@ -106,14 +107,14 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Matão, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Matão, SP.</em>
+              Sofisticação sob medida para os lares mais exclusivos de Matão.{' '}
+              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas de alto padrão.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Matão e toda a região. Instalação sob consulta.
+              Proteja a privacidade da sua família e preserve o seu mobiliário com a alta costura do décor. Criamos projetos inteligentes para os principais condomínios de Matão, unindo a praticidade de tecidos nobres e fáceis de cuidar à tecnologia da motorização invisível.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Matão →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -181,7 +182,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Matão →
+              Consultoria com a especialista →
             </a>
           </div>
 
