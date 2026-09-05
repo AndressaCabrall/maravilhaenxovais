@@ -52,11 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Taquaritinga?', a: 'Sim! Taquaritinga fica a ~25km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
-  { q: 'Há taxa de deslocamento para Taquaritinga?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — respondemos rápido e alinhamos o melhor formato para o seu caso.' },
-  { q: 'Quais produtos estão disponíveis em Taquaritinga?', a: 'Todos os produtos: cortinas wave, blackout, linho, prega macho, persianas rolô, double vision, blackout, tela solar e motorização.' },
-  { q: 'Como funciona a consultoria?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente em Taquaritinga.' },
-  { q: 'Qual o prazo de entrega para Taquaritinga?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'A Maravilha Cortinas atende Taquaritinga?', a: 'Sim. Taquaritinga fica a cerca de 25 km de Ibitinga e faz parte da nossa área de atendimento. O contato começa pela consultoria personalizada no WhatsApp.' },
+  { q: 'Como funciona a consultoria personalizada para Taquaritinga?', a: 'É uma conversa pelo WhatsApp, no seu tempo. Analisamos o ambiente, a luz que entra e o uso do espaço antes de indicar qualquer modelo — e orientamos a medição para que a peça saia no tamanho exato.' },
+  { q: 'Vocês fazem cortina para sala com pé direito duplo em Taquaritinga?', a: 'Sim, é uma das nossas especialidades. Ambientes com pé direito alto pedem trilho adequado, tecido com o caimento certo e medição precisa — e a motorização costuma ser a melhor solução para janelas de difícil acesso.' },
 ]
 
 const servicos = [

@@ -52,10 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Araraquara?', a: 'Sim! Araraquara está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
-  { q: 'Atendem projetos de arquitetura em Araraquara?', a: 'Sim! Temos experiência em projetos com arquitetos e designers de interiores — cortina wave, pé direito duplo, trilho embutido e motorização.' },
-  { q: 'Como funciona a consultoria?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente em Araraquara.' },
-  { q: 'Qual o prazo de entrega para Araraquara?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'A Maravilha Cortinas atende Araraquara?', a: 'Sim. Araraquara fica a cerca de 60 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. Consulte a disponibilidade pela consultoria personalizada no WhatsApp.' },
+  { q: 'Vocês atendem projetos de arquitetura e design de interiores em Araraquara?', a: 'Sim. Trabalhamos com arquitetos e designers em projetos residenciais e comerciais, seguindo a especificação de tecido, trilho e acabamento definida no projeto — inclusive em salas de pé direito duplo.' },
+  { q: 'Como funciona a consultoria personalizada e a instalação em Araraquara?', a: 'A consultoria personalizada é feita pelo WhatsApp: entendemos o ambiente e indicamos os modelos adequados, com orientação de medição. A instalação é profissional e sob consulta, com as condições informadas no orçamento.' },
 ]
 
 const servicos = [

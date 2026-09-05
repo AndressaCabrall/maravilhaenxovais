@@ -52,10 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'Como funciona a consultoria em Itápolis?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente — nossa fundadora mora em Itápolis.' },
-  { q: 'Quais modelos estão disponíveis em Itápolis?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
-  { q: 'A instalação está inclusa no orçamento?', a: 'Instalação sob consulta, com valor informado no orçamento. Trabalhamos com instalação profissional em Itápolis.' },
-  { q: 'Qual o prazo de entrega para Itápolis?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'Como funciona a consultoria personalizada em Itápolis?', a: 'A consultoria personalizada é feita pelo WhatsApp, no horário que for melhor para você. Entendemos o ambiente, a incidência de luz e a necessidade de privacidade, e indicamos o tecido e o modelo que fazem sentido para o seu espaço — nossa fundadora mora em Itápolis.' },
+  { q: 'Quais cortinas e persianas vocês fazem para Itápolis?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal. Também fazemos motorização com controle remoto, celular, Alexa e Google Home.' },
+  { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é profissional, feita por quem conhece o produto. Instalação sob consulta — as condições são informadas junto com o orçamento, sem surpresa depois.' },
 ]
 
 const servicos = [

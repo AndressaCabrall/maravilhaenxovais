@@ -52,11 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Nova Europa?', a: 'Sim! Nova Europa fica a ~30km de Ibitinga e está na nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
-  { q: 'Há taxa de deslocamento para Nova Europa?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — alinhamos o melhor formato para o seu caso.' },
-  { q: 'Quais modelos estão disponíveis em Nova Europa?', a: 'Todos os modelos: cortinas wave, blackout, linho, franzida, prega macho e persianas rolô, double vision, blackout, tela solar e motorizadas.' },
-  { q: 'Como funciona a consultoria?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente em Nova Europa.' },
-  { q: 'Qual o prazo de entrega para Nova Europa?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'A Maravilha Cortinas atende Nova Europa?', a: 'Sim. Nova Europa fica a cerca de 30 km do nosso ateliê em Ibitinga e está dentro da área que atendemos. O primeiro passo é a consultoria personalizada pelo WhatsApp.' },
+  { q: 'Quais modelos estão disponíveis para Nova Europa?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal — com motorização opcional.' },
+  { q: 'Como funciona a instalação em Nova Europa?', a: 'A instalação é profissional e sob consulta, com o valor informado no orçamento. Nenhuma peça é padrão: tudo é produzido no ateliê para a medida exata do seu vão.' },
 ]
 
 const servicos = [

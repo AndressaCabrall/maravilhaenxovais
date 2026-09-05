@@ -52,11 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Tabatinga?', a: 'Sim! Tabatinga fica a ~25km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
-  { q: 'Há taxa de deslocamento para Tabatinga?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — alinhamos o melhor formato para o seu caso.' },
-  { q: 'Quais produtos estão disponíveis em Tabatinga?', a: 'Todos os produtos: cortinas wave, blackout, linho, prega macho, persianas rolô, double vision, blackout, tela solar e motorização.' },
-  { q: 'Como funciona a consultoria?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente em Tabatinga.' },
-  { q: 'Qual o prazo de entrega para Tabatinga?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'A Maravilha Cortinas atende Tabatinga?', a: 'Sim. Tabatinga fica a cerca de 25 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. O primeiro passo é a consultoria personalizada pelo WhatsApp.' },
+  { q: 'Como é feita a consultoria personalizada para quem é de Tabatinga?', a: 'Pelo WhatsApp, no horário que você preferir. Você conta como é o ambiente e o que precisa — controlar o sol, ganhar privacidade, escurecer o quarto — e indicamos o tecido e o modelo certos, com orientação de medição.' },
+  { q: 'A instalação está inclusa no orçamento em Tabatinga?', a: 'A instalação é sob consulta, com o valor informado no orçamento. Trabalhamos com instalação profissional e você sabe todas as condições antes de fechar.' },
 ]
 
 const servicos = [

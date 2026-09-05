@@ -52,11 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende em Matão?', a: 'Sim! Matão fica a ~35km de Ibitinga e está dentro da nossa área de atendimento. Consulte disponibilidade e condições de consultoria pelo WhatsApp.' },
-  { q: 'Há taxa de deslocamento para Matão?', a: 'As condições de atendimento variam conforme a agenda. Consulte pelo WhatsApp — alinhamos o melhor formato para o seu caso.' },
-  { q: 'Atendem apartamentos e casas em Matão?', a: 'Sim! Atendemos residências, apartamentos, escritórios e comércios em Matão e região.' },
-  { q: 'Como funciona a consultoria?', a: 'A consultoria é feita pelo WhatsApp, no horário que for melhor para você. Apresentamos as opções de tecido e modelo mais adequadas pro seu ambiente em Matão.' },
-  { q: 'Qual o prazo de entrega para Matão?', a: 'Na consultoria, o ateliê informa todos os prazos — de confecção, entrega e instalação, se houver — de acordo com o modelo e a quantidade de peças do seu projeto.' },
+  { q: 'A Maravilha Cortinas atende Matão?', a: 'Sim. Matão fica a cerca de 35 km do ateliê em Ibitinga e faz parte da nossa área de atendimento. Comece pela consultoria personalizada no WhatsApp.' },
+  { q: 'Vocês atendem casas, apartamentos e comércios em Matão?', a: 'Sim — residências, apartamentos, escritórios, consultórios e espaços comerciais. Cada ambiente pede uma solução diferente, e é isso que definimos na consultoria personalizada.' },
+  { q: 'Como funciona a instalação em Matão?', a: 'Instalação profissional, sob consulta, com as condições informadas no orçamento. Você recebe tudo detalhado antes de confirmar o pedido.' },
 ]
 
 const servicos = [
