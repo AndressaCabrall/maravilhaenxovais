@@ -13,7 +13,7 @@ export const AUTORA = {
   nome:      'Mara Pavan',
   cargo:     'Fundadora da Maravilha Enxovais Cortinas & Persianas',
   bio:       'Mara Pavan fundou a Maravilha Enxovais Cortinas & Persianas há mais de 16 anos. Especialista em decoração com cortinas e persianas sob medida, ela já transformou centenas de ambientes residenciais e comerciais — sempre aliando estética, funcionalidade e instalação profissional.',
-  instagram: 'https://instagram.com/maravilhacortinas',
+  instagram: 'https://www.instagram.com/maravilhaenxovais',
   avatar:    '/images/mara-pavan.webp',
 }
 

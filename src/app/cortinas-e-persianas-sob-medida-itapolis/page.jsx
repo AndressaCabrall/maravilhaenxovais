@@ -53,7 +53,6 @@ const schema = {
 
 const faq = [
   { q: 'Como funciona a Consultoria Personalizada da Maravilha Enxovais?', a: 'Diferente de lojas comuns, que apenas vendem produtos, nós funcionamos como um ateliê especializado. Nossa consultoria analisa a arquitetura da sua casa, a incidência de luz em Itápolis e o estilo do seu mobiliário. Guiamos você na escolha técnica dos tecidos — como linhos puros e gazes de alta gramatura —, dos sistemas (wave, motorização) e dos caimentos, para que o resultado final seja digno de revista.' },
-  { q: 'A Maravilha Cortinas atende Itápolis?', a: 'Sim. Itápolis fica a cerca de 20 km do nosso ateliê em Ibitinga e é onde mora a nossa fundadora — você tem acesso direto a quem projeta e produz o seu projeto. Instalação sob consulta.' },
   { q: 'Quais cortinas e persianas vocês fazem para Itápolis?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal. Também fazemos motorização com controle remoto, celular, Alexa e Google Home.' },
   { q: 'Como posso ver os tecidos disponíveis em Itápolis?', a: 'Na consultoria personalizada apresentamos nosso mostruário exclusivo, com as últimas tendências de tecidos, texturas e sistemas de automação compatíveis com assistentes virtuais (Alexa e Google Home). Tudo pensado para quem busca conforto, privacidade e sofisticação.' },
   { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é sob consulta, com as condições informadas junto com o orçamento — sem surpresa depois. Trabalhamos com instalação profissional.' },
@@ -112,7 +111,7 @@ export default function Page() {
               <em className={styles.tituloEm}>Cortinas e persianas sob medida para os projetos mais exigentes de Itápolis.</em>
             </h1>
             <p className={styles.sub}>
-              Esqueça as soluções genéricas. No nosso ateliê especializado, transformamos seus ambientes através de uma consultoria de design personalizada, selecionando os tecidos mais nobres e as tecnologias mais modernas para harmonizar perfeitamente com a arquitetura do seu lar.
+              Esqueça as soluções genéricas. No nosso ateliê especializado, transformamos seus ambientes através de uma consultoria personalizada, selecionando os tecidos mais nobres e as tecnologias mais modernas para harmonizar perfeitamente com a arquitetura do seu lar.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Quero falar com a consultora especializada →
@@ -125,7 +124,7 @@ export default function Page() {
               <em className={styles.secTituloEm}>em Itápolis.</em>
             </h2>
             <p className={styles.texto}>A Maravilha Cortinas atende Itápolis com um ateliê especializado — cada projeto começa com uma consultoria personalizada. Nossa fundadora mora em Itápolis — você tem acesso direto a quem projeta e produz o seu projeto. Instalação sob consulta.</p>
-            <p className={styles.texto}>Trabalhamos com todos os modelos de cortina e persiana sob medida: wave, blackout, linho, prega macho, rolô, double vision, tela solar e motorização. Do primeiro contato à instalação, cuidamos de tudo com mais de 16 anos de experiência.</p>
+            <p className={styles.texto}>Trabalhamos com todos os modelos de cortina e persiana sob medida: wave, blackout, linho, prega macho, rolô, double vision, tela solar e motorização. Do primeiro contato à instalação, cuidamos de tudo com mais de 16 anos de experiência. Instalação sob consulta.</p>
           </section>
 
           <section className={styles.sec}>
