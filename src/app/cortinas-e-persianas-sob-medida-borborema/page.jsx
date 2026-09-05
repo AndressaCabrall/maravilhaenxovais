@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Borborema.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Borborema.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Borborema SP',
@@ -52,7 +52,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Borborema?', a: 'Sim. Borborema fica a cerca de 25 km do ateliê em Ibitinga e está na nossa área de atendimento. Tudo começa com uma consultoria personalizada pelo WhatsApp.' },
+  { q: 'Vocês trabalham junto com o arquiteto do meu projeto em Borborema?', a: 'Sim. Nosso foco está na excelência do design e na precisão milimétrica da confecção no ateliê. Para assegurar a exatidão que as construções de alto padrão exigem — especialmente em condomínios como o Village Tietê e o Altos do Tietê —, trabalhamos em sinergia com o seu arquiteto, designer de interiores ou o responsável pela obra.' },
   { q: 'Quais modelos de cortina e persiana estão disponíveis para Borborema?', a: 'A linha completa sob medida — do clássico ao contemporâneo. Cortinas wave, blackout, linho e prega macho; persianas rolô, double vision, tela solar e horizontal, com opção de motorização.' },
   { q: 'Como funciona a instalação em Borborema?', a: 'Instalação profissional, sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê para o tamanho exato do seu vão.' },
 ]
@@ -106,14 +106,14 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Borborema, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Borborema, SP.</em>
+              A imponência dos refúgios de luxo exige a perfeição da alta costura.{' '}
+              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas para os condomínios e ranchos mais exclusivos de Borborema.</em>
             </h1>
             <p className={styles.sub}>
               Um ateliê especializado de Ibitinga — consultoria personalizada em Borborema e região. Instalação sob consulta.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Borborema →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -181,7 +181,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Borborema →
+              Consultoria com a especialista →
             </a>
           </div>
 

@@ -29,7 +29,7 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type':    'LocalBusiness',
   name:        EMPRESA.nomeCompleto,
-  description: 'Especialistas em cortinas e persianas sob medida em Ibitinga/SP desde 2011. Atendemos Ibitinga, Itápolis, Taquaritinga, Matão, Araraquara, Tabatinga e Borborema. Instalação sob consulta e todo Brasil.',
+  description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga/SP, com consultoria personalizada. Atendemos Itápolis, Taquaritinga, Matão, Araraquara, Tabatinga, Borborema e todo o Brasil. Instalação sob consulta.',
   url:         DOMINIO,
   areaServed:  AREA_ATENDIMENTO.map((c) => ({ '@type': 'City', name: c.nome })),
   telephone:   CONTATO.telefoneFormatado,
