@@ -3,7 +3,7 @@
 
 export const siteConfig = {
   name:        'Maravilha Cortinas',
-  url:         'https://maravilhaenxovais.com.br',
+  url:         'https://www.maravilhaenxovais.com.br',
   description: 'Ateliê especializado em cortinas e persianas sob medida em Ibitinga desde 2011. Consultoria personalizada e projeto sob medida. Instalação sob consulta.',
   contact: {
     phone:     '(16) 99610-3132',

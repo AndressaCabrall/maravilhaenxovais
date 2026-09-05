@@ -1,4 +1,10 @@
-# Redirects 301 — paginas de cidade descontinuadas
+# Protege arquivos de configuracao
+<Files ".htaccess">
+  Require all denied
+</Files>
+
 RewriteEngine On
-RewriteRule ^cortinas-e-persianas-sob-medida-jaboticabal/?$ / [R=301,L]
-RewriteRule ^cortinas-e-persianas-sob-medida-nova-europa/?$ / [R=301,L]
+
+# Redirects 301 — paginas de cidade descontinuadas
+RewriteRule ^cortinas-e-persianas-sob-medida-jaboticabal/?$ https://www.maravilhaenxovais.com.br/ [R=301,L]
+RewriteRule ^cortinas-e-persianas-sob-medida-nova-europa/?$ https://www.maravilhaenxovais.com.br/ [R=301,L]
