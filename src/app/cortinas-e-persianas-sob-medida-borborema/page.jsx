@@ -10,7 +10,7 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a espe
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Borborema SP',
-  description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Borborema SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Borborema', 'persianas Borborema SP', 'cortinas Borborema', 'instalação cortinas Borborema'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema` },
   openGraph: {
@@ -18,14 +18,14 @@ export const metadata = {
     locale:      'pt_BR',
     siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Borborema SP',
-    description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Borborema SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-borborema`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Borborema SP' }],
   },
   twitter: {
     card:        'summary_large_image',
     title:       'Cortinas e Persianas Sob Medida em Borborema SP',
-    description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Borborema SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
@@ -48,7 +48,7 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Borborema' },
-  description: 'Cortinas e persianas sob medida em Borborema SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Borborema SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
 }
 
 const faq = [
@@ -110,7 +110,7 @@ export default function Page() {
               <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas para os condomínios e ranchos mais exclusivos de Borborema.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Borborema e região. Instalação sob consulta.
+              Proteja o mobiliário do seu refúgio com elegância e domine a luminosidade do sol.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria com a especialista →
