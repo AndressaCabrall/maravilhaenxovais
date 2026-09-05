@@ -52,7 +52,7 @@ const schema = {
 }
 
 const faq = [
-  { q: 'Como funciona a consultoria personalizada em Itápolis?', a: 'A consultoria personalizada é feita pelo WhatsApp, no horário que for melhor para você. Entendemos o ambiente, a incidência de luz e a necessidade de privacidade, e indicamos o tecido e o modelo que fazem sentido para o seu espaço — nossa fundadora mora em Itápolis.' },
+  { q: 'A Maravilha Cortinas atende Itápolis?', a: 'Sim. Itápolis fica a cerca de 20 km do nosso ateliê em Ibitinga e é onde mora a nossa fundadora — você tem acesso direto a quem projeta, produz e instala.' },
   { q: 'Quais cortinas e persianas vocês fazem para Itápolis?', a: 'Toda a linha sob medida: cortinas wave, blackout, linho, prega macho e franzida, e persianas rolô, double vision, tela solar e horizontal. Também fazemos motorização com controle remoto, celular, Alexa e Google Home.' },
   { q: 'Como funciona a instalação em Itápolis?', a: 'A instalação é profissional, feita por quem conhece o produto. Instalação sob consulta — as condições são informadas junto com o orçamento, sem surpresa depois.' },
 ]

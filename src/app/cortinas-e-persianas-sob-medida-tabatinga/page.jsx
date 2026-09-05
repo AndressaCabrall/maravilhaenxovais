@@ -53,7 +53,6 @@ const schema = {
 
 const faq = [
   { q: 'A Maravilha Cortinas atende Tabatinga?', a: 'Sim. Tabatinga fica a cerca de 25 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. O primeiro passo é a consultoria personalizada pelo WhatsApp.' },
-  { q: 'Como é feita a consultoria personalizada para quem é de Tabatinga?', a: 'Pelo WhatsApp, no horário que você preferir. Você conta como é o ambiente e o que precisa — controlar o sol, ganhar privacidade, escurecer o quarto — e indicamos o tecido e o modelo certos, com orientação de medição.' },
   { q: 'A instalação está inclusa no orçamento em Tabatinga?', a: 'A instalação é sob consulta, com o valor informado no orçamento. Trabalhamos com instalação profissional e você sabe todas as condições antes de fechar.' },
 ]
 

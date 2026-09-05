@@ -53,7 +53,6 @@ const schema = {
 
 const faq = [
   { q: 'A Maravilha Cortinas atende Taquaritinga?', a: 'Sim. Taquaritinga fica a cerca de 25 km de Ibitinga e faz parte da nossa área de atendimento. O contato começa pela consultoria personalizada no WhatsApp.' },
-  { q: 'Como funciona a consultoria personalizada para Taquaritinga?', a: 'É uma conversa pelo WhatsApp, no seu tempo. Analisamos o ambiente, a luz que entra e o uso do espaço antes de indicar qualquer modelo — e orientamos a medição para que a peça saia no tamanho exato.' },
   { q: 'Vocês fazem cortina para sala com pé direito duplo em Taquaritinga?', a: 'Sim, é uma das nossas especialidades. Ambientes com pé direito alto pedem trilho adequado, tecido com o caimento certo e medição precisa — e a motorização costuma ser a melhor solução para janelas de difícil acesso.' },
 ]
 
