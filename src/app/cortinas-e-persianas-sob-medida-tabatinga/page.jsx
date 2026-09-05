@@ -52,6 +52,7 @@ const schema = {
 }
 
 const faq = [
+  { q: 'Como a consultoria me ajuda com a poeira e o calor forte da região de Tabatinga?', a: 'O clima do interior e a proximidade com o campo exigem escolhas inteligentes de materiais. Na consultoria, ajudamos você a selecionar tecidos nobres com tramas especiais que repelem a poeira e persianas tecnológicas — como as telas solares com tratamento antiestático, indicadas para áreas gourmet. Isso garante o bloqueio dos raios UV, protegendo os seus móveis planejados, além de conforto térmico e facilidade na limpeza.' },
   { q: 'A Maravilha Cortinas atende Tabatinga?', a: 'Sim. Tabatinga fica a cerca de 25 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. O primeiro passo é a consultoria personalizada pelo WhatsApp.' },
   { q: 'A instalação está inclusa no orçamento em Tabatinga?', a: 'A instalação é sob consulta, com o valor informado no orçamento. Trabalhamos com instalação profissional e você sabe todas as condições antes de fechar.' },
 ]
@@ -105,11 +106,11 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Tabatinga, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Tabatinga, SP.</em>
+              Esqueça as soluções comuns. Vista a sua casa com a alta costura.{' '}
+              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas de alto padrão para as residências mais exclusivas de Tabatinga.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Tabatinga e região. Instalação sob consulta.
+              Fuja do óbvio com projetos desenhados sob medida para a sua arquitetura.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria personalizada em Tabatinga →
