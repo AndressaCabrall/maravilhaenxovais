@@ -107,10 +107,10 @@ export default function Page() {
             </div>
             <h1 className={styles.titulo}>
               A imponência dos refúgios de luxo exige a perfeição da alta costura.{' '}
-              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas para os condomínios e ranchos mais exclusivos de Borborema.</em>
+              <em className={styles.tituloEm}>Ateliê especializado em cortinas e persianas.</em>
             </h1>
             <p className={styles.sub}>
-              Proteja o mobiliário do seu refúgio com elegância e domine a luminosidade do sol.
+              Proteja o mobiliário do seu refúgio com elegância e domine a luminosidade do sol, para os condomínios e ranchos mais exclusivos de Borborema.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
               Consultoria com a especialista →
