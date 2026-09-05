@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Araraquara.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de agendar uma consultoria com a especialista para um projeto em Araraquara.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Araraquara SP',
@@ -52,8 +52,9 @@ const schema = {
 }
 
 const faq = [
-  { q: 'A Maravilha Cortinas atende Araraquara?', a: 'Sim. Araraquara fica a cerca de 60 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. Faça sua consultoria personalizada — fale conosco pelo WhatsApp.' },
   { q: 'Vocês atendem projetos de arquitetura e design de interiores em Araraquara?', a: 'Sim. Trabalhamos com arquitetos e designers em projetos residenciais e comerciais, seguindo a especificação de tecido, trilho e acabamento definida no projeto — inclusive em salas de pé direito duplo.' },
+  { q: 'Minha casa em Araraquara tem pé-direito duplo. Como a consultoria me ajuda?', a: 'Projetos com grandes vãos de vidro — comuns em condomínios como o Damha e o Cedros do Campo — exigem cálculo exato de peso, caimento e escolha do tecido correto, como linhos de alta gramatura e gazes especiais, para que a peça não deforme com o tempo. Nossa consultoria avalia a incidência solar do ambiente para indicar a proporção perfeita de pregas, como no sistema wave, garantindo um caimento impecável sem sobrecarregar a estrutura.' },
+  { q: 'Quero cortinas e persianas motorizadas integradas à minha casa inteligente. Vocês fazem?', a: 'Sim, essa é uma das nossas especialidades. Na consultoria planejamos a inclusão de motores ultrassilenciosos e sistemas compatíveis com os principais ecossistemas do mercado — Alexa, Google Home e centrais cabeadas de automação residencial. Orientamos o seu eletricista sobre os pontos de energia necessários antes mesmo da confecção, para que a tecnologia fique totalmente invisível aos olhos.' },
   { q: 'Como funciona a instalação em Araraquara?', a: 'A instalação é profissional e sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê na medida exata do seu vão.' },
 ]
 
@@ -106,14 +107,14 @@ export default function Page() {
               <span className={styles.eyebrowText}>Atendemos Araraquara, SP</span>
             </div>
             <h1 className={styles.titulo}>
-              Cortinas e persianas sob medida{' '}
-              <em className={styles.tituloEm}>em Araraquara, SP.</em>
+              Grandes arquiteturas exigem a perfeição da alta costura.{' '}
+              <em className={styles.tituloEm}>Consultoria personalizada para os condomínios mais exclusivos de Araraquara.</em>
             </h1>
             <p className={styles.sub}>
-              Um ateliê especializado de Ibitinga — consultoria personalizada em Araraquara e região. Instalação sob consulta.
+              Proteja o mobiliário do seu lar com elegância e domine a luz natural.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Araraquara →
+              Agendar Consultoria com Especialista →
             </a>
           </header>
 
@@ -181,7 +182,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Araraquara →
+              Agendar Consultoria com Especialista →
             </a>
           </div>
 
