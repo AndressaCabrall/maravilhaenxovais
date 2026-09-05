@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com o ateliê especializado para um projeto em Taquaritinga.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Taquaritinga.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Taquaritinga SP',
@@ -113,7 +113,7 @@ export default function Page() {
               Valorize a luz natural e proteja a privacidade do seu lar com elegância.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria com o ateliê especializado →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -181,7 +181,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria com o ateliê especializado →
+              Consultoria com a especialista →
             </a>
           </div>
 

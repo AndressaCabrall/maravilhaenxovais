@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de falar com a consultora especializada sobre um projeto em Itápolis.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Itápolis.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Itápolis SP',
@@ -114,7 +114,7 @@ export default function Page() {
               Esqueça as soluções genéricas. No nosso ateliê especializado, transformamos seus ambientes através de uma consultoria personalizada, selecionando os tecidos mais nobres e as tecnologias mais modernas para harmonizar perfeitamente com a arquitetura do seu lar.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Quero falar com a consultora especializada →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -182,7 +182,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Itápolis →
+              Consultoria com a especialista →
             </a>
           </div>
 

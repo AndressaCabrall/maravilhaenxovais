@@ -6,7 +6,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 import { CONTATO, DOMINIO, ENDERECO } from '@/lib/constants'
 import { whatsappUrl } from '@/lib/whatsapp'
 
-const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personalizada em Tabatinga.')
+const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a especialista para um projeto em Tabatinga.')
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Tabatinga SP',
@@ -112,7 +112,7 @@ export default function Page() {
               Fuja do óbvio com projetos desenhados sob medida para a sua arquitetura, para as residências mais exclusivas de Tabatinga.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaHero}>
-              Consultoria personalizada em Tabatinga →
+              Consultoria com a especialista →
             </a>
           </header>
 
@@ -180,7 +180,7 @@ export default function Page() {
               Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
-              Consultoria personalizada em Tabatinga →
+              Consultoria com a especialista →
             </a>
           </div>
 
