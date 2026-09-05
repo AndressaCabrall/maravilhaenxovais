@@ -73,7 +73,7 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Nova Europa: ajudamos a escolher o tecido e o modelo certos para o seu ambiente, com orientação de medição profissional.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Nova Europa: ajudamos a escolher o tecido e o modelo certos para o seu ambiente.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Nova Europa e toda a região recomendam.' },
@@ -178,7 +178,7 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Nova Europa?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente, orientamos a medição e apresentamos as melhores opções.
+              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
               Consultoria personalizada em Nova Europa →

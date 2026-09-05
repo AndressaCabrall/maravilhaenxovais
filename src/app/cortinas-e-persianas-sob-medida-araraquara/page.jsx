@@ -54,7 +54,7 @@ const schema = {
 const faq = [
   { q: 'A Maravilha Cortinas atende Araraquara?', a: 'Sim. Araraquara fica a cerca de 60 km do nosso ateliê em Ibitinga e faz parte da nossa área de atendimento. Faça sua consultoria personalizada — fale conosco pelo WhatsApp.' },
   { q: 'Vocês atendem projetos de arquitetura e design de interiores em Araraquara?', a: 'Sim. Trabalhamos com arquitetos e designers em projetos residenciais e comerciais, seguindo a especificação de tecido, trilho e acabamento definida no projeto — inclusive em salas de pé direito duplo.' },
-  { q: 'Como funciona a instalação em Araraquara?', a: 'A instalação é profissional e sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê na medida exata do seu vão e instalada por quem entende do produto.' },
+  { q: 'Como funciona a instalação em Araraquara?', a: 'A instalação é profissional e sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê na medida exata do seu vão.' },
 ]
 
 const servicos = [
@@ -73,7 +73,7 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Araraquara: ajudamos a escolher o tecido e o modelo certos para o seu ambiente, com orientação de medição profissional.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Araraquara: ajudamos a escolher o tecido e o modelo certos para o seu ambiente.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Araraquara e toda a região recomendam.' },
@@ -178,7 +178,7 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Araraquara?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente, orientamos a medição e apresentamos as melhores opções.
+              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
               Consultoria personalizada em Araraquara →

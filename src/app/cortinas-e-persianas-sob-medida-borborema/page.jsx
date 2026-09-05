@@ -54,7 +54,7 @@ const schema = {
 const faq = [
   { q: 'A Maravilha Cortinas atende Borborema?', a: 'Sim. Borborema fica a cerca de 25 km do ateliê em Ibitinga e está na nossa área de atendimento. Tudo começa com uma consultoria personalizada pelo WhatsApp.' },
   { q: 'Quais modelos de cortina e persiana estão disponíveis para Borborema?', a: 'A linha completa sob medida — do clássico ao contemporâneo. Cortinas wave, blackout, linho e prega macho; persianas rolô, double vision, tela solar e horizontal, com opção de motorização.' },
-  { q: 'Como funciona a instalação em Borborema?', a: 'Instalação profissional, sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê para o tamanho exato do seu vão e instalada por quem entende do produto.' },
+  { q: 'Como funciona a instalação em Borborema?', a: 'Instalação profissional, sob consulta, com as condições informadas no orçamento. Cada peça é produzida no ateliê para o tamanho exato do seu vão.' },
 ]
 
 const servicos = [
@@ -73,7 +73,7 @@ const servicos = [
 ]
 
 const diferenciais = [
-  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Borborema: ajudamos a escolher o tecido e o modelo certos para o seu ambiente, com orientação de medição profissional.' },
+  { num: '01', titulo: 'Consultoria personalizada', desc: 'Consultoria personalizada para Borborema: ajudamos a escolher o tecido e o modelo certos para o seu ambiente.' },
   { num: '02', titulo: 'Instalação profissional', desc: 'Instalação sob consulta, com valor informado no orçamento. Sem surpresas no processo.' },
   { num: '03', titulo: 'Ateliê especializado', desc: 'Cada projeto pensado sob medida em Ibitinga. Você paga por um trabalho de detalhe, não por intermediários.' },
   { num: '04', titulo: '5,0 no Google', desc: 'Nota máxima com avaliações verificadas. Clientes de Borborema e toda a região recomendam.' },
@@ -178,7 +178,7 @@ export default function Page() {
               <em className={styles.ctaFinalEm}>em Borborema?</em>
             </h2>
             <p className={styles.ctaFinalSub}>
-              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente, orientamos a medição e apresentamos as melhores opções.
+              Consultoria personalizada com quem é especialista. Entendemos o seu ambiente e apresentamos as melhores opções.
             </p>
             <a href={WA} target="_blank" rel="noopener noreferrer" className={styles.ctaFinalBtn}>
               Consultoria personalizada em Borborema →

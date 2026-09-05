@@ -22,7 +22,7 @@ export const PASSOS = [
   {
     numero:    '4',
     titulo:    'Instalação profissional',
-    descricao: 'Nossa equipe instala com cuidado e precisão, tudo feito por quem entende do produto. Instalação sob consulta — condições informadas no orçamento.',
+    descricao: 'Nossa equipe instala com cuidado e precisão. Instalação sob consulta — condições informadas no orçamento.',
     detalhe:   'Da medição à instalação',
   },
 ]
