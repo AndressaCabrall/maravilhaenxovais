@@ -10,7 +10,7 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria personaliz
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Tabatinga SP',
-  description: 'Cortinas e persianas sob medida em Tabatinga SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Tabatinga SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Tabatinga', 'persianas Tabatinga SP', 'cortinas Tabatinga', 'instalação cortinas Tabatinga'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-tabatinga` },
   openGraph: {
@@ -18,14 +18,14 @@ export const metadata = {
     locale:      'pt_BR',
     siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Tabatinga SP',
-    description: 'Cortinas e persianas sob medida em Tabatinga SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Tabatinga SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-tabatinga`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Tabatinga SP' }],
   },
   twitter: {
     card:        'summary_large_image',
     title:       'Cortinas e Persianas Sob Medida em Tabatinga SP',
-    description: 'Cortinas e persianas sob medida em Tabatinga SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Tabatinga SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
@@ -48,7 +48,7 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Tabatinga' },
-  description: 'Cortinas e persianas sob medida em Tabatinga SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Tabatinga SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
 }
 
 const faq = [

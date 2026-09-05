@@ -10,7 +10,7 @@ const WA = whatsappUrl('Olá! Vi o site e gostaria de uma consultoria com a espe
 
 export const metadata = {
   title:       'Cortinas e Persianas Sob Medida em Matão SP',
-  description: 'Cortinas e persianas sob medida em Matão SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Matão SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
   keywords:    ['cortinas sob medida Matão', 'persianas Matão SP', 'cortinas Matão', 'instalação cortinas Matão SP'],
   alternates:  { canonical: `${DOMINIO}/cortinas-e-persianas-sob-medida-matao` },
   openGraph: {
@@ -18,14 +18,14 @@ export const metadata = {
     locale:      'pt_BR',
     siteName:    'Maravilha Cortinas',
     title:       'Cortinas e Persianas Sob Medida em Matão SP',
-    description: 'Cortinas e persianas sob medida em Matão SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Matão SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     url:         `${DOMINIO}/cortinas-e-persianas-sob-medida-matao`,
     images: [{ url: `${DOMINIO}/images/og-image.jpg`, width: 1200, height: 630, alt: 'Cortinas e Persianas Sob Medida em Matão SP' }],
   },
   twitter: {
     card:        'summary_large_image',
     title:       'Cortinas e Persianas Sob Medida em Matão SP',
-    description: 'Cortinas e persianas sob medida em Matão SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+    description: 'Cortinas e persianas sob medida em Matão SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
     images:      [`${DOMINIO}/images/og-image.jpg`],
   },
 }
@@ -48,7 +48,7 @@ const schema = {
     },
   },
   areaServed:  { '@type': 'City', name: 'Matão' },
-  description: 'Cortinas e persianas sob medida em Matão SP. Instalação sob consulta. Atendimento da Maravilha Cortinas de Ibitinga — ateliê especializado, +16 anos.',
+  description: 'Cortinas e persianas sob medida em Matão SP, de alto padrão. Consultoria personalizada, ateliê especializado, +16 anos. Instalação sob consulta.',
 }
 
 const faq = [
